@@ -1,0 +1,24 @@
+# decomineral LoRA — kohya sd-scripts 数据集配置（剖面 8gb / SPEC §8.2）
+# 数值来源 hardware/8gb.yaml，勿手改；改了要同步 SPEC 与该 yaml。
+# 用法：--dataset_config configs/dataset_8gb.toml（与 configs/sdxl_lora_8gb.toml 配套）
+
+[general]
+enable_bucket = true
+bucket_no_upscale = true
+min_bucket_reso = 640              # = resolution_buckets 最小值
+max_bucket_reso = 832              # = resolution_buckets 最大值
+bucket_reso_steps = 64
+caption_extension = ".txt"
+shuffle_caption = false            # SPEC §6.2 caption 四段顺序是合同，不打乱
+keep_tokens = 2                    # 与 data/train/images/metadata.json 一致；仅 shuffle 时生效
+color_aug = false                  # 矿物色是风格核心，禁止色彩扰动
+flip_aug = false                   # 纹样/题字有方向性，禁止镜像
+
+[[datasets]]
+resolution = 768                   # 桶中位值；SPEC §8.2「短边 768 即可，不要迷信 1024」
+batch_size = 1
+
+  [[datasets.subsets]]
+  image_dir = "F:/pearl_LoRA/data/train/images"
+  num_repeats = 10                 # repeats = target_steps/(image_count*epochs)（SPEC §8）
+                                   # 现 15 张：150 步/epoch，1800 步 ≈ 12 epoch

@@ -1,0 +1,38 @@
+{
+  "id": "00009",
+  "license": "CC0",
+  "family": "silkroad_mural",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline",
+      "tapestry_space"
+    ],
+    "palette": [
+      "lapis",
+      "malachite",
+      "cinnabar",
+      "ochre",
+      "jade_white",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "figure",
+    "donor",
+    "scarf",
+    "robe",
+    "cup",
+    "headdress"
+  ],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, a standing donor figure with a red headdress and long green scarf, holding a small cup, on a deep lapis blue ground, weathered mineral surface, lapis blue, malachite green, cinnabar red, ochre, jade white",
+  "notes_zh": "克孜尔供养人残片：红发髻立像，绿帔帛绕身，手持杯盏，青金蓝底剥落。",
+  "split": "train"
+}

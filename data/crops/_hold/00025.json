@@ -1,0 +1,42 @@
+{
+  "id": "00025",
+  "license": "CC0",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "patterned_terrain"
+    ],
+    "palette": [
+      "malachite",
+      "cinnabar",
+      "azurite",
+      "ochre",
+      "gold"
+    ]
+  },
+  "theme": {
+    "primary": "nature",
+    "secondary": []
+  },
+  "content": [
+    "horseman",
+    "banner",
+    "spear",
+    "rock",
+    "hill",
+    "tree",
+    "flower",
+    "herb",
+    "horse",
+    "rider"
+  ],
+  "composition": "horizontal_register",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, tapestry space, mountains patterned as dense forest, mounted warriors with banners and spears crossing a rocky hillside, patterned trees and flowering plants filling the slope, riders in blue and red on a pale ground, malachite green, cinnabar red, azurite blue, ochre, gold",
+  "notes_zh": "Shahnameh 插图(IMJ B69-0633)：持旗矛骑者过山，纹样树石满铺。",
+  "split": "train"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "00040",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "tapestry_space"
+    ],
+    "palette": [
+      "lapis",
+      "gold",
+      "cinnabar",
+      "malachite",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "court",
+    "secondary": []
+  },
+  "content": [
+    "ruler",
+    "throne",
+    "canopy",
+    "courtier",
+    "vessel",
+    "dish",
+    "attendant",
+    "robe",
+    "carpet"
+  ],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, tapestry space, a ruler seated on a jewelled throne beneath a striped canopy while courtiers present gold vessels and dishes, attendants in long robes standing in rows on a flowering carpet, lapis blue, gold, cinnabar red, malachite green, jade white",
+  "notes_zh": "萨法维设拉子《廷臣献礼》(Commons PD, circa 1600)：宝座帐顶+金器+花卉地毯。",
+  "split": "train"
+}

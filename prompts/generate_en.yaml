@@ -1,0 +1,37 @@
+# decomineral 生成期提示词合同（SPEC §7）。风格锁永远同一句，主题只改 SUBJECT。
+# 拼法：<lora:decomineral:0.8>, {style_lock}, {subject}, malachite, azurite, cinnabar, gold
+style_lock: >-
+  decomineral style, flat mineral pigments, no chiaroscuro,
+  pattern equal to form, tapestry space, jewel-like palette,
+  closed color shapes, ornamental border
+
+negative: >-
+  photograph, realistic lighting, chiaroscuro, 3d render, anime,
+  oil painting, western perspective, watermark, text, artist name
+
+branches:
+  ritual:
+    subject: >-
+      a ceremonial hall with canopy, attendants, sacred tree and
+      geometric pavement, ritual but not a copy of a known cave
+  future:
+    subject: >-
+      an orbital palace and procession of machine-bodied attendants,
+      towers like sutra pillars, sky-boats treated as ornament not sci-fi chrome
+  water:
+    subject: >-
+      an underwater palace, fish-scale waves, lotus as fabric, boats
+      and palaces stacked like a tapestry
+  # court：SPEC §7 未给，由用户 2026-09-17 依 §3.3「宫殿、城郭、仪仗、织物、宝座」口述补写。
+  court:
+    subject: >-
+      a vast stone palace of blue and green masonry with arcades and
+      lattice windows, a city of countless stairs in silhouette behind it
+      with a jade glow, a winding procession road with banners, instruments,
+      horses and animals, curling floating textiles, and a throne spreading
+      like a peacock tail, lit against the dark hall
+
+# v1.1 新增可选 FORM GRAMMAR（SPEC §13，装饰画传统技法；按需在 SUBJECT 或句尾追加，勿强行塞进 style_lock）：
+#   mountains patterned as dense forest      # 山体满铺纹理，读来如长满树林
+#   color radiating outward from the center  # 自中心向外轮环式渐变
+#   figures in large non-focal areas         # 人物置于非焦点大面积区域以制造张力

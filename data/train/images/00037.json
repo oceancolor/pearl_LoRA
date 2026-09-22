@@ -1,0 +1,41 @@
+{
+  "id": "00037",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "patterned_terrain"
+    ],
+    "palette": [
+      "cinnabar",
+      "malachite",
+      "azurite",
+      "ochre",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "nature",
+    "secondary": []
+  },
+  "content": [
+    "figure",
+    "fish",
+    "tree",
+    "flower",
+    "attendant",
+    "wing",
+    "rock",
+    "slope",
+    "herb"
+  ],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, mountains patterned as dense forest, a bearded figure emerging from the mouth of a great fish beneath a flowering tree, winged attendants above and rocky slopes set with herbs around, cinnabar red, malachite green, azurite blue, ochre, jade white",
+  "notes_zh": "《约拿出鱼口》页(Jami al-Tavarikh, Commons PD)：花树下先知出鱼口，有翼侍者与山石草木。",
+  "split": "train"
+}

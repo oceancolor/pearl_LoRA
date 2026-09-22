@@ -1,0 +1,41 @@
+{
+  "id": "00014",
+  "license": "CC0",
+  "family": "pure_ornament",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "no_chiaroscuro",
+      "closed_outline",
+      "pattern_equals_form",
+      "enamel_cells",
+      "jewel_palette"
+    ],
+    "palette": [
+      "azurite",
+      "cinnabar",
+      "ochre",
+      "malachite",
+      "gold",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ornament",
+    "secondary": []
+  },
+  "content": [
+    "border",
+    "frieze",
+    "rosette",
+    "lotus",
+    "palmette",
+    "guilloche",
+    "panel",
+    "motif"
+  ],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, enamel cell outlines, a plate of ancient ornament with horizontal friezes of lotus and palmette, rosettes, guilloche bands and square flower panels in blue and orange, small printed captions, azurite blue, cinnabar red, ochre, malachite green, gold",
+  "notes_zh": "Nineveh & Persia No.1 图版：亚述波斯纹样带与方花，蓝橙对比，三语页眉。",
+  "split": "train"
+}

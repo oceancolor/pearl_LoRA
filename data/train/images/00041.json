@@ -1,0 +1,41 @@
+{
+  "id": "00041",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "tapestry_space"
+    ],
+    "palette": [
+      "lapis",
+      "cinnabar",
+      "malachite",
+      "gold",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "court",
+    "secondary": []
+  },
+  "content": [
+    "king",
+    "crown",
+    "throne",
+    "attendant",
+    "courtier",
+    "hanging",
+    "carpet",
+    "tree",
+    "bird"
+  ],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, tapestry space, a crowned king enthroned on a throne with attendants and courtiers around, patterned hangings and a decorated carpet, a flowering tree and birds above the assembly, lapis blue, cinnabar red, malachite green, gold, jade white",
+  "notes_zh": "Kalila wa Dimna《印度王 Heblar 的宫廷》(Commons PD, 蒙古时期)：宝座+廷臣+花鸟。",
+  "split": "train"
+}

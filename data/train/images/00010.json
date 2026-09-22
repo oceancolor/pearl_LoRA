@@ -1,0 +1,39 @@
+{
+  "id": "00010",
+  "license": "CC0",
+  "family": "silkroad_mural",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline",
+      "pattern_equals_form"
+    ],
+    "palette": [
+      "lapis",
+      "malachite",
+      "cinnabar",
+      "ochre",
+      "jade_white",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "court",
+    "secondary": []
+  },
+  "content": [
+    "figure",
+    "warrior",
+    "armor",
+    "sword",
+    "helmet",
+    "shield",
+    "guard"
+  ],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, an armored palace guard standing with a sword at the waist, scale armor patterned in blue and green, red contour lines, on a weathered earthen ground, lapis blue, malachite green, cinnabar red, ochre",
+  "notes_zh": "克孜尔武士残片：束甲胄卫兵立像，甲片纹样清晰，青金蓝+孔雀石绿+红勾线，泥底斑驳。",
+  "split": "train"
+}

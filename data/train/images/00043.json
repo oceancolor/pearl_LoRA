@@ -1,0 +1,41 @@
+{
+  "id": "00043",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "gold_ground"
+    ],
+    "palette": [
+      "gold",
+      "malachite",
+      "cinnabar",
+      "azurite",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "court",
+    "secondary": []
+  },
+  "content": [
+    "courtier",
+    "attendant",
+    "palace",
+    "terrace",
+    "carpet",
+    "vessel",
+    "tree",
+    "cypress",
+    "wall"
+  ],
+  "composition": "horizontal_register",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, tapestry space, gold ground, robed courtiers and attendants gathered before a palace terrace under a gold sky, a carpet and gold vessels set out, flowering trees and a dark cypress behind the wall, gold, malachite green, cinnabar red, azurite blue, jade white",
+  "notes_zh": "《Sohni-Mahiwal》上部宫廷集会(Commons PD, 蒙兀儿 ca.1700-50)：金天+宫台+廷臣+花树。",
+  "split": "train"
+}

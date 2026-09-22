@@ -1,0 +1,43 @@
+{
+  "id": "00017",
+  "license": "CC0",
+  "family": "pure_ornament",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "gold_ground",
+      "ornamental_border",
+      "jewel_palette"
+    ],
+    "palette": [
+      "lapis",
+      "gold",
+      "cinnabar",
+      "malachite",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ornament",
+    "secondary": []
+  },
+  "content": [
+    "scroll",
+    "vine",
+    "palmette",
+    "lotus",
+    "rosette",
+    "medallion",
+    "panel",
+    "border",
+    "stem",
+    "bud"
+  ],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, gold ground, ornamental border, jewel-like palette, an illuminated album headpiece of scrolling gold vines and palmettes with lotus buds on a deep blue ground, rosette medallions and a lattice of curling stems filling the panel, lapis blue, gold, cinnabar red, malachite green, jade white",
+  "notes_zh": "",
+  "split": "train"
+}

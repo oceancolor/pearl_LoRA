@@ -1,0 +1,15 @@
+{
+  "id": "00001",
+  "license": "CC0",
+  "family": "persian_miniature",
+  "style": {
+    "traits": ["flat_fill", "mineral_pigment", "pattern_equals_form", "no_chiaroscuro", "closed_outline", "tapestry_space"],
+    "palette": ["azurite", "malachite", "ochre", "gold"]
+  },
+  "theme": {"primary": "nature", "secondary": ["water"]},
+  "content": ["bird", "crane", "rooster", "hawk", "swallow", "goose", "phoenix", "parrot", "magpie", "nightingale", "duck", "ram", "hunter", "spear", "mountain", "rock", "pond", "water-lily"],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, tapestry space, a gathering of twenty-one birds of many kinds, cranes, a phoenix, parrots and ducks, with two horned rams and a hunter bearing a long spear, set among mountains and a pond patterned with water-lilies, peacock blue, malachite green, ochre, gold",
+  "notes_zh": "《群鸟会》绘画核心区（已裁纯图案衬托边）。21只杂色鸟（鹤/公鸡/鹰/燕/雁/凤凰/鹦鹉/喜鹊/夜莺/鸭或鸳鸯）+两只有角公羊+一持长枪猎人；山石、池水、睡莲纹。色：金黄/孔雀蓝/深浅绿/赭石。主题 nature。",
+  "split": "train"
+}

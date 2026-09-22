@@ -1,0 +1,45 @@
+# decomineral .gitignore
+# 依据 SPEC §4（models/ 注明 gitignore）与常见 ML 数据集仓库惯例；只忽略大体量/易重生成/敏感项。
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 用户自备权重，禁止入库（SPEC §0.9 / §4）；保留空目录占位
+models/*
+!models/.gitkeep
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+
+# 训练产物与日志（可重生成）；保留占位
+output/*
+!output/.gitkeep
+logs/*
+!logs/.gitkeep
+
+# 原始下载 / 复核队列（体积大、含未过许可候选，SPEC §5.1 / §2.2）；保留占位
+data/inbox/raw/*
+data/inbox/review/*
+!data/inbox/raw/.gitkeep
+!data/inbox/review/.gitkeep
+
+# 已拒候选（体积大；拒因与来源 URL 均已记在 provenance.csv，可回溯）
+data/rejected/*
+!data/rejected/.gitkeep
+
+# 复核缩略图与自动裁切中间产物（可由 _cropw.py / _wthumb.py 重建）
+data/crops/_review/
+data/crops/*.png
+data/crops/*.jpg
+
+# 临时输出（脚本 stdout 重定向产物）
+_*.txt
+
+# 操作系统缓存
+.DS_Store
+Thumbs.db

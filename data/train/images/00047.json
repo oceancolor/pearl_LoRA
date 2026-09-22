@@ -1,0 +1,41 @@
+{
+  "id": "00047",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "tapestry_space"
+    ],
+    "palette": [
+      "lapis",
+      "cinnabar",
+      "malachite",
+      "gold",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "court",
+    "secondary": []
+  },
+  "content": [
+    "courtier",
+    "throne",
+    "falcon",
+    "robe",
+    "sash",
+    "tree",
+    "flower",
+    "carpet",
+    "row"
+  ],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, tapestry space, courtiers of the shah standing in rows before a throne, one holding a falcon, robes of lapis and cinnabar with gold sashes, a flowering tree and a patterned carpet on a pale ground, lapis blue, cinnabar red, malachite green, gold, jade white",
+  "notes_zh": "《阿拔斯一世宫廷群像》(Walters W691A, Commons PD, Safavid 17世纪)：廷臣列+持鹰者+花树与地毯。",
+  "split": "train"
+}

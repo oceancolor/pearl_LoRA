@@ -1,0 +1,15 @@
+{
+  "id": "00004",
+  "license": "PD",
+  "family": "bilibin",
+  "style": {
+    "traits": ["flat_fill", "mineral_pigment", "pattern_equals_form", "no_chiaroscuro", "closed_outline", "ornamental_border", "tapestry_space"],
+    "palette": ["gold", "ochre", "cinnabar", "coral", "malachite", "lapis", "jade_white", "soot"]
+  },
+  "theme": {"primary": "court", "secondary": ["ornament"]},
+  "content": ["castle", "tower", "conical-roof", "wall", "arch-gate", "minaret", "dome", "palace", "corridor", "soldier", "shield", "spear", "palm-tree", "snake", "bird", "star", "pinecone", "floral-scroll"],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, ornamental border, tapestry space, a fantastic fortress with a stone tower and black conical roof, high white walls and a great arched gate, domed palaces and minarets in the distance, soldiers in red armor with shields and spears on a covered walkway, palm trees, entwined snakes and white stars, ochre, cinnabar, malachite green, lapis blue, gold",
+  "notes_zh": "Bilibin 城堡/宫殿群插图（边框为作品组成部分，不裁）。中央圆石防卫塔（黑锥顶、檐下彩鸟壁画）、右上白色高墙+木铁拱门（棕榈+双蛇图腾）、左上圆顶宣礼塔与宫殿天际线、左下斜顶长廊与红甲盾矛士兵队列。夜空墨黑/深蓝缀白星，石塔暖褐，米白+土黄，朱红/珊瑚红点缀，橄榄绿/墨绿棕榈，淡紫金棕卷草。主题定 court（§3.3 宫殿/城郭/仪仗）。不含风格/流派词。",
+  "split": "train"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "00039",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "patterned_terrain"
+    ],
+    "palette": [
+      "malachite",
+      "ochre",
+      "cinnabar",
+      "azurite",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "nature",
+    "secondary": []
+  },
+  "content": [
+    "jackal",
+    "captive",
+    "bird",
+    "tree",
+    "flower",
+    "rock",
+    "hollow",
+    "herb",
+    "slope"
+  ],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, mountains patterned as dense forest, a jackal visiting a captive jackal at the mouth of a rocky hollow, birds and a flowering tree above, tufted herbs and patterned rocks filling the slope, malachite green, ochre, cinnabar red, azurite blue, jade white",
+  "notes_zh": "Kalila wa Dimna《Kalila 探视被囚之 Dimna》(Commons PD)：岩穴、飞鸟与花树。",
+  "split": "train"
+}

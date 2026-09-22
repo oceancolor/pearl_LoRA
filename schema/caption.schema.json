@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "decomineral caption",
+  "type": "object",
+  "required": [
+    "id",
+    "style",
+    "theme",
+    "content",
+    "caption_en",
+    "license"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "license": {
+      "enum": [
+        "PD",
+        "CC0"
+      ]
+    },
+    "family": {
+      "enum": [
+        "silkroad_mural",
+        "persian_miniature",
+        "bilibin",
+        "clarkestain",
+        "rimpa",
+        "pure_ornament",
+        "other_pd"
+      ]
+    },
+    "style": {
+      "type": "object",
+      "required": [
+        "traits"
+      ],
+      "properties": {
+        "traits": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "enum": [
+              "flat_fill",
+              "mineral_pigment",
+              "pattern_equals_form",
+              "no_chiaroscuro",
+              "closed_outline",
+              "ornamental_border",
+              "tapestry_space",
+              "gold_ground",
+              "enamel_cells",
+              "jewel_palette",
+              "patterned_terrain",
+              "radial_gradient",
+              "nonfocal_figures"
+              ]
+          }
+        },
+        "palette": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "azurite",
+              "malachite",
+              "cinnabar",
+              "ochre",
+              "gold",
+              "jade_white",
+              "lapis",
+              "soot",
+              "coral",
+              "turquoise"
+            ]
+          }
+        }
+      }
+    },
+    "theme": {
+      "type": "object",
+      "required": [
+        "primary"
+      ],
+      "properties": {
+        "primary": {
+          "enum": [
+            "ritual",
+            "court",
+            "nature",
+            "water",
+            "ornament",
+            "machine_or_sky"
+          ]
+        },
+        "secondary": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "content": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "nouns only: boat, wave-pattern, palace, bird, tree, throne. No artist names. No 'dunhuang style'."
+    },
+    "composition": {
+      "enum": [
+        "full_page",
+        "border_frame",
+        "horizontal_register",
+        "central_figure",
+        "pattern_field",
+        "crop_detail"
+      ]
+    },
+    "caption_en": {
+      "type": "string",
+      "minLength": 40,
+      "maxLength": 600
+    },
+    "notes_zh": {
+      "type": "string"
+    },
+    "split": {
+      "enum": [
+        "train",
+        "val"
+      ]
+    }
+  }
+}

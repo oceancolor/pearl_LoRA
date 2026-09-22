@@ -1,0 +1,39 @@
+{
+  "id": "00012",
+  "license": "CC0",
+  "family": "pure_ornament",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "no_chiaroscuro",
+      "closed_outline",
+      "pattern_equals_form",
+      "ornamental_border",
+      "jewel_palette"
+    ],
+    "palette": [
+      "gold",
+      "cinnabar",
+      "ochre",
+      "malachite",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ornament",
+    "secondary": []
+  },
+  "content": [
+    "letter",
+    "scroll",
+    "vine",
+    "leaf",
+    "border",
+    "motif",
+    "panel"
+  ],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, ornamental border, an illuminated title page with large foliate letters entwined with scrolling vines and leaves, dense ornament panels on a warm paper ground, gold, cinnabar red, ochre, malachite green, jade white",
+  "notes_zh": "Grammar of Ornament 扉页：藤蔓字母装饰，红金褐卷草满铺印版。",
+  "split": "train"
+}

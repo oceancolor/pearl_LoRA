@@ -1,0 +1,38 @@
+{
+  "id": "00013",
+  "license": "CC0",
+  "family": "pure_ornament",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "no_chiaroscuro",
+      "closed_outline",
+      "pattern_equals_form",
+      "ornamental_border",
+      "jewel_palette"
+    ],
+    "palette": [
+      "lapis",
+      "cinnabar",
+      "gold",
+      "jade_white",
+      "malachite"
+    ]
+  },
+  "theme": {
+    "primary": "ornament",
+    "secondary": []
+  },
+  "content": [
+    "letter",
+    "initial",
+    "foliage",
+    "scroll",
+    "border",
+    "motif"
+  ],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, ornamental border, jewel-like palette, an illuminated title page with great blue initials and crimson foliage on a gold ground, dense foliate scrollwork filling the page, lapis blue, cinnabar red, gold, jade white, malachite green",
+  "notes_zh": "Grammar of Ornament 扉页另一版：青金蓝大首字母+朱红叶饰+金地，饱和度更高。",
+  "split": "train"
+}

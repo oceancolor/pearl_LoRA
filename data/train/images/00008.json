@@ -1,0 +1,37 @@
+{
+  "id": "00008",
+  "license": "CC0",
+  "family": "silkroad_mural",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline",
+      "tapestry_space"
+    ],
+    "palette": [
+      "azurite",
+      "malachite",
+      "ochre",
+      "jade_white",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "figure",
+    "monk",
+    "lotus",
+    "halo",
+    "robe",
+    "cloud"
+  ],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, a standing haloed figure of a monk holding a lotus flower, wearing patched robes, on a deep blue ground with swirling cloud scrolls, azurite blue, malachite green, ochre, jade white",
+  "notes_zh": "克孜尔风格持莲僧壁画残片：圆光立僧持莲花，百衲衣，蓝灰底云气卷涡。",
+  "split": "train"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "00020",
+  "license": "CC0",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "patterned_terrain"
+    ],
+    "palette": [
+      "cinnabar",
+      "malachite",
+      "azurite",
+      "gold",
+      "ochre"
+    ]
+  },
+  "theme": {
+    "primary": "nature",
+    "secondary": []
+  },
+  "content": [
+    "hero",
+    "horse",
+    "spear",
+    "dragon",
+    "scale",
+    "rock",
+    "mountain",
+    "tree",
+    "hill"
+  ],
+  "composition": "horizontal_register",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, mountains patterned as dense forest, a hero on horseback thrusting a spear into a coiling dragon whose scaly body loops across a cinnabar red ground, jagged rocks and stylized trees around them, cinnabar red, malachite green, azurite blue, gold, ochre",
+  "notes_zh": "Shahnama《Isfandiyar 第三关·屠龙》画幅带：龙身盘旋于赭红地，山石与纹样树。",
+  "split": "train"
+}

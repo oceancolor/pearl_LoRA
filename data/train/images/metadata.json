@@ -1,0 +1,230 @@
+{
+  "00001.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00001.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, tapestry space, a gathering of twenty-one birds of many kinds, cranes, a phoenix, parrots and ducks, with two horned rams and a hunter bearing a long spear, set among mountains and a pond patterned with water-lilies, peacock blue, malachite green, ochre, gold",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00007.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00007.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, tapestry space, patterned clouds, a seated sacred figure in red robes on a lotus throne amid swirling blue clouds, small attendant figures below, dark mountains behind, azurite blue, malachite green, cinnabar red, ochre, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00008.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00008.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, a standing haloed figure of a monk holding a lotus flower, wearing patched robes, on a deep blue ground with swirling cloud scrolls, azurite blue, malachite green, ochre, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00009.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00009.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, a standing donor figure with a red headdress and long green scarf, holding a small cup, on a deep lapis blue ground, weathered mineral surface, lapis blue, malachite green, cinnabar red, ochre, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00010.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00010.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, an armored palace guard standing with a sword at the waist, scale armor patterned in blue and green, red contour lines, on a weathered earthen ground, lapis blue, malachite green, cinnabar red, ochre",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00012.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00012.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, ornamental border, an illuminated title page with large foliate letters entwined with scrolling vines and leaves, dense ornament panels on a warm paper ground, gold, cinnabar red, ochre, malachite green, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00013.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00013.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, ornamental border, jewel-like palette, an illuminated title page with great blue initials and crimson foliage on a gold ground, dense foliate scrollwork filling the page, lapis blue, cinnabar red, gold, jade white, malachite green",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00014.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00014.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, enamel cell outlines, a plate of ancient ornament with horizontal friezes of lotus and palmette, rosettes, guilloche bands and square flower panels in blue and orange, small printed captions, azurite blue, cinnabar red, ochre, malachite green, gold",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00016.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00016.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, a towering black mountain between two slender white castle towers, strips of golden cloud in a white sky, two tattooed figures facing each other below holding golden cups that drip gold into a woven basket, soot black, gold, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00017.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00017.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, gold ground, ornamental border, jewel-like palette, an illuminated album headpiece of scrolling gold vines and palmettes with lotus buds on a deep blue ground, rosette medallions and a lattice of curling stems filling the panel, lapis blue, gold, cinnabar red, malachite green, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00018.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00018.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, tapestry space, a courtyard scene with a maiden leaning from a tiled balcony above, a bearded holy man in a green robe kneeling below with two companions, a blossoming tree beside a blue-tiled iwan and a pale flowered carpet, lapis blue, cinnabar red, malachite green, gold, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00019.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00019.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, gold ground, a garden feast of two courtiers seated on a carpet beneath a blossoming tree, one in a blue robe pouring wine, one in a green robe holding a cup, gold vessels and a ewer before them on an olive ground, lapis blue, malachite green, gold, cinnabar red, ochre",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00020.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00020.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, mountains patterned as dense forest, a hero on horseback thrusting a spear into a coiling dragon whose scaly body loops across a cinnabar red ground, jagged rocks and stylized trees around them, cinnabar red, malachite green, azurite blue, gold, ochre",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00021.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00021.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, mountains patterned as dense forest, a great long-tailed bird perched in a stylized blossoming tree above a youth on horseback who reaches toward it, pink and grey rocky hills and patterned foliage filling the field, malachite green, cinnabar red, azurite blue, ochre, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00022.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00022.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, patterned water, mountains patterned as dense forest, a swimming figure in a lotus pool beneath a tiled pavilion where robed onlookers lean from an arch, fish and a small boat on the water, flower-dotted hills and a dark cypress behind, lapis blue, malachite green, cinnabar red, gold, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00024.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00024.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, patterned water, mountains patterned as dense forest, a pool with a swimming figure among fish and a small boat, a mounted prince with attendants watching from the bank, blossoming trees, a cypress and patterned rocks around, malachite green, cinnabar red, azurite blue, gold, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00027.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00027.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, gold ground, ornamental border, jewel-like palette, an illuminated album panel of gold arabesques and cloud scrolls on a deep blue ground, red and gold medallions with leaf palmettes and small rosettes, a lattice of fine stems filling the field, lapis blue, gold, cinnabar red, malachite green, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00028.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00028.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, patterned water, gold ground, ornamental border, a folding screen of breaking waves drawn as flat curling ridges of blue and green on a gold ground, pine-clad islets scattered between the crests, foam combs repeated as ornament, gold, azurite blue, malachite green, jade white, soot",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00029.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00029.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, patterned water, gold ground, closed color shapes, a folding screen panel of surging waves drawn as flat overlapping ridges in blue and green on a gold ground, dark pine-covered rocks rising between the crests, foam repeated as combed ornament, gold, azurite blue, malachite green, soot, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00030.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00030.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, patterned water, gold ground, closed color shapes, two small boats with rowers riding bands of stylized waves drawn as overlapping green and blue ridges on a gold ground, pale mist bands across the water, gold, malachite green, azurite blue, jade white, soot",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00031.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00031.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, patterned water, gold ground, closed color shapes, a tall screen panel of stacked wave ridges in green and blue with a small boat adrift among the crests, foam combs repeated as ornament on a gold ground, gold, malachite green, azurite blue, jade white, soot",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00032.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00032.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, patterned water, gold ground, closed color shapes, a boat with figures on curling waves drawn as flat overlapping ridges of green and blue, spray repeated as combed ornament on a gold ground, pale cloud bands above, gold, malachite green, azurite blue, jade white, soot",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00033.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00033.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, ornamental border, a standing bodhisattva beneath a flower-strewn canopy preaching to a small devotee, attendants with banners and a jewelled altar, scrolling cloud bands and striped drapery on a red ground, cinnabar red, malachite green, azurite blue, ochre, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00034.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00034.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, patterned clouds, a fierce crowned guardian deity seated within a ring of flame scrolls on a deep blue ground, small attendant figures below and a lotus throne behind, lapis blue, cinnabar red, malachite green, ochre, gold",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00035.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00035.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, ornamental border, a crowned sacred guardian king in scaled armor standing against a green halo, a ribboned retinue and cloud scrolls on a red ground, borders of repeating flower rosettes, cinnabar red, malachite green, azurite blue, ochre, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00036.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00036.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, tapestry space, a young king enthroned beneath a patterned tent canopy with courtiers standing in rows, a jewelled carpet and gold vessels before the throne, rocky slopes and stylized trees behind, lapis blue, cinnabar red, malachite green, gold, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00037.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00037.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, mountains patterned as dense forest, a bearded figure emerging from the mouth of a great fish beneath a flowering tree, winged attendants above and rocky slopes set with herbs around, cinnabar red, malachite green, azurite blue, ochre, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00038.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00038.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, mountains patterned as dense forest, a jackal standing beneath a blossoming tree on a rocky slope, birds in the branches and herbs flowering at the foot of the rocks, a pale ground with patterned foliage, malachite green, cinnabar red, ochre, azurite blue, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00039.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00039.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, mountains patterned as dense forest, a jackal visiting a captive jackal at the mouth of a rocky hollow, birds and a flowering tree above, tufted herbs and patterned rocks filling the slope, malachite green, ochre, cinnabar red, azurite blue, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00040.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00040.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, tapestry space, a ruler seated on a jewelled throne beneath a striped canopy while courtiers present gold vessels and dishes, attendants in long robes standing in rows on a flowering carpet, lapis blue, gold, cinnabar red, malachite green, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00041.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00041.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, tapestry space, a crowned king enthroned on a throne with attendants and courtiers around, patterned hangings and a decorated carpet, a flowering tree and birds above the assembly, lapis blue, cinnabar red, malachite green, gold, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00042.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00042.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, ornamental border, a standing bodhisattva on a lotus throne with a jewelled crown and scarves, striped skirt and bands of flower rosettes down the banner, small donor figures and cloud scrolls on a warm ground, cinnabar red, malachite green, azurite blue, ochre, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00043.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00043.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, tapestry space, gold ground, robed courtiers and attendants gathered before a palace terrace under a gold sky, a carpet and gold vessels set out, flowering trees and a dark cypress behind the wall, gold, malachite green, cinnabar red, azurite blue, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00045.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00045.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, patterned water, gold ground, closed color shapes, a folding screen of curling wave ridges in green and blue on a gold ground, a pine-clad islet rising between the crests and a small boat riding the waves, gold, malachite green, azurite blue, jade white, soot",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00046.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00046.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, gold ground, ornamental border, jewel-like palette, a leather book cover stamped in gold with lobed medallions and arabesque scrolls, a circular mandorla at the centre and rosette bands along the frame, dark blue panels set with gold foliage, gold, azurite blue, cinnabar red, malachite green, soot",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00047.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00047.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, tapestry space, courtiers of the shah standing in rows before a throne, one holding a falcon, robes of lapis and cinnabar with gold sashes, a flowering tree and a patterned carpet on a pale ground, lapis blue, cinnabar red, malachite green, gold, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00048.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00048.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, mountains patterned as dense forest, two jackals confronting each other beside a date palm, red blossoms and tufted herbs scattered over a patterned rocky ground, malachite green, cinnabar red, ochre, azurite blue, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00049.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00049.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, tapestry space, a rider on a dark horse passing through a field of leaping flames, rows of attendants watching from a striped tent canopy above, gold flames repeated as ornament over a pale ground, cinnabar red, gold, lapis blue, malachite green, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  }
+}

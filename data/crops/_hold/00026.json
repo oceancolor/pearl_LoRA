@@ -1,0 +1,42 @@
+{
+  "id": "00026",
+  "license": "CC0",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "patterned_terrain"
+    ],
+    "palette": [
+      "malachite",
+      "cinnabar",
+      "azurite",
+      "ochre",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "nature",
+    "secondary": []
+  },
+  "content": [
+    "horseman",
+    "lance",
+    "standard",
+    "pass",
+    "rock",
+    "tree",
+    "herb",
+    "slope",
+    "horse",
+    "rider"
+  ],
+  "composition": "horizontal_register",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, tapestry space, mountains patterned as dense forest, horsemen with lances and a standard moving through a rocky pass, stylized trees and flowering herbs covering the slopes, figures in blue, red and green on a pale ground, malachite green, cinnabar red, azurite blue, ochre, jade white",
+  "notes_zh": "Shahnameh 插图(IMJ B69-0627)：持矛骑者与旗帜穿行山隘，纹样草木满铺。",
+  "split": "train"
+}

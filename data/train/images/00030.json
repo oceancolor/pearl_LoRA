@@ -1,0 +1,40 @@
+{
+  "id": "00030",
+  "license": "CC0",
+  "family": "rimpa",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "gold_ground",
+      "closed_outline"
+    ],
+    "palette": [
+      "gold",
+      "malachite",
+      "azurite",
+      "jade_white",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "boat",
+    "rower",
+    "wave",
+    "ridge",
+    "crest",
+    "mist",
+    "water",
+    "screen"
+  ],
+  "composition": "horizontal_register",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, patterned water, gold ground, closed color shapes, two small boats with rowers riding bands of stylized waves drawn as overlapping green and blue ridges on a gold ground, pale mist bands across the water, gold, malachite green, azurite blue, jade white, soot",
+  "notes_zh": "《波に舟図屏風》(Met CC0, DP264141)：金地绿蓝浪脊+两叶小舟，E 族 water。",
+  "split": "train"
+}

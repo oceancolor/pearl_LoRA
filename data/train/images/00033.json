@@ -1,0 +1,40 @@
+{
+  "id": "00033",
+  "license": "CC0",
+  "family": "silkroad_mural",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "ornamental_border"
+    ],
+    "palette": [
+      "cinnabar",
+      "malachite",
+      "azurite",
+      "ochre",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "bodhisattva",
+    "canopy",
+    "devotee",
+    "attendant",
+    "banner",
+    "altar",
+    "cloud",
+    "drapery"
+  ],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, ornamental border, a standing bodhisattva beneath a flower-strewn canopy preaching to a small devotee, attendants with banners and a jewelled altar, scrolling cloud bands and striped drapery on a red ground, cinnabar red, malachite green, azurite blue, ochre, jade white",
+  "notes_zh": "敦煌绢画《观音说法图》(Met CC0 74906)：红地华盖、幡幢、云气卷草。",
+  "split": "train"
+}

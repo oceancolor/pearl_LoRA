@@ -1,0 +1,266 @@
+[
+  {
+    "file_id": "met_44794",
+    "family": "A",
+    "theme_primary": "ritual",
+    "source": "data\\inbox\\raw\\met_44794\\image.jpg",
+    "orig_size": [
+      1968,
+      3928
+    ],
+    "bbox": [
+      265,
+      535,
+      1705,
+      3330
+    ],
+    "mode": "manual",
+    "crop_size": [
+      1440,
+      2795
+    ],
+    "short_side": 1440,
+    "ok_640": true,
+    "out": "data\\crops\\met_44794.png"
+  },
+  {
+    "file_id": "met_700091",
+    "family": "F",
+    "theme_primary": "ornament",
+    "source": "data\\inbox\\raw\\met_700091\\image.jpg",
+    "orig_size": [
+      2538,
+      3965
+    ],
+    "bbox": [
+      120,
+      195,
+      2410,
+      3675
+    ],
+    "mode": "manual",
+    "crop_size": [
+      2290,
+      3480
+    ],
+    "short_side": 2290,
+    "ok_640": true,
+    "out": "data\\crops\\met_700091.png"
+  },
+  {
+    "file_id": "met_891631",
+    "family": "F",
+    "theme_primary": "ornament",
+    "source": "data\\inbox\\raw\\met_891631\\image.jpg",
+    "orig_size": [
+      2610,
+      4000
+    ],
+    "bbox": [
+      0,
+      0,
+      2610,
+      4000
+    ],
+    "mode": "manual",
+    "crop_size": [
+      2610,
+      4000
+    ],
+    "short_side": 2610,
+    "ok_640": true,
+    "out": "data\\crops\\met_891631.png"
+  },
+  {
+    "file_id": "met_891632",
+    "family": "F",
+    "theme_primary": "ornament",
+    "source": "data\\inbox\\raw\\met_891632\\image.jpg",
+    "orig_size": [
+      2621,
+      4000
+    ],
+    "bbox": [
+      0,
+      0,
+      2621,
+      4000
+    ],
+    "mode": "manual",
+    "crop_size": [
+      2621,
+      4000
+    ],
+    "short_side": 2621,
+    "ok_640": true,
+    "out": "data\\crops\\met_891632.png"
+  },
+  {
+    "file_id": "commons_Mogao_Cave_288_Devatas_at_the_Balcony_Western_Wei_period_jpg",
+    "family": "A",
+    "theme_primary": "ritual",
+    "source": "data\\inbox\\raw\\commons_Mogao_Cave_288_Devatas_at_the_Balcony_Western_Wei_period_jpg\\image.jpg",
+    "orig_size": [
+      2309,
+      1195
+    ],
+    "bbox": [
+      4,
+      4,
+      2305,
+      1191
+    ],
+    "mode": "auto",
+    "crop_size": [
+      2301,
+      1187
+    ],
+    "short_side": 1187,
+    "ok_640": true,
+    "out": "data\\crops\\commons_Mogao_Cave_288_Devatas_at_the_Balcony_Western_Wei_period_jpg.png"
+  },
+  {
+    "file_id": "commons_TsangMonk_jpg",
+    "family": "A",
+    "theme_primary": "ritual",
+    "source": "data\\inbox\\raw\\commons_TsangMonk_jpg\\image.jpg",
+    "orig_size": [
+      775,
+      949
+    ],
+    "bbox": [
+      4,
+      4,
+      771,
+      945
+    ],
+    "mode": "auto",
+    "crop_size": [
+      767,
+      941
+    ],
+    "short_side": 767,
+    "ok_640": true,
+    "out": "data\\crops\\commons_TsangMonk_jpg.png"
+  },
+  {
+    "file_id": "met_60654",
+    "family": "A",
+    "theme_primary": "court",
+    "source": "data\\inbox\\raw\\met_60654\\image.jpg",
+    "orig_size": [
+      2532,
+      3858
+    ],
+    "bbox": [
+      13,
+      13,
+      2512,
+      3841
+    ],
+    "mode": "auto",
+    "crop_size": [
+      2499,
+      3828
+    ],
+    "short_side": 2499,
+    "ok_640": true,
+    "out": "data\\crops\\met_60654.png"
+  },
+  {
+    "file_id": "met_60655",
+    "family": "A",
+    "theme_primary": "ritual",
+    "source": "data\\inbox\\raw\\met_60655\\image.jpg",
+    "orig_size": [
+      2277,
+      3856
+    ],
+    "bbox": [
+      12,
+      9,
+      2267,
+      3843
+    ],
+    "mode": "auto",
+    "crop_size": [
+      2255,
+      3834
+    ],
+    "short_side": 2255,
+    "ok_640": true,
+    "out": "data\\crops\\met_60655.png"
+  },
+  {
+    "file_id": "met_814025",
+    "family": "F",
+    "theme_primary": "ornament",
+    "source": "data\\inbox\\raw\\met_814025\\image.jpg",
+    "orig_size": [
+      2154,
+      3387
+    ],
+    "bbox": [
+      4,
+      36,
+      2150,
+      3361
+    ],
+    "mode": "auto",
+    "crop_size": [
+      2146,
+      3325
+    ],
+    "short_side": 2146,
+    "ok_640": true,
+    "out": "data\\crops\\met_814025.png"
+  },
+  {
+    "file_id": "commons_Clarke_The_Two_Distilleries_on_the_Same_Hill_1925_png",
+    "family": "G",
+    "theme_primary": "nature",
+    "source": "data\\inbox\\raw\\commons_Clarke_The_Two_Distilleries_on_the_Same_Hill_1925_png\\image.png",
+    "orig_size": [
+      3840,
+      5299
+    ],
+    "bbox": [
+      128,
+      352,
+      3144,
+      4610
+    ],
+    "mode": "manual",
+    "crop_size": [
+      3016,
+      4258
+    ],
+    "short_side": 3016,
+    "ok_640": true,
+    "out": "data\\crops\\commons_Clarke_The_Two_Distilleries_on_the_Same_Hill_1925_png.png"
+  },
+  {
+    "file_id": "met_448280",
+    "family": "B",
+    "theme_primary": "court",
+    "source": "data\\inbox\\raw\\met_448280\\image.jpg",
+    "orig_size": [
+      3027,
+      3717
+    ],
+    "bbox": [
+      165,
+      425,
+      2565,
+      1115
+    ],
+    "mode": "manual",
+    "crop_size": [
+      2400,
+      690
+    ],
+    "short_side": 690,
+    "ok_640": true,
+    "out": "data\\crops\\met_448280.png"
+  }
+]

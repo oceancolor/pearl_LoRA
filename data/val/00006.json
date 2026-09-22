@@ -1,0 +1,45 @@
+{
+  "id": "00006",
+  "license": "PD",
+  "family": "silkroad_mural",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline",
+      "tapestry_space",
+      "ornamental_border"
+    ],
+    "palette": [
+      "malachite",
+      "cinnabar",
+      "azurite",
+      "ochre",
+      "jade_white",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": [
+      "ornament"
+    ]
+  },
+  "content": [
+    "figure",
+    "musician",
+    "dancer",
+    "lute",
+    "halo",
+    "arch",
+    "niche",
+    "balcony",
+    "railing",
+    "ribbon"
+  ],
+  "composition": "horizontal_register",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, tapestry space, closed color shapes, three sacred figures standing in a row of arched niches behind a patterned balcony railing, one playing a lute, one dancing with raised arms, round halos and fluttering ribbons, malachite green, cinnabar red, azurite blue, ochre, jade white",
+  "notes_zh": "西魏天宫伎乐横带：三身天人立拱龛，栏楯纹带，左弹琵琶右起舞。",
+  "split": "val"
+}

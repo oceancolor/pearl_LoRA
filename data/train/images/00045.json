@@ -1,0 +1,40 @@
+{
+  "id": "00045",
+  "license": "CC0",
+  "family": "rimpa",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "gold_ground",
+      "closed_outline"
+    ],
+    "palette": [
+      "gold",
+      "malachite",
+      "azurite",
+      "jade_white",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "wave",
+    "ridge",
+    "crest",
+    "islet",
+    "pine",
+    "boat",
+    "screen",
+    "sea"
+  ],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, patterned water, gold ground, closed color shapes, a folding screen of curling wave ridges in green and blue on a gold ground, a pine-clad islet rising between the crests and a small boat riding the waves, gold, malachite green, azurite blue, jade white, soot",
+  "notes_zh": "《波に舟図屏風》另一扇(Met CC0, DP262129)：金地浪脊+松岛小舟，E 族 water。",
+  "split": "train"
+}

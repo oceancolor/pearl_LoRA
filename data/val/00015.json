@@ -1,0 +1,40 @@
+{
+  "id": "00015",
+  "license": "CC0",
+  "family": "pure_ornament",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "no_chiaroscuro",
+      "closed_outline",
+      "pattern_equals_form",
+      "jewel_palette"
+    ],
+    "palette": [
+      "gold",
+      "malachite",
+      "cinnabar",
+      "ochre",
+      "jade_white",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "ornament",
+    "secondary": []
+  },
+  "content": [
+    "rosette",
+    "diaper",
+    "geometric",
+    "star",
+    "circle",
+    "panel",
+    "motif",
+    "border"
+  ],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, geometric pavement, jewel-like palette, a plate of geometric ornament with rosettes, star and circle medallions, diaper lattices and checkerboard panels in gold and green, small printed captions, gold, malachite green, cinnabar red, ochre, jade white",
+  "notes_zh": "Nineveh & Persia No.2 图版：黄绿金地几何纹与圆花，24 格图案阵列，三语页眉。",
+  "split": "val"
+}

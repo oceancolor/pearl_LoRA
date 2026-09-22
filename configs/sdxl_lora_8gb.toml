@@ -1,0 +1,58 @@
+# decomineral LoRA — kohya sd-scripts 训练配置（剖面 8gb / SPEC §8.2）
+# 入口：sdxl_train_network.py。FLUX 在 8GB 默认禁用（disallow_default: flux1-dev）。
+# 用法：
+#   accelerate launch --num_cpu_threads_per_process 2 sdxl_train_network.py \
+#     --config_file F:/pearl_LoRA/configs/sdxl_lora_8gb.toml \
+#     --dataset_config F:/pearl_LoRA/configs/dataset_8gb.toml
+# 前置（必须全绿，SPEC §0.1/§9）：
+#   python scripts/env_check.py
+#   python scripts/license_gate.py --csv data/provenance.csv
+#   python scripts/caption_lint.py --train data/train/images
+#   python scripts/make_kohya_structure.py --profile 8gb
+
+# ---- 基础模型（用户自备，放 models/，SPEC §0.9）----
+pretrained_model_name_or_path = "F:/pearl_LoRA/models/sd_xl_base_1.0.safetensors"
+vae = ""                            # 留空用 base 自带；若用 fp16-fix VAE 填路径
+
+# ---- LoRA 网络（SPEC §8.2：rank/alpha 8）----
+network_module = "networks.lora"
+network_dim = 8
+network_alpha = 8
+network_train_unet_only = true      # SPEC §8 注：不要把 text encoder 学太狠
+
+# ---- 优化与步数（全部取自 hardware/8gb.yaml）----
+learning_rate = 8.0e-5
+unet_lr = 8.0e-5
+optimizer_type = "AdamW8bit"
+lr_scheduler = "cosine"
+lr_warmup_steps = 50
+max_train_steps = 1800
+gradient_accumulation_steps = 8
+max_grad_norm = 1.0
+seed = 20260915                     # 两台机器/两个剖面必须同种子对照（SPEC §8 末）
+
+# ---- 显存（8GB 生死线；SPEC §8.2 oom_fallback）----
+mixed_precision = "fp16"
+save_precision = "fp16"
+gradient_checkpointing = true
+cache_latents = true
+cache_latents_to_disk = true
+vae_batch_size = 1
+xformers = true                     # 若装的是 torch>=2.0 可换 sdpa = true
+lowram = false
+
+# ---- 输出与日志 ----
+output_dir = "F:/pearl_LoRA/output/lora"
+output_name = "decomineral_v1_8gb"
+save_model_as = "safetensors"
+save_every_n_epochs = 2             # 15 张×10 repeats = 150 步/epoch → 约每 300 步一存
+save_last_n_epochs = 4
+logging_dir = "F:/pearl_LoRA/logs"
+log_prefix = "decomineral_8gb_"
+log_with = "tensorboard"
+
+# ---- 训练细节 ----
+min_snr_gamma = 5                   # 平涂色块收敛更稳（替代旧命令里的错误参数名）
+noise_offset = 0.0                  # 矿物色平涂不需要压黑，保持 0
+max_data_loader_n_workers = 2
+persistent_data_loader_workers = true

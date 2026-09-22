@@ -1,0 +1,38 @@
+{
+  "id": "00007",
+  "license": "PD",
+  "family": "silkroad_mural",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline",
+      "tapestry_space"
+    ],
+    "palette": [
+      "azurite",
+      "malachite",
+      "cinnabar",
+      "ochre",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "figure",
+    "throne",
+    "cloud",
+    "mountain",
+    "robe",
+    "attendant",
+    "lotus"
+  ],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, tapestry space, patterned clouds, a seated sacred figure in red robes on a lotus throne amid swirling blue clouds, small attendant figures below, dark mountains behind, azurite blue, malachite green, cinnabar red, ochre, jade white",
+  "notes_zh": "敦煌系观音坐像：红袍结跏坐，云气漩涡环绕，下有小供养人，石青石绿斑驳。",
+  "split": "train"
+}

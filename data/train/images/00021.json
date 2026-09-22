@@ -1,0 +1,41 @@
+{
+  "id": "00021",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "patterned_terrain"
+    ],
+    "palette": [
+      "malachite",
+      "cinnabar",
+      "azurite",
+      "ochre",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "nature",
+    "secondary": []
+  },
+  "content": [
+    "bird",
+    "tail",
+    "tree",
+    "blossom",
+    "youth",
+    "horse",
+    "rock",
+    "hill",
+    "foliage"
+  ],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, mountains patterned as dense forest, a great long-tailed bird perched in a stylized blossoming tree above a youth on horseback who reaches toward it, pink and grey rocky hills and patterned foliage filling the field, malachite green, cinnabar red, azurite blue, ochre, jade white",
+  "notes_zh": "Shahnama《Zal 与神鸟 Simurgh》：神鸟栖于纹样花树，少年骑马仰望，粉绿山石。",
+  "split": "train"
+}

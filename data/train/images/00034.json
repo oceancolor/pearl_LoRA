@@ -1,0 +1,40 @@
+{
+  "id": "00034",
+  "license": "CC0",
+  "family": "silkroad_mural",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "radial_gradient"
+    ],
+    "palette": [
+      "lapis",
+      "cinnabar",
+      "malachite",
+      "ochre",
+      "gold"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "guardian",
+    "crown",
+    "flame",
+    "scroll",
+    "attendant",
+    "lotus",
+    "throne",
+    "ring"
+  ],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, patterned clouds, a fierce crowned guardian deity seated within a ring of flame scrolls on a deep blue ground, small attendant figures below and a lotus throne behind, lapis blue, cinnabar red, malachite green, ochre, gold",
+  "notes_zh": "《Mahakala》(Met CC0 78195)：深蓝地火焰卷涡背光中的护法神。",
+  "split": "train"
+}

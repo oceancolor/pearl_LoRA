@@ -1,0 +1,42 @@
+{
+  "id": "00019",
+  "license": "CC0",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "gold_ground"
+    ],
+    "palette": [
+      "lapis",
+      "malachite",
+      "gold",
+      "cinnabar",
+      "ochre"
+    ]
+  },
+  "theme": {
+    "primary": "court",
+    "secondary": []
+  },
+  "content": [
+    "courtier",
+    "carpet",
+    "tree",
+    "blossom",
+    "robe",
+    "cup",
+    "ewer",
+    "vessel",
+    "wine",
+    "garden"
+  ],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, gold ground, a garden feast of two courtiers seated on a carpet beneath a blossoming tree, one in a blue robe pouring wine, one in a green robe holding a cup, gold vessels and a ewer before them on an olive ground, lapis blue, malachite green, gold, cinnabar red, ochre",
+  "notes_zh": "波斯单页《园中饮酒》：蓝袍与绿袍二人席地对饮，花树与金器。",
+  "split": "train"
+}

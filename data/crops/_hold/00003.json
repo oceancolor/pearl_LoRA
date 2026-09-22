@@ -1,0 +1,15 @@
+{
+  "id": "00003",
+  "license": "PD",
+  "family": "bilibin",
+  "style": {
+    "traits": ["flat_fill", "mineral_pigment", "pattern_equals_form", "no_chiaroscuro", "closed_outline", "ornamental_border", "tapestry_space"],
+    "palette": ["gold", "ochre", "soot"]
+  },
+  "theme": {"primary": "court", "secondary": ["ornament"]},
+  "content": ["king", "turban-crown", "robe", "maiden", "black-cat", "hound"],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, ornamental border, a stern exotic king in a turban crown and long robe standing at court, while a maiden in royal dress kneels and pleads with outstretched hands, a black cat and a fierce hound beside them, earth red, gold, black",
+  "notes_zh": "Bilibin 插图（边框为作品组成部分，不裁）。右侧异域国王（头巾王冠+波斯/东方长袍，面容严肃）站立；天鹅女玛利亚着俄式皇室冠服跪伏、伸臂哀求；旁有黑猫与凶猛猎犬。土红/金/赭石为主。主题定 court（叙事场景），边框纹理作 ornamental_border。不含风格/流派词。",
+  "split": "train"
+}

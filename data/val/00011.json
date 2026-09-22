@@ -1,0 +1,39 @@
+{
+  "id": "00011",
+  "license": "CC0",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline",
+      "tapestry_space"
+    ],
+    "palette": [
+      "cinnabar",
+      "gold",
+      "ochre",
+      "lapis",
+      "jade_white",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "court",
+    "secondary": []
+  },
+  "content": [
+    "horseman",
+    "hunter",
+    "spear",
+    "boar",
+    "horse",
+    "tree",
+    "hill"
+  ],
+  "composition": "horizontal_register",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, tapestry space, a royal boar hunt of the court, horsemen with spears charging among fleeing boars on a cinnabar red ground, a golden hill with a blossoming tree, cinnabar red, gold, ochre, lapis blue, jade white",
+  "notes_zh": "Shahnama 1341 画幅带：朱砂红地皇家猎野猪图，骑士挺矛，金丘花树。",
+  "split": "val"
+}

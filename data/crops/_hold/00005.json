@@ -1,0 +1,15 @@
+{
+  "id": "00005",
+  "license": "PD",
+  "family": "bilibin",
+  "style": {
+    "traits": ["flat_fill", "mineral_pigment", "pattern_equals_form", "no_chiaroscuro", "closed_outline", "ornamental_border", "tapestry_space"],
+    "palette": ["gold", "ochre", "malachite", "cinnabar", "soot"]
+  },
+  "theme": {"primary": "nature", "secondary": ["ornament"]},
+  "content": ["ram", "horn", "hill", "willow", "tree", "berry", "pine-sapling", "river", "church", "sun", "border-motif"],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, ornamental border, a golden ram with great curling horns rearing on a patterned hill, among stylized willow trees, red berry clusters and dark pine saplings, a winding river, a tiny wooden church and a pale setting sun in the distance, gold, ochre, malachite green, cinnabar, soot black",
+  "notes_zh": "Bilibin 1903 插图（全页含边框，不裁）。金色公羊（螺旋大角、卷毛作纹样）跃上山坡；垂柳状树木、红浆果丛、墨绿针叶树苗皆图案化；中景蜿蜒河流，左下远处黑色小木教堂（红点旗），右后苍白落日。朱砂红民俗边框（白描鸟兽几何母题）为作品组成部分。色：金/赭/石绿/朱砂/墨黑。主题 nature（动物风景），secondary ornament（边框）。修复记录：原 00005 图文不符（caption 误配 111 号宫廷场景），2026-09-15 按实际像素（Bilibin_789 公羊）重写。",
+  "split": "train"
+}

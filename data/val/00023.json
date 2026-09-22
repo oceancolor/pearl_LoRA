@@ -1,0 +1,42 @@
+{
+  "id": "00023",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "gold_ground"
+    ],
+    "palette": [
+      "gold",
+      "lapis",
+      "cinnabar",
+      "malachite",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "ark",
+    "boat",
+    "figure",
+    "animal",
+    "bird",
+    "serpent",
+    "wave",
+    "water",
+    "sky",
+    "sea"
+  ],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, patterned water, gold ground, a great ark crowded with human figures and animals adrift on bands of patterned waves, birds circling above and a dragon-tailed serpent rising from the sea, gold sky and dark water, gold, lapis blue, cinnabar red, malachite green, soot",
+  "notes_zh": "帖木儿时期《诺亚方舟》（Hafiz-i Abru 史集）：金天、方舟载人畜、浪纹与海蛇。",
+  "split": "val"
+}

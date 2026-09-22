@@ -1,0 +1,41 @@
+{
+  "id": "00038",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "patterned_terrain"
+    ],
+    "palette": [
+      "malachite",
+      "cinnabar",
+      "ochre",
+      "azurite",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "nature",
+    "secondary": []
+  },
+  "content": [
+    "jackal",
+    "tree",
+    "blossom",
+    "bird",
+    "branch",
+    "rock",
+    "slope",
+    "herb",
+    "foliage"
+  ],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, mountains patterned as dense forest, a jackal standing beneath a blossoming tree on a rocky slope, birds in the branches and herbs flowering at the foot of the rocks, a pale ground with patterned foliage, malachite green, cinnabar red, ochre, azurite blue, jade white",
+  "notes_zh": "Kalila wa Dimna 寓言插图(Commons PD)：花树下豺、枝头鸟、山石花草。",
+  "split": "train"
+}

@@ -1,0 +1,27 @@
+# decomineral 硬件剖面（SPEC §8.2）—— 本次用户环境 8GB，训练/生成默认用此文件。
+# ★只引用 16gb.yaml 或 8gb.yaml 之一，勿混用（SPEC §0.8）。
+profile: 8gb
+preferred_base: sdxl
+disallow_default: flux1-dev        # 除非用户明确要 block-swap 且接受 3h+/轮
+lora:
+  rank: 8
+  alpha: 8
+train:
+  resolution_buckets: [640, 768, 832]
+  batch_size: 1
+  grad_accum: 8
+  optimizer: adamw8bit
+  lr: 8.0e-5
+  max_train_steps: 1800
+  mixed_precision: fp16
+  gradient_checkpointing: true
+  cache_latents: true
+  vae_slicing: true
+time_budget_hours: 3
+oom_fallback:
+  - resolution_max: 704
+  - rank: 4
+  - 改 SD 1.5 仅作最后手段，需另写 caption 更短
+notes:
+  - 8GB 不要并行下载+训练
+  - 训练图短边 768 即可，不要迷信 1024

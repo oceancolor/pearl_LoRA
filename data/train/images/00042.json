@@ -1,0 +1,41 @@
+{
+  "id": "00042",
+  "license": "PD",
+  "family": "silkroad_mural",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "ornamental_border"
+    ],
+    "palette": [
+      "cinnabar",
+      "malachite",
+      "azurite",
+      "ochre",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "bodhisattva",
+    "lotus",
+    "throne",
+    "crown",
+    "scarf",
+    "skirt",
+    "rosette",
+    "donor",
+    "cloud"
+  ],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, ornamental border, a standing bodhisattva on a lotus throne with a jewelled crown and scarves, striped skirt and bands of flower rosettes down the banner, small donor figures and cloud scrolls on a warm ground, cinnabar red, malachite green, azurite blue, ochre, jade white",
+  "notes_zh": "敦煌幡画《菩萨立像（可能为 Mahamayuri）》(Commons PD)：莲台+宝冠+条纹裙+团花带。",
+  "split": "train"
+}

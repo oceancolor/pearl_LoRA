@@ -1,0 +1,40 @@
+{
+  "id": "00044",
+  "license": "PD",
+  "family": "rimpa",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "gold_ground"
+    ],
+    "palette": [
+      "gold",
+      "malachite",
+      "soot",
+      "jade_white",
+      "cinnabar"
+    ]
+  },
+  "theme": {
+    "primary": "nature",
+    "secondary": []
+  },
+  "content": [
+    "plum",
+    "blossom",
+    "branch",
+    "tree",
+    "water",
+    "leaf",
+    "bud",
+    "screen"
+  ],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, gold ground, a gnarled plum tree with white blossom spreading across a gold ground, dark branches and a band of patterned water below, leaves and buds repeated as ornament, gold, malachite green, soot, jade white, cinnabar",
+  "notes_zh": "光琳屏风《梅树》(Commons PD)：金地白梅+虬枝+下方水纹带，琳派 E 族 nature。",
+  "split": "val"
+}

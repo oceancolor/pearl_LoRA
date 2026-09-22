@@ -1,0 +1,42 @@
+{
+  "id": "00027",
+  "license": "PD",
+  "family": "pure_ornament",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "gold_ground",
+      "ornamental_border",
+      "jewel_palette"
+    ],
+    "palette": [
+      "lapis",
+      "gold",
+      "cinnabar",
+      "malachite",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ornament",
+    "secondary": []
+  },
+  "content": [
+    "arabesque",
+    "scroll",
+    "medallion",
+    "palmette",
+    "rosette",
+    "panel",
+    "border",
+    "stem",
+    "leaf"
+  ],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, gold ground, ornamental border, jewel-like palette, an illuminated album panel of gold arabesques and cloud scrolls on a deep blue ground, red and gold medallions with leaf palmettes and small rosettes, a lattice of fine stems filling the field, lapis blue, gold, cinnabar red, malachite green, jade white",
+  "notes_zh": "Muraqqa-e Golshan 第106页上部金饰面板：蓝地金阿拉贝斯+红金团花。",
+  "split": "train"
+}

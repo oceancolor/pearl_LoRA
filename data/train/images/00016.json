@@ -1,0 +1,36 @@
+{
+  "id": "00016",
+  "license": "PD",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "no_chiaroscuro",
+      "closed_outline",
+      "pattern_equals_form"
+    ],
+    "palette": [
+      "soot",
+      "gold",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "nature",
+    "secondary": []
+  },
+  "content": [
+    "mountain",
+    "tower",
+    "castle",
+    "cloud",
+    "figure",
+    "cup",
+    "droplet",
+    "basket"
+  ],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, closed color shapes, pattern equal to form, a towering black mountain between two slender white castle towers, strips of golden cloud in a white sky, two tattooed figures facing each other below holding golden cups that drip gold into a woven basket, soot black, gold, jade white",
+  "notes_zh": "Harry Clarke 1925 插图：黑色巨山双白塔，两纹身小人对坐举金杯滴金，线描平涂。",
+  "split": "train"
+}

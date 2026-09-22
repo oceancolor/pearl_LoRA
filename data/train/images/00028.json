@@ -1,0 +1,41 @@
+{
+  "id": "00028",
+  "license": "PD",
+  "family": "rimpa",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "gold_ground",
+      "ornamental_border"
+    ],
+    "palette": [
+      "gold",
+      "azurite",
+      "malachite",
+      "jade_white",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "wave",
+    "crest",
+    "foam",
+    "islet",
+    "pine",
+    "screen",
+    "sea",
+    "ridge",
+    "comb"
+  ],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, patterned water, gold ground, ornamental border, a folding screen of breaking waves drawn as flat curling ridges of blue and green on a gold ground, pine-clad islets scattered between the crests, foam combs repeated as ornament, gold, azurite blue, malachite green, jade white, soot",
+  "notes_zh": "俵屋宗达《松岛图》屏风（Google Art Project, Commons PD）：金地+蓝绿浪脊+松岛，琳派金地 E 族。",
+  "split": "train"
+}

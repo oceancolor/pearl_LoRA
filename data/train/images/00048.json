@@ -1,0 +1,39 @@
+{
+  "id": "00048",
+  "license": "CC0",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "patterned_terrain"
+    ],
+    "palette": [
+      "malachite",
+      "cinnabar",
+      "ochre",
+      "azurite",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "nature",
+    "secondary": []
+  },
+  "content": [
+    "jackal",
+    "palm",
+    "blossom",
+    "herb",
+    "rock",
+    "ground",
+    "animal"
+  ],
+  "composition": "central_figure",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, mountains patterned as dense forest, two jackals confronting each other beside a date palm, red blossoms and tufted herbs scattered over a patterned rocky ground, malachite green, cinnabar red, ochre, azurite blue, jade white",
+  "notes_zh": "Kalila wa Dimna《Kalila 斥 Dimna》(Met CC0, 18世纪)：双豺对峙+棕榈+花草与纹样坡地。",
+  "split": "train"
+}

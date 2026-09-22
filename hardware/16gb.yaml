@@ -1,0 +1,31 @@
+# decomineral 硬件剖面（SPEC §8.1）。来源 SPEC，勿手改数值除非同步 SPEC。
+# ★只引用 16gb.yaml 或 8gb.yaml 之一，勿混用（SPEC §0.8）。当前用户环境为 8GB。
+profile: 16gb
+preferred_base: flux1-dev          # 用户自备，遵守 FLUX 非商用条款
+fallback_base: sdxl
+lora:
+  rank: 16
+  alpha: 16
+  blocks: default_for_flux_or_sdxl
+train:
+  resolution_buckets: [768, 896, 1024]
+  batch_size: 1
+  grad_accum: 4
+  optimizer: adamw8bit
+  lr: 1.0e-4
+  lr_scheduler: cosine
+  warmup_steps: 50
+  max_train_steps: 2000            # 约 45–60 张时；按 30 张可 1500，70 张可 2500
+  mixed_precision: bf16            # 不支持则 fp16
+  gradient_checkpointing: true
+  cache_latents: true
+repeats_formula: "target_steps / (image_count * epochs) ; epochs=1–2"
+time_budget_hours: 1.5
+oom_fallback:
+  - rank: 8
+  - resolution_max: 896
+  - cache_latents: false
+notes:
+  - 不要 full finetune
+  - 不要把 text encoder 学太狠；FLUX 只训 LoRA
+  - 每 250 step 出 4 张固定 prompt 抽检：ritual / court / water / future
