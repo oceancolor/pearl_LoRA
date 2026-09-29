@@ -1,0 +1,40 @@
+{
+  "id": "00050",
+  "license": "PD",
+  "family": "rimpa",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "gold_ground",
+      "closed_outline"
+    ],
+    "palette": [
+      "gold",
+      "malachite",
+      "ochre",
+      "jade_white",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "wave",
+    "comb",
+    "foam",
+    "rock",
+    "islet",
+    "pine",
+    "screen",
+    "sea"
+  ],
+  "composition": "full_page",
+  "caption_en": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, patterned water, gold ground, closed color shapes, a screen of dense curling waves drawn as flat gold combs tipped with white foam, green and ochre rock islets rising from the sea with dark pine trees upon them, gold, malachite green, ochre, jade white, soot",
+  "notes_zh": "尾形光琳《松岛图》(Commons PD)：金地梳状浪纹+绿赭岩岛+黑松，E 族 water；替换短边不足的 00024。",
+  "split": "train"
+}

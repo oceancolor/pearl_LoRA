@@ -1,16 +1,33 @@
-# decomineral 抽检网格（SPEC §8/§9）
-# 用法：每 250 step 用下面 4 条固定 prompt 各出 1 张，两台机器/两个剖面用同一 seed 对照。
+# decomineral 抽检网格（SPEC §8 / §9）
 # 模板（SPEC §7）：<lora:decomineral:0.8>, {style_lock}, {subject}, malachite, azurite, cinnabar, gold
 # 主题只改 SUBJECT；style_lock 永远同一句，改了就不是同一把锁。
+#
+# 两处用法：
+#   A. 训练中（SPEC §8）：每 250 step，4 条各出 1 张。
+#   B. 最小实验（SPEC §9 第 4 步）：固定 4 条 branch prompt 各出 8 张，按文末及格线人工打分。
 
-seed = 20260915
+# ---------- 生成参数 ----------
+# ★SPEC 未规定这些值，属运维约定。但「两台机器用同一随机种子对照」（§8 末）
+#   只有在 sampler / cfg / steps / 尺寸也一致时才成立——只对齐 seed 是无效的对照。
+#   → 两台机、两个剖面必须整段一致；要改就两边同时改。
+#   默认值按 SDXL + 8GB 剖面（hardware/8gb.yaml）给出；有惯用值请改这里并同步。
+seed        = 20260915
+sampler     = Euler a            # SDXL 常用；换 sampler 会显著改变出图，务必两边同步
+steps       = 28
+cfg_scale   = 7.0
+size        = 1024x1024          # SDXL 原生分辨率；8GB 出不动可降 896x896（两边同步）
+lora_weight = 0.8                # <lora:decomineral:0.8>，与 SPEC §7 生成期拼法一致
 
+# ---------- 负向词（SPEC §7 给定）----------
 negative = photograph, realistic lighting, chiaroscuro, 3d render, anime,
   oil painting, western perspective, watermark, text, artist name
 
+# ---------- 风格锁（永远同一句，勿改）----------
 style_lock = decomineral style, flat mineral pigments, no chiaroscuro,
   pattern equal to form, tapestry space, jewel-like palette,
   closed color shapes, ornamental border
+
+# ---------- 4 条固定 prompt ----------
 
 --- 1 ritual ---
 <lora:decomineral:0.8>, decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, tapestry space, jewel-like palette, closed color shapes, ornamental border, a ceremonial hall with canopy, attendants, sacred tree and geometric pavement, ritual but not a copy of a known cave, malachite, azurite, cinnabar, gold
@@ -23,3 +40,13 @@ style_lock = decomineral style, flat mineral pigments, no chiaroscuro,
 
 --- 4 future ---
 <lora:decomineral:0.8>, decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, tapestry space, jewel-like palette, closed color shapes, ornamental border, an orbital palace and procession of machine-bodied attendants, towers like sutra pillars, sky-boats treated as ornament not sci-fi chrome, malachite, azurite, cinnabar, gold
+
+# ---------- 及格线（SPEC §9 第 5 步，逐条人工打分）----------
+# 四条全过才算及格；不及格就改数据，不改触发词、不加在世作者（§9 末）。
+#   1. 一眼平涂，不是照片或厚涂油画
+#   2. 三张 branch 能看出同一家族（矿物色 + 纹样空间）
+#   3. future 允许古怪，但不许只有「飞天换铁盔」
+#   4. 没有画家签名、没有洞窟编号、没有训练水印
+#
+# 主题解耦失败时的第一反应：查 train 集的 theme.primary 直方图，
+# 不是加 GPU、不是改触发词、不是去爬在世画家（SPEC §9 / §11）。

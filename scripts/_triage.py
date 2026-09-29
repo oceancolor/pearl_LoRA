@@ -155,9 +155,8 @@ T = {
 
     # ---------- train：water / nature / ornament（2026-09-16 第五轮）----------
     "commons_Brooklyn_Museum_Khusraw_Discovers_Shirin_Bathing_From_Pictor": dict(
-        decision="train", family="B", theme_primary="water",
-        publication_year="1540",
-        reason="人工目检可留：《Khusraw 发现 Shirin 沐浴》(Brooklyn Museum, Commons PD)；池泳者+鱼+小舟+岸上马队，B 族 water。"),
+        decision="review", family="B", theme_primary="water", train_filename="",
+        reason="风格可留（Khusraw 发现 Shirin 沐浴，池泳者+鱼+舟+马队，B 族 water）；但原图仅 768x760，短边 760 < 768，达不到 16gb 剖面门槛（§5.2），移出训练集暂存 data/crops/_hold（换高清源再入册）。"),
     "commons_Shahnameh_illustration_IMJ_B69_0633_jpeg": dict(
         decision="review", family="B", theme_primary="nature",
         reason="风格可留（持旗矛骑者过山，纹样树石满铺，B 族 nature）；但 Commons 元数据只给上传日期2018，无作品年代证据，按 §2.1 退回 review——补到年代再入册（三件套暂存 data/crops/_hold）。"),
@@ -178,6 +177,7 @@ T = {
     "commons_Painting_of_the_folk_tale_Sohni_Mahiwal_Mughal_ca_1700_50_jp": dict(decision="train", family="B", theme_primary="court", publication_year="1725", reason="人工目检可留：《Sohni-Mahiwal》上部宫廷集会(Commons PD，文件页 ca.1700-50，取1725)；金天+宫台+廷臣+花树，B 族 court；裁上部画幅带。"),
     "commons_KorinsScreen_webp": dict(decision="train", family="E", theme_primary="nature", publication_year="1710", reason="人工目检可留：光琳屏风《梅树》(Commons PD，取1710)；金地白梅+虬枝+下方水纹带，E 族 nature。"),
     "commons_Boats_upon_Waves_MET_DP262129_jpg": dict(decision="train", family="E", theme_primary="water", creator_death_year="1643", reason="人工目检可留：《波に舟図屏風》另一扇(Met CC0, DP262129，宗达卒1643)；金地浪脊+松岛小舟，E 族 water。"),
+    "commons_K_rin_Matsushima_jpg": dict(decision="train", family="E", theme_primary="water", creator_death_year="1716", reason="人工目检可留：尾形光琳《松岛图》(Commons PD，光琳卒1716)；金地梳状浪纹+绿赭岩岛+黑松，E 族 water；替换短边不足的 00024。"),
     "met_74906": dict(decision="train", family="A", theme_primary="ritual", reason="人工目检可留：敦煌绢画《观音说法图》(Met CC0 74906)；红地华盖+幡幢+云气卷草，A 族 ritual。"),
     "commons_Jonah_and_the_Whale_Folio_from_a_Jami_al_Tavarikh_Compendium": dict(decision="train", family="B", theme_primary="nature", publication_year="1400", reason="人工目检可留：《约拿出鱼口》页(Commons PD，Jami al-Tavarikh，取1400)；花树+有翼侍者+山石草木，B 族 nature。"),
     "commons_Kalila_wa_Dimna_1_jpg": dict(decision="train", family="B", theme_primary="nature", publication_year="1500", reason="人工目检可留：Kalila wa Dimna 寓言插图(Commons PD，取1500)；花树下豺+枝头鸟+山石花草，B 族 nature。"),

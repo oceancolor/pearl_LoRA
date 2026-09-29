@@ -40,6 +40,9 @@ data/crops/*.jpg
 # 临时输出（脚本 stdout 重定向产物）
 _*.txt
 
+# 冒烟打包产物（_pack_smoke.py 生成，随时可重建）
+smoke_pack.tar.gz
+
 # 操作系统缓存
 .DS_Store
 Thumbs.db

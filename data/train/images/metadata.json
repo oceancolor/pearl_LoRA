@@ -89,12 +89,6 @@
     "repeats": 1,
     "keep_tokens": 2
   },
-  "00024.png": {
-    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00024.png",
-    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, patterned water, mountains patterned as dense forest, a pool with a swimming figure among fish and a small boat, a mounted prince with attendants watching from the bank, blossoming trees, a cypress and patterned rocks around, malachite green, cinnabar red, azurite blue, gold, jade white",
-    "repeats": 1,
-    "keep_tokens": 2
-  },
   "00027.png": {
     "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00027.png",
     "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, gold ground, ornamental border, jewel-like palette, an illuminated album panel of gold arabesques and cloud scrolls on a deep blue ground, red and gold medallions with leaf palmettes and small rosettes, a lattice of fine stems filling the field, lapis blue, gold, cinnabar red, malachite green, jade white",
@@ -224,6 +218,12 @@
   "00049.png": {
     "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00049.png",
     "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, closed color shapes, tapestry space, a rider on a dark horse passing through a field of leaping flames, rows of attendants watching from a striped tent canopy above, gold flames repeated as ornament over a pale ground, cinnabar red, gold, lapis blue, malachite green, jade white",
+    "repeats": 1,
+    "keep_tokens": 2
+  },
+  "00050.png": {
+    "full_path": "F:\\pearl_LoRA\\data\\train\\images\\00050.png",
+    "caption": "decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, patterned water, gold ground, closed color shapes, a screen of dense curling waves drawn as flat gold combs tipped with white foam, green and ochre rock islets rising from the sea with dark pine trees upon them, gold, malachite green, ochre, jade white, soot",
     "repeats": 1,
     "keep_tokens": 2
   }

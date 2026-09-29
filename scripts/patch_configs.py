@@ -46,14 +46,18 @@ def main():
         else:
             print("[WARN] models/ 下未找到 .safetensors，将保留原 pretrained_model_name_or_path")
 
+    # 8gb 与 16gb 两套都改（SPEC §0.8 禁止混用；改哪套由训练时的 --config_file 决定）
     targets = {
         "configs/dataset_8gb.toml": [("image_dir", proj / "data" / "train" / "images")],
+        "configs/dataset_16gb.toml": [("image_dir", proj / "data" / "train" / "images")],
         "configs/sdxl_lora_8gb.toml": [("output_dir", proj / "output" / "lora"),
                                        ("logging_dir", proj / "logs")],
+        "configs/sdxl_lora_16gb.toml": [("output_dir", proj / "output" / "lora"),
+                                        ("logging_dir", proj / "logs")],
     }
     if model:
-        targets["configs/sdxl_lora_8gb.toml"].insert(
-            0, ("pretrained_model_name_or_path", pathlib.Path(model)))
+        for k in ("configs/sdxl_lora_8gb.toml", "configs/sdxl_lora_16gb.toml"):
+            targets[k].insert(0, ("pretrained_model_name_or_path", pathlib.Path(model)))
 
     for rel, keys in targets.items():
         p = ROOT / rel

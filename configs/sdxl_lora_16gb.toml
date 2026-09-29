@@ -1,0 +1,57 @@
+# decomineral LoRA — kohya sd-scripts 训练配置（剖面 16gb / SPEC §8.1）
+# base 选定：SDXL（16gb.yaml 的 fallback_base）。
+#   未选 preferred_base=flux1-dev 的理由：用户推理机为 8GB，FLUX LoRA 推理显存不足；
+#   16gb.yaml 本身允许 fallback 到 sdxl。若日后改用 FLUX，需另写一份 flux_lora_16gb.toml。
+# 入口：sdxl_train_network.py。用法：
+#   accelerate launch --num_cpu_threads_per_process 2 sdxl_train_network.py \
+#     --config_file F:/pearl_LoRA/configs/sdxl_lora_16gb.toml \
+#     --dataset_config F:/pearl_LoRA/configs/dataset_16gb.toml
+# 前置（必须全绿，SPEC §0.1/§9）：
+#   python3 scripts/preflight.py --profile 16gb
+
+# ---- 基础模型（用户自备，放 models/，SPEC §0.9）----
+pretrained_model_name_or_path = "F:/pearl_LoRA/models/sd_xl_base_1.0.safetensors"
+vae = ""                            # 留空用 base 自带；若用 fp16-fix VAE 填路径
+
+# ---- LoRA 网络（SPEC §8.1：rank/alpha 16）----
+network_module = "networks.lora"
+network_dim = 16
+network_alpha = 16
+network_train_unet_only = true      # SPEC §8 注：不要把 text encoder 学太狠
+
+# ---- 优化与步数（全部取自 hardware/16gb.yaml）----
+learning_rate = 1.0e-4
+unet_lr = 1.0e-4
+optimizer_type = "AdamW8bit"
+lr_scheduler = "cosine"
+lr_warmup_steps = 50
+max_train_steps = 2000
+gradient_accumulation_steps = 4
+max_grad_norm = 1.0
+seed = 20260915                     # 两台机器/两个剖面必须同种子对照（SPEC §8 末）
+
+# ---- 显存（16GB+；H20 95GB 实测余量充足，SPEC §8.1 oom_fallback 备降）----
+mixed_precision = "bf16"            # 不支持则改 fp16
+save_precision = "bf16"
+gradient_checkpointing = true
+cache_latents = true
+cache_latents_to_disk = true
+vae_batch_size = 1
+xformers = true                     # 若 torch>=2.0 也可改 sdpa = true
+lowram = false
+
+# ---- 输出与日志 ----
+output_dir = "F:/pearl_LoRA/output/lora"
+output_name = "decomineral_v1_16gb"
+save_model_as = "safetensors"
+save_every_n_epochs = 1             # 38 张×26 repeats = 988 步/epoch
+save_last_n_epochs = 3
+logging_dir = "F:/pearl_LoRA/logs"
+log_prefix = "decomineral_16gb_"
+log_with = "tensorboard"
+
+# ---- 训练细节 ----
+min_snr_gamma = 5                   # 平涂色块收敛更稳
+noise_offset = 0.0                  # 矿物色平涂不需要压黑，保持 0
+max_data_loader_n_workers = 2
+persistent_data_loader_workers = true

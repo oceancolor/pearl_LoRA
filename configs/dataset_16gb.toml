@@ -1,0 +1,26 @@
+# decomineral LoRA — kohya sd-scripts 数据集配置（剖面 16gb / SPEC §8.1）
+# 数值来源 hardware/16gb.yaml，勿手改；改了要同步 SPEC 与该 yaml。
+# 适用：显存 ~16GB 及以上（本机实测 H20 95GB）。与 configs/sdxl_lora_16gb.toml 配套。
+# ★SPEC §0.8：只引用 16gb 或 8gb 之一，勿混用。本文件与 8gb 版不得同时用于同一次训练。
+# 用法：--dataset_config configs/dataset_16gb.toml
+
+[general]
+enable_bucket = true
+bucket_no_upscale = true
+min_bucket_reso = 768              # = resolution_buckets 最小值（16gb 剖面）
+max_bucket_reso = 1024             # = resolution_buckets 最大值
+bucket_reso_steps = 64
+caption_extension = ".txt"
+shuffle_caption = false            # SPEC §6.2 caption 四段顺序是合同，不打乱
+keep_tokens = 2                    # 与 data/train/images/metadata.json 一致；仅 shuffle 时生效
+color_aug = false                  # 矿物色是风格核心，禁止色彩扰动
+flip_aug = false                   # 纹样/题字有方向性，禁止镜像
+
+[[datasets]]
+resolution = 896                   # 桶中位值（768/896/1024）
+batch_size = 1
+
+  [[datasets.subsets]]
+  image_dir = "F:/pearl_LoRA/data/train/images"
+  num_repeats = 26                 # repeats = target_steps/(image_count*epochs)（SPEC §8.1）
+                                   # 现 38 张：38*26 = 988 步/epoch，2000 步 ≈ 2 epoch

@@ -8,14 +8,20 @@
 - `provenance.csv` 现 **144 行（train=50 / review=38 / reject=56）**。已实跑 `fetch_met.py` / `fetch_commons.py` 十几轮。已实跑 `fetch_met.py` / `fetch_commons.py` 十几轮。**★关键教训（检索侧）**：Met 的 `search?q=` 接口已退化——多数查询返回同一组默认结果（Stela 544320 / Bust 200668 / 圣杰罗姆 437261 / Marie-Antoinette 824771…），`q=*` 全库只返回 178 条，按部门限定也只有 3–7 条 → **Met 侧发现能力已枯竭**，只适合用 `_probe_met.py --ids` 按已知 objectID 精取。Commons 侧改为 `--search`（全文检索，绕过分类只给字母序前 N 条的问题），是 2026-09-16 之后的主力；但 Commons 会 403 限流（退避 30–60s + delay 4s）。
 - **`data/train/images/` 现有 38 张三件套（00001、00006–00010、00012–00014、00016–00024、00027–00043、00045–00049；编号有缺口属正常，见下）**，`data/val/` 5 张（00006/00011/00015/00023/00044，`split=val`，涵盖 A/ritual、B/court、B/water、E/nature、F/ornament）。**theme 配额已达标**：ritual 8 / court 8 / nature 8 / water 8 / ornament 6；`machine_or_sky` 0（SPEC §3.3 明写「PD 里少，缺则保持 4」，属**软配额**）。家族分布：B 波斯 17 / A 丝路 8 / F 纯图案 6 / E 琳派 6 / G 其它 1（C 俄童话已归零，见下）。
 - **三道门现已无条件全绿**（不加任何降级参数）：`license_gate --csv` EXIT=0 → `caption_lint --train data/train/images` **PASS（LINT=0，0 问题）** → `make_kohya_structure.py --profile 8gb` EXIT=0（`metadata.json` 38 条）。正式训练命令落 `logs/smoke_train_cmd.txt`（冒烟 10 步），正式档走 `configs/*.toml`。
-- `data/crops/_hold/` 暂存 **5 张待定三件套**（有 caption/json，只差一个条件即可归位）：00003/00004/00005 = Bilibin 插图，**短边 638/621/564 < 640（§5.2）且 Commons 无更大版本**；00025/00026 = IMJ Shahnameh 插图，**Commons 只给上传日期 2018、无作品年代证据（§2.1）**。原因均写进 provenance 的 decision_reason。
+- `data/crops/_hold/` 暂存 **8 张待定三件套**（有 caption/json，只差一个条件即可归位）：00003/00004/00005 = Bilibin 插图，**短边 638/621/564 < 640 且 Commons 无更大版本**；00025/00026 = IMJ Shahnameh 插图，**Commons 只给上传日期 2018、无作品年代证据（§2.1）**；00024 = Brooklyn《Khusraw 发现 Shirin 沐浴》，**原图仅 768x760，达不到 16gb 的 768 门槛**。原因均写进 provenance 的 decision_reason。
 - **§3.3 配额下限 = 38 张 train**（8+8+8+8+6）。切 val 后 train 必须 ≥38 才不破坏配额，所以**补图与切 val 要一起算**：38 train + 5 val = 43 张总量。
 - **标注坑（已踩过）**：`geometric pavement` 是 §6.2 的 **caption 短语**，**不是** §6.1 的 `style.traits` 键（SPEC traits 枚举只有 13 个）；把它写进 json 会 schema 校验失败。同理 `woven feathers` / `patterned water` / `patterned clouds` 也只准进 caption，不准进 traits。
 - **§6.3 第 5 条是硬校验**：`theme.primary` 与 caption 大意必须一致，靠 `THEME_HINTS` 关键词匹配（如 ritual 须含 canopy/attendant/sacred/throne/seated 之一，water 须含 water/wave/boat/fish/lotus 之一）。写了「heavenly king」但没写 sacred/throne 会被判冲突 → 加词即可。
 - **`caption_lint.py` 有硬/软配额之分（2026-09-17 改）**：`THEME_MIN` 之外新增 `THEME_SOFT = {"machine_or_sky"}`。依据 SPEC §3.3「尽量找，PD 里少，缺则保持 4，禁止用现代科幻插画补」——缺它只 WARN 不 FAIL，其余主题是硬配额。改造前它把 machine_or_sky 当硬指标，导致数据集明明达标却无法 PASS。
 - **`_triage.py` 的字段写回列表**：支持 `decision / family / theme_primary / train_filename / creator / creator_death_year / publication_year` + `reason`→`decision_reason`。**给新条目加字段时必须同步这个元组**，否则字段不落盘（2026-09-16 因缺 `creator_death_year` 白给过卒年证据仍过不了门）。补丁要写在 `if k in t:` 保护**之内**，写在外面会对无该键的行 KeyError 并让整个 triage 崩溃。
 - **年代证据是硬门槛（§2.1）**：Commons 侧非开放获取机构的文件，必须 `creator_death_year ≤ 1955` 或 `publication_year ≤ 1930`，且**必须是可解析的整数年份**。Commons 的 `publication_year` 常是上传时间（如 2018）或「17th century」这类字符串——前者不是作品年代，**不能用**；后者不可解析，要折算成具体年份并在 `decision_reason` 里写明来源（如「文件页 circa 1600」）。拿不到就标 `review`，不要硬凑。
-- **GPU 机初始化**：`scripts/init_gpu.sh [sd-scripts目录]`（6 段幂等：机器信息 → torch/CUDA → 克隆/更新 kohya → 装依赖 → 项目与 models 检查 → `env_check.py` GO/NO-GO）。注意 `configs/*.toml` 里是 **Windows 绝对路径**，GPU 机上必须改；SDXL base 需自备放 `models/`（§0.9）。
+- **★§5.2 短边门槛是分剖面的**：默认 **768**；「640」只是 **8gb 剖面的放宽下限**，不是通用门槛。`make_kohya_structure.py` / `preflight.py` 都取该剖面 `resolution_buckets` 的最小值作门槛（16gb→768，8gb→640）。**后果**：按 640 建的数据集切到 16gb 会卡（2026-09-29 实测 00007=767、00024=740 被拦）；`00024` 原图本身仅 760 短边、无法挽救，已换为光琳《松岛图》(00050)，`00007` 重裁到 775 达标。
+- **★训练机实况（2026-09-29）**：GPU 为 **NVIDIA H20 / 95GB**，属 **16gb 剖面**（不是 8gb）。该机 **Python 3.9.16**，而 kohya 要求 **≥3.10** → 必须先 `dnf install -y python3.11`（仓库有此包）再建 venv。`models/` 与 kohya 当时均缺失。
+- **16gb/SDXL 配置已就绪**：`configs/dataset_16gb.toml`（桶 768/896/1024、num_repeats 26）+ `configs/sdxl_lora_16gb.toml`（rank/alpha 16、bf16、lr 1e-4、grad_accum 4、2000 步）。**在 16gb.yaml 的 `preferred_base=flux1-dev` 与 `fallback_base=sdxl` 之间选了 SDXL**，理由：用户推理机为 8GB，FLUX LoRA 推理显存不足。两套 configs 并存但 SPEC §0.8 禁止混用，训练时靠 `--config_file` 二选一。
+- **GPU 机初始化**：`scripts/init_gpu.sh [sd-scripts目录]`（6 段幂等：机器信息 → torch/CUDA → 克隆/更新 kohya → 装依赖 → 项目与 models 检查 + 自动改写 configs 路径 → `env_check.py` GO/NO-GO）。SDXL base 需自备放 `models/`（§0.9）。
+- **`make_kohya_structure.py` 的历史坑**：打印命令里曾写 `--min_silo_noise_offset`（kohya 无此参数，照抄会直接报错）；已修正为 `--min_snr_gamma=5 --noise_offset=0.0`，与 `configs/sdxl_lora_8gb.toml` 一致。
+- **Commons 会封本机 IP**：api.php 与文件页都可能返回 `403 Too Many Reqs`，且窗口较长（2026-09-22 起持续多日）。遇到时**不要**靠重试硬刷；改为 `--delay 4.0` 低速、或请用户在浏览器打开目标文件页人工核实（§2.1 本就要求「30 秒点回原页」）。
+- **`prompts/eval_grid.txt` 含两类内容**：4 条固定 prompt（SPEC §8/§9 要求）+ **生成参数**（sampler/steps/cfg/size/seed）。后者 SPEC 未规定、属运维约定，但「两台机器同一 seed 对照」只有在这些也一致时才成立，改动必须两边同步。
 - **不是 git 仓库**（未 `git init`）。默认硬件剖面 = **8gb**（用户显存 8GB）。训练框架定为 **kohya sd-scripts**（用户 2026-09-09 选定）。
 - 本项目是**个人非商用**「矿物色装饰」风格 LoRA 数据集 + 标注工具 + 训练配置工程。先做数据集与标注，后做训练配置，**不要一上来就训**（SPEC §0.1）。
 
@@ -80,7 +86,10 @@ SPEC §4 的目录树以仓库根（`f:/pearl_LoRA`）为准，树首的 `decomi
 
 **SPEC 原文：在第 1–2 步完成前不要写训练启动器。** 本仓库第 1–2 步已完成，第 6 步（训练启动器）也已在，但它是**为冒烟、按用户知情压缩顺序**落地，且内含法律门；正式训练仍须走满 §9（≥36 张 + theme 配额 + 无 `--smoke` 的 `caption_lint` 通过）。
 
-## 常用命令（已实现脚本；⬜ 为未实现）
+## 常用命令（已实现脚本）
+
+- **训练前自检（一条命令 GO/NO-GO）**：`python scripts/preflight.py [--profile 8gb] [--skip-gates]` —— 三件套完整性 + json 字段/split + §3.3 配额 + §5.2 短边 + 册/图双向链接 + val 未混入 + metadata 条数 + 三道门。退出码 0=GO（允许有 WARN）、1=NO-GO。**开训前先跑这个。**
+- **GPU 机路径适配**：`python scripts/patch_configs.py --project-dir /root/pearl_LoRA [--model .../sd_xl_base_1.0.safetensors] [--dry-run]` —— 把 `configs/*.toml` 里的 Windows 绝对路径改写成目标机路径（幂等；`models/` 下只有一个 safetensors 时自动探测）。`init_gpu.sh` 第 5 段会自动调用。
 
 - 体检 GPU 训练机（冒烟第一步）：`python scripts/env_check.py [--sd-scripts PATH]` —— stdlib-only，缺 GPU/torch/kohya 优雅降级，末尾 GO/NO-GO。
 - 初始化/补骨架（幂等）：`python scripts/init_tree.py [--force]` —— 建 §4 目录 + 生成 schema/csv/yaml/prompts/data README，内置 schema 自检。
