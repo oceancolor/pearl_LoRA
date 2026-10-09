@@ -12,7 +12,8 @@
 
 # ---- 基础模型（用户自备，放 models/，SPEC §0.9）----
 pretrained_model_name_or_path = "F:/pearl_LoRA/models/sd_xl_base_1.0.safetensors"
-vae = ""                            # 留空用 base 自带；若用 fp16-fix VAE 填路径
+# VAE：不要写 vae = ""（会被 kohya 当成要从 HF 下载的 repo id 而报错）。
+# 不写即用 checkpoint 自带 VAE；要用 fp16-fix VAE 就填含 config.json 的目录路径。
 
 # ---- LoRA 网络（SPEC §8.2：rank/alpha 8）----
 network_module = "networks.lora"
