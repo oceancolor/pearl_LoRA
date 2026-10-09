@@ -37,7 +37,8 @@ gradient_checkpointing = true
 cache_latents = true
 cache_latents_to_disk = true
 vae_batch_size = 1
-xformers = true                     # 若 torch>=2.0 也可改 sdpa = true
+sdpa = true                         # 用 torch 原生 sdpa；装了 xformers 可改回 xformers = true
+                                    # （H20 实测环境未装 xformers，保持 sdpa）
 lowram = false
 
 # ---- 输出与日志 ----
