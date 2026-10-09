@@ -33,8 +33,11 @@ max_grad_norm = 1.0
 seed = 20260915                     # 两台机器/两个剖面必须同种子对照（SPEC §8 末）
 
 # ---- 显存（16GB+；H20 95GB 实测余量充足，SPEC §8.1 oom_fallback 备降）----
-mixed_precision = "bf16"            # 不支持则改 fp16
-save_precision = "bf16"
+# 2026-10-09 实测：H20 上 bf16 训练会在头几个 step 以 SIGFPE 崩溃
+# （env_check 当时报告「支持 bf16=? fp16=yes」）。hardware/16gb.yaml 第 19 行
+# 注明「不支持则 fp16」，故按 SPEC 许可改用 fp16。冒烟 10 步 avr_loss=0.12 通过。
+mixed_precision = "fp16"
+save_precision = "fp16"
 gradient_checkpointing = true
 cache_latents = true
 cache_latents_to_disk = true

@@ -1,0 +1,14 @@
+# kohya 抽检提示词（供 sdxl_train_network.py --sample_prompts 使用）
+# 内容与 prompts/eval_grid.txt 的 4 条固定 prompt 一致，参数取自该文件：
+#   size 1024x1024 / steps 28 / cfg 7.0 / seed 20260915
+# 说明：训练中采样时 LoRA 以当前权重（1.0）生效，与生成期的 0.8 略有差异；
+#       抽检看的是「平涂/矿物色/纹样空间」是否成立，不用于最终成品评估。
+# 每行一条，# 开头为注释。
+
+--prompt decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, tapestry space, jewel-like palette, closed color shapes, ornamental border, a ceremonial hall with canopy, attendants, sacred tree and geometric pavement, ritual but not a copy of a known cave, malachite, azurite, cinnabar, gold --negative photograph, realistic lighting, chiaroscuro, 3d render, anime, oil painting, western perspective, watermark, text, artist name --w 1024 --h 1024 --s 28 --l 7.0 --d 20260915
+
+--prompt decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, tapestry space, jewel-like palette, closed color shapes, ornamental border, a vast stone palace of blue and green masonry with arcades and lattice windows, a city of countless stairs in silhouette behind it with a jade glow, a winding procession road with banners, instruments, horses and animals, curling floating textiles, and a throne spreading like a peacock tail, lit against the dark hall, malachite, azurite, cinnabar, gold --negative photograph, realistic lighting, chiaroscuro, 3d render, anime, oil painting, western perspective, watermark, text, artist name --w 1024 --h 1024 --s 28 --l 7.0 --d 20260915
+
+--prompt decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, tapestry space, jewel-like palette, closed color shapes, ornamental border, an underwater palace, fish-scale waves, lotus as fabric, boats and palaces stacked like a tapestry, malachite, azurite, cinnabar, gold --negative photograph, realistic lighting, chiaroscuro, 3d render, anime, oil painting, western perspective, watermark, text, artist name --w 1024 --h 1024 --s 28 --l 7.0 --d 20260915
+
+--prompt decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, tapestry space, jewel-like palette, closed color shapes, ornamental border, an orbital palace and procession of machine-bodied attendants, towers like sutra pillars, sky-boats treated as ornament not sci-fi chrome, malachite, azurite, cinnabar, gold --negative photograph, realistic lighting, chiaroscuro, 3d render, anime, oil painting, western perspective, watermark, text, artist name --w 1024 --h 1024 --s 28 --l 7.0 --d 20260915
