@@ -38,6 +38,11 @@ seed = 20260915                     # 两台机器/两个剖面必须同种子�
 # 注明「不支持则 fp16」，故按 SPEC 许可改用 fp16。冒烟 10 步 avr_loss=0.12 通过。
 mixed_precision = "fp16"
 save_precision = "fp16"
+# ★SDXL + fp16 必须开：VAE 用 float32 跑。否则 fp16 下 VAE 数值溢出：
+#   - 采样图全黑
+#   - 更严重的是 cache_latents=true 时，开头缓存的 latents 就是坏的，
+#     整个训练建立在废数据上，LoRA 直接报废（2026-10-09 首次训练即踩此坑）。
+no_half_vae = true
 gradient_checkpointing = true
 cache_latents = true
 cache_latents_to_disk = true
