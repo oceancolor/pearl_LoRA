@@ -26,7 +26,10 @@ fi
 
 echo "==== [4/6] Python 依赖 ===="
 $PY -m pip install --upgrade pip
-$PY -m pip install -r "$SD/requirements.txt"
+# 注意：kohya 的 requirements.txt 含 "-e ."（把自己 editable 安装），
+# 必须在 sd-scripts 目录内执行，否则 "." 会被解析成当前目录（项目根）而报
+# "does not appear to be a Python project"。
+( cd "$SD" && $PY -m pip install -r requirements.txt )
 # 8GB 剖面用 AdamW8bit；xformers 按 torch 版本二选一
 $PY -m pip install bitsandbytes || echo "WARN: bitsandbytes 安装失败（AdamW8bit 不可用）"
 $PY -m pip install xformers || echo "WARN: xformers 安装失败（可在 toml 里改 sdpa=true）"
