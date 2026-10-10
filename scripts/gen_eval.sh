@@ -38,7 +38,9 @@ INFER="$PRJ/.gen_eval_infer.py"
 cp "$SD/sdxl_minimal_inference.py" "$INFER"
 sed -i 's/^    steps = 50/    steps = '"$STEPS"'/' "$INFER"
 sed -i 's/^    seed = None.*/    seed = int(os.environ.get("GEN_SEED", "'"$BASE_SEED"'"))/' "$INFER"
-grep -n "^    steps\|^    seed" "$INFER"
+# 该脚本无条件调用 xformers（未装会 ModuleNotFoundError），替换为 no-op
+sed -i 's/^\([[:space:]]*\).*set_use_memory_efficient_attention_xformers.*/\1pass  # xformers 未安装，已禁用/' "$INFER"
+grep -n "^    steps\|^    seed\|xformers\|pass" "$INFER" | head
 
 gen() {  # gen <branch> <subject>
   local branch="$1" subject="$2"
