@@ -20,7 +20,9 @@ PRJ="${PROJECT_DIR:-$HOME/pearl_LoRA}"
 SD="${SD_SCRIPTS:-$HOME/sd-scripts}"
 CKPT="${CKPT:-$PRJ/models/sd_xl_base_1.0.safetensors}"
 LORA="${LORA:-$PRJ/output/lora/decomineral_v1_16gb.safetensors}"
-MUL="${MUL:-0.8}"
+# 默认 0.6：SPEC §7 原文是 0.8，但实测 0.7/0.8 会出大量伪阿拉伯书法条带（训练图带文字栏所致），
+# 0.6 显著减少。这是缓解措施，根治需重裁数据。见 prompts/eval_grid.txt 的说明。
+MUL="${MUL:-0.6}"
 N="${N:-8}"
 BASE_SEED="${BASE_SEED:-20260915}"
 STEPS="${STEPS:-28}"

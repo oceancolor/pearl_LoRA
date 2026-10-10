@@ -16,7 +16,10 @@ sampler     = Euler a            # SDXL 常用；换 sampler 会显著改变出�
 steps       = 28
 cfg_scale   = 7.0
 size        = 1024x1024          # SDXL 原生分辨率；8GB 出不动可降 896x896（两边同步）
-lora_weight = 0.8                # <lora:decomineral:0.8>，与 SPEC §7 生成期拼法一致
+# ★偏离 SPEC §7（原文为 0.8），用户 2026-10-10 同意。
+#   依据：实测 0.7 / 0.8 权重下会出现大量伪阿拉伯书法条带（训练图带文字栏所致），
+#   0.6 时文字条带显著减少。注意这是**缓解而非根治**——根治需重裁掉训练图的文字栏并重训。
+lora_weight = 0.6
 
 # ---------- 负向词（SPEC §7 给定）----------
 negative = photograph, realistic lighting, chiaroscuro, 3d render, anime,
