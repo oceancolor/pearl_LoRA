@@ -38,8 +38,11 @@ INFER="$PRJ/.gen_eval_infer.py"
 cp "$SD/sdxl_minimal_inference.py" "$INFER"
 sed -i 's/^    steps = 50/    steps = '"$STEPS"'/' "$INFER"
 sed -i 's/^    seed = None.*/    seed = int(os.environ.get("GEN_SEED", "'"$BASE_SEED"'"))/' "$INFER"
-# 该脚本无条件调用 xformers（未装会 ModuleNotFoundError），替换为 no-op
+# 该脚本默认开启 xformers（未装会 ModuleNotFoundError，两处：
+#   vae.set_use_memory_efficient_attention_xformers / unet.set_use_memory_efficient_attention(True,...)
+# 一律关掉，走普通注意力）
 sed -i 's/^\([[:space:]]*\).*set_use_memory_efficient_attention_xformers.*/\1pass  # xformers 未安装，已禁用/' "$INFER"
+sed -i 's/set_use_memory_efficient_attention(True/set_use_memory_efficient_attention(False/g' "$INFER"
 grep -n "^    steps\|^    seed\|xformers\|pass" "$INFER" | head
 
 gen() {  # gen <branch> <subject>
