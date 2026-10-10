@@ -33,7 +33,7 @@ style_lock = decomineral style, flat mineral pigments, no chiaroscuro,
 <lora:decomineral:0.8>, decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, tapestry space, jewel-like palette, closed color shapes, ornamental border, a ceremonial hall with canopy, attendants, sacred tree and geometric pavement, ritual but not a copy of a known cave, malachite, azurite, cinnabar, gold
 
 --- 2 court ---
-<lora:decomineral:0.8>, decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, tapestry space, jewel-like palette, closed color shapes, ornamental border, a vast stone palace of blue and green masonry with arcades and lattice windows, a city of countless stairs in silhouette behind it with a jade glow, a winding procession road with banners, instruments, horses and animals, curling floating textiles, and a throne spreading like a peacock tail, lit against the dark hall, malachite, azurite, cinnabar, gold
+<lora:decomineral:0.8>, decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, tapestry space, jewel-like palette, closed color shapes, ornamental border, a stone palace arcade of blue and green masonry, rows of courtiers in patterned robes with banners and horses, a jewelled carpet and a throne spreading like a peacock tail, malachite, azurite, cinnabar, gold
 
 --- 3 water ---
 <lora:decomineral:0.8>, decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, tapestry space, jewel-like palette, closed color shapes, ornamental border, an underwater palace, fish-scale waves, lotus as fabric, boats and palaces stacked like a tapestry, malachite, azurite, cinnabar, gold

@@ -24,12 +24,13 @@ branches:
       and palaces stacked like a tapestry
   # court：SPEC §7 未给，由用户 2026-09-17 依 §3.3「宫殿、城郭、仪仗、织物、宝座」口述补写。
   court:
+    # 2026-10-10 修订：首版含 "lit against the dark hall"，与 style_lock 的
+    # no_chiiaroscuro 冲突，且堆叠了宫殿/城郭/仪仗/织物/宝座五项导致 token 摊薄。
+    # 评测结果：court 走成淡彩写实，矿物色不达标。现改为短、具体、无光照语义。
     subject: >-
-      a vast stone palace of blue and green masonry with arcades and
-      lattice windows, a city of countless stairs in silhouette behind it
-      with a jade glow, a winding procession road with banners, instruments,
-      horses and animals, curling floating textiles, and a throne spreading
-      like a peacock tail, lit against the dark hall
+      a stone palace arcade of blue and green masonry, rows of courtiers in
+      patterned robes with banners and horses, a jewelled carpet and a throne
+      spreading like a peacock tail
 
 # v1.1 新增可选 FORM GRAMMAR（SPEC §13，装饰画传统技法；按需在 SUBJECT 或句尾追加，勿强行塞进 style_lock）：
 #   mountains patterned as dense forest      # 山体满铺纹理，读来如长满树林

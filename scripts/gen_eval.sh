@@ -61,7 +61,7 @@ gen() {  # gen <branch> <subject>
 
 echo "== 生成评估图（steps=$STEPS, mul=$MUL, base_seed=$BASE_SEED）=="
 gen ritual "a ceremonial hall with canopy, attendants, sacred tree and geometric pavement, ritual but not a copy of a known cave"
-gen court  "a vast stone palace of blue and green masonry with arcades and lattice windows, a city of countless stairs in silhouette behind it with a jade glow, a winding procession road with banners, instruments, horses and animals, curling floating textiles, and a throne spreading like a peacock tail, lit against the dark hall"
+gen court  "a stone palace arcade of blue and green masonry, rows of courtiers in patterned robes with banners and horses, a jewelled carpet and a throne spreading like a peacock tail"
 gen water  "an underwater palace, fish-scale waves, lotus as fabric, boats and palaces stacked like a tapestry"
 gen future "an orbital palace and procession of machine-bodied attendants, towers like sutra pillars, sky-boats treated as ornament not sci-fi chrome"
 
