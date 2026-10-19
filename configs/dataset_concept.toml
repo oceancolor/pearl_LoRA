@@ -1,0 +1,28 @@
+# decomineral 概念 LoRA — 数据集配置模板（剖面 16gb）
+#
+# 与 dataset_16gb.toml 的差异：
+#   - image_dir 指向 data/concept_later/<slug>（三件套格式相同）
+#   - keep_tokens = 1（caption 首位只有概念触发词一个固定段）
+#   - num_repeats 由 scripts/train_concept.sh 按实际张数渲染，使 1 epoch ≈ 250 步
+#
+# __XXX__ 是渲染占位符，勿直接手改本文件。
+
+[general]
+enable_bucket = true
+bucket_no_upscale = true
+min_bucket_reso = 768
+max_bucket_reso = 1024
+bucket_reso_steps = 64
+caption_extension = ".txt"
+shuffle_caption = false             # 概念集也不打乱：触发词必须在首位
+keep_tokens = 1
+color_aug = false
+flip_aug = false
+
+[[datasets]]
+resolution = 896
+batch_size = 1
+
+  [[datasets.subsets]]
+  image_dir = "__CONCEPT_DIR__"
+  num_repeats = __REPEATS__

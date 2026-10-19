@@ -1,0 +1,58 @@
+# decomineral 概念 LoRA — kohya sd-scripts 训练配置（剖面 16gb / SPEC §7 末）
+#
+# 与风格 LoRA 配置（sdxl_lora_16gb.toml）的差异，逐条说明理由：
+#   1. network_dim 8 / alpha 4 —— 概念集只有 15–25 张，rank 16 容易把「单张的记忆」也学进去
+#      （典型表现：提示词稍变就退化到某张训练图）。alpha=dim/2 让有效缩放更柔。
+#   2. max_train_steps 1000 —— 风格集 38 张跑 2000 步；概念集规模减半、目标只是「绑定一个触发词」，
+#      1000 步足够，且减少过拟合。
+#   3. keep_tokens 1 —— 概念集 caption 首位只有触发词一个固定段（风格集是 2 段）。
+#   4. 仍保持 network_train_unet_only = true —— 与风格 LoRA 一致，避免 TE LoRA 与风格 LoRA
+#      的 TE 侧叠加互相打架。若首轮触发词绑定太弱（换词就不出对应意象），再单独试 false。
+#
+# 路径由 scripts/train_concept.sh 渲染，__XXX__ 是占位符，勿直接手改本文件。
+# 前置：python scripts/concept_check.py 必须 PASS（除数量缺口外无 FAIL）。
+
+pretrained_model_name_or_path = "__MODEL__"
+# VAE：不写 vae 键（空串会被 kohya 当 HF repo id 去联网，必崩）
+
+network_module = "networks.lora"
+network_dim = 8
+network_alpha = 4
+network_train_unet_only = true
+
+learning_rate = 1.0e-4
+unet_lr = 1.0e-4
+optimizer_type = "AdamW8bit"
+lr_scheduler = "cosine"
+lr_warmup_steps = 40
+max_train_steps = 1000
+gradient_accumulation_steps = 4
+max_grad_norm = 1.0
+seed = 20260915
+
+# ★本机实测约束（见 CODEBUDDY.md）：
+#   bf16 在 H20 上会 SIGFPE 崩溃 -> fp16；
+#   fp16 下 VAE 必须 fp32，否则 latents 缓存损坏、LoRA 报废 -> no_half_vae。
+mixed_precision = "fp16"
+save_precision = "fp16"
+no_half_vae = true
+gradient_checkpointing = true
+cache_latents = true
+cache_latents_to_disk = true
+vae_batch_size = 1
+sdpa = true                         # 未装 xformers；走 torch 原生 sdpa
+lowram = false
+
+output_dir = "__OUTDIR__"
+output_name = "__OUTNAME__"
+save_model_as = "safetensors"
+save_every_n_epochs = 1
+save_last_n_epochs = 3
+logging_dir = "__LOGDIR__"
+log_prefix = "__OUTNAME___"
+log_with = "tensorboard"
+
+min_snr_gamma = 5
+noise_offset = 0.0
+max_data_loader_n_workers = 2
+persistent_data_loader_workers = true
