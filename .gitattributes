@@ -1,0 +1,15 @@
+# 行尾约定：脚本在 Linux 训练机上执行，必须 LF，否则报 $'\r': command not found
+*.sh   text eol=lf
+*.py   text eol=lf
+*.toml text eol=lf
+*.yaml text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+
+# 二进制：禁止任何换行/文本转换
+*.png        binary
+*.jpg        binary
+*.jpeg       binary
+*.webp       binary
+*.safetensors binary
+*.npz        binary
