@@ -1,0 +1,43 @@
+{
+  "id": "future_seed_00002",
+  "license": "CC0",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "patterned_terrain"
+    ],
+    "palette": [
+      "cinnabar",
+      "malachite",
+      "azurite",
+      "gold",
+      "ochre"
+    ]
+  },
+  "theme": {
+    "primary": "machine_or_sky",
+    "secondary": []
+  },
+  "content": [
+    "hero",
+    "horse",
+    "spear",
+    "dragon",
+    "scale",
+    "rock",
+    "mountain",
+    "tree",
+    "hill"
+  ],
+  "composition": "horizontal_register",
+  "caption_en": "deco_future, mountains patterned as dense forest, a hero on horseback thrusting a spear into a coiling dragon whose scaly body loops across a cinnabar red ground, jagged rocks and stylized trees around them, cinnabar red, malachite green, azurite blue, gold, ochre",
+  "notes_zh": "复用风格集 00020；caption 已去风格锁词、加概念触发词 deco_future。",
+  "split": "train",
+  "concept": "future_seed",
+  "reused_from": "00020"
+}

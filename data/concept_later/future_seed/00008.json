@@ -1,0 +1,41 @@
+{
+  "id": "future_seed_00008",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "jade_white",
+      "cinnabar",
+      "ochre",
+      "malachite"
+    ]
+  },
+  "theme": {
+    "primary": "machine_or_sky",
+    "secondary": [
+      "creature"
+    ]
+  },
+  "content": [
+    "div",
+    "horned_figure",
+    "boulder",
+    "cloud",
+    "mountain",
+    "tree"
+  ],
+  "composition": "central_figure",
+  "caption_en": "deco_future, a horned div lifting a slab of rock overhead, islands of cloud ringing the sky, jagged mountains and flowering trees below",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:Shahnameh_-_The_Div_Akvan_throws_Rustam_into_the_sea.jpg（Wikimedia Commons，16th-17th centuries）。裁切 (0.12, 0.4, 0.945, 0.8)。",
+  "split": "train",
+  "concept": "future_seed",
+  "source_file_id": "commons_Shahnameh_The_Div_Akvan_throws_Rustam_into_the_sea_jpg",
+  "source_sha256": "f2773b72a4ae1b4bd012d8aa0a75e8462103655b6f16e253edaf52cb5ec9ef3d"
+}

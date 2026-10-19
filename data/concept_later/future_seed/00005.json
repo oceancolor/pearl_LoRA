@@ -1,0 +1,43 @@
+{
+  "id": "future_seed_00005",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "gold_ground"
+    ],
+    "palette": [
+      "gold",
+      "malachite",
+      "cinnabar",
+      "azurite",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "machine_or_sky",
+    "secondary": []
+  },
+  "content": [
+    "courtier",
+    "attendant",
+    "palace",
+    "terrace",
+    "carpet",
+    "vessel",
+    "tree",
+    "cypress",
+    "wall"
+  ],
+  "composition": "horizontal_register",
+  "caption_en": "deco_future, robed courtiers and attendants gathered before a palace terrace under a gold sky, a carpet and gold vessels set out, flowering trees and a dark cypress behind the wall, gold, malachite green, cinnabar red, azurite blue, jade white",
+  "notes_zh": "复用风格集 00043；caption 已去风格锁词、加概念触发词 deco_future。",
+  "split": "train",
+  "concept": "future_seed",
+  "reused_from": "00043"
+}

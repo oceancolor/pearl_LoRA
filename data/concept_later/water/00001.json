@@ -1,0 +1,45 @@
+{
+  "id": "water_00001",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "patterned_terrain"
+    ],
+    "palette": [
+      "lapis",
+      "malachite",
+      "cinnabar",
+      "gold",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "swimmer",
+    "pool",
+    "lotus",
+    "pavilion",
+    "arch",
+    "onlooker",
+    "robe",
+    "fish",
+    "boat",
+    "hill",
+    "cypress"
+  ],
+  "composition": "central_figure",
+  "caption_en": "deco_water, patterned water, mountains patterned as dense forest, a swimming figure in a lotus pool beneath a tiled pavilion where robed onlookers lean from an arch, fish and a small boat on the water, flower-dotted hills and a dark cypress behind, lapis blue, malachite green, cinnabar red, gold, jade white",
+  "notes_zh": "复用风格集 00022；caption 已去风格锁词、加概念触发词 deco_water。",
+  "split": "train",
+  "concept": "water",
+  "reused_from": "00022"
+}

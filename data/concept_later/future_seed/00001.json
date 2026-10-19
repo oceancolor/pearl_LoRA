@@ -1,0 +1,38 @@
+{
+  "id": "future_seed_00001",
+  "license": "PD",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "no_chiaroscuro",
+      "closed_outline",
+      "pattern_equals_form"
+    ],
+    "palette": [
+      "soot",
+      "gold",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "machine_or_sky",
+    "secondary": []
+  },
+  "content": [
+    "mountain",
+    "tower",
+    "castle",
+    "cloud",
+    "figure",
+    "cup",
+    "droplet",
+    "basket"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_future, a towering black mountain between two slender white castle towers, strips of golden cloud in a white sky, two tattooed figures facing each other below holding golden cups that drip gold into a woven basket, soot black, gold, jade white",
+  "notes_zh": "复用风格集 00016；caption 已去风格锁词、加概念触发词 deco_future。",
+  "split": "train",
+  "concept": "future_seed",
+  "reused_from": "00016"
+}

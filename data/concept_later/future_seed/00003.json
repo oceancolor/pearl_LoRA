@@ -1,0 +1,43 @@
+{
+  "id": "future_seed_00003",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "patterned_terrain"
+    ],
+    "palette": [
+      "malachite",
+      "cinnabar",
+      "azurite",
+      "ochre",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "machine_or_sky",
+    "secondary": []
+  },
+  "content": [
+    "bird",
+    "tail",
+    "tree",
+    "blossom",
+    "youth",
+    "horse",
+    "rock",
+    "hill",
+    "foliage"
+  ],
+  "composition": "central_figure",
+  "caption_en": "deco_future, mountains patterned as dense forest, a great long-tailed bird perched in a stylized blossoming tree above a youth on horseback who reaches toward it, pink and grey rocky hills and patterned foliage filling the field, malachite green, cinnabar red, azurite blue, ochre, jade white",
+  "notes_zh": "复用风格集 00021；caption 已去风格锁词、加概念触发词 deco_future。",
+  "split": "train",
+  "concept": "future_seed",
+  "reused_from": "00021"
+}

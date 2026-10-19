@@ -1,0 +1,39 @@
+{
+  "id": "water_00005",
+  "license": "CC0",
+  "family": "rimpa",
+  "style": {
+    "traits": [
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "gold_ground",
+      "closed_outline"
+    ],
+    "palette": [
+      "gold",
+      "malachite",
+      "azurite",
+      "jade_white",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "boat",
+    "wave",
+    "ridge",
+    "crest",
+    "foam",
+    "screen",
+    "water"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_water, patterned water, a tall screen panel of stacked wave ridges in green and blue with a small boat adrift among the crests, foam combs repeated as ornament, gold, malachite green, azurite blue, jade white, soot",
+  "notes_zh": "复用风格集 00031；caption 已去风格锁词、加概念触发词 deco_water。",
+  "split": "train",
+  "concept": "water",
+  "reused_from": "00031"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "future_seed_00006",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "cinnabar",
+      "ochre",
+      "azurite",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "machine_or_sky",
+    "secondary": [
+      "creature"
+    ]
+  },
+  "content": [
+    "tortoise",
+    "creature",
+    "cloud",
+    "serpent",
+    "fish",
+    "scaled_ground"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_future, a giant tortoise with a patterned shell among red swirling clouds, a reclining figure and a serpent beside it, fish and scaled ground below",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:%22The_Tortoise%22,_Folio_from_an_%60Aja%27ib_al-Makhluqat_(Wonders_of_Creation)_of_Qazwini_MET_136888.jpg（Wikimedia Commons，second half 16th century）。裁切 (0.04, 0.03, 0.96, 0.925)。",
+  "split": "train",
+  "concept": "future_seed",
+  "source_file_id": "commons_The_Tortoise_Folio_from_an_Aja_ib_al_Makhluqat_Wonders_of_C",
+  "source_sha256": "386fb61b9a5ea7588012ad8a76cb52c219291803a54eb88a4815b90461206579"
+}

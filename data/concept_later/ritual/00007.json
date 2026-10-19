@@ -1,0 +1,43 @@
+{
+  "id": "ritual_00007",
+  "license": "PD",
+  "family": "silkroad_mural",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "ornamental_border"
+    ],
+    "palette": [
+      "cinnabar",
+      "malachite",
+      "azurite",
+      "ochre",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "bodhisattva",
+    "lotus",
+    "throne",
+    "crown",
+    "scarf",
+    "skirt",
+    "rosette",
+    "donor",
+    "cloud"
+  ],
+  "composition": "central_figure",
+  "caption_en": "deco_ritual, a standing bodhisattva on a lotus throne with a jewelled crown and scarves, striped skirt and bands of flower rosettes down the banner, small donor figures and cloud scrolls on a warm ground, cinnabar red, malachite green, azurite blue, ochre, jade white",
+  "notes_zh": "复用风格集 00042；caption 已去风格锁词、加概念触发词 deco_ritual。",
+  "split": "train",
+  "concept": "ritual",
+  "reused_from": "00042"
+}

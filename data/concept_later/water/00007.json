@@ -1,0 +1,42 @@
+{
+  "id": "water_00007",
+  "license": "CC0",
+  "family": "rimpa",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "gold_ground",
+      "closed_outline"
+    ],
+    "palette": [
+      "gold",
+      "malachite",
+      "azurite",
+      "jade_white",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "wave",
+    "ridge",
+    "crest",
+    "islet",
+    "pine",
+    "boat",
+    "screen",
+    "sea"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_water, patterned water, a folding screen of curling wave ridges in green and blue, a pine-clad islet rising between the crests and a small boat riding the waves, gold, malachite green, azurite blue, jade white, soot",
+  "notes_zh": "复用风格集 00045；caption 已去风格锁词、加概念触发词 deco_water。",
+  "split": "train",
+  "concept": "water",
+  "reused_from": "00045"
+}

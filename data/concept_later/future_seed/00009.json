@@ -1,0 +1,40 @@
+{
+  "id": "future_seed_00009",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "cinnabar",
+      "ochre",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "machine_or_sky",
+    "secondary": [
+      "creature"
+    ]
+  },
+  "content": [
+    "demon",
+    "grotto",
+    "rock",
+    "king",
+    "attendant",
+    "banner"
+  ],
+  "composition": "crop_detail",
+  "caption_en": "deco_future, a white demon seated in a dark grotto of violet rocks, a bound king and attendants among jutting stone shelves, small trees along the ledges",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:Kay-Ka%27us_chained_in_a_grotto_by_the_white_demon_(FGA_F2006.7).jpg（Wikimedia Commons，1576）。裁切 (0.02, 0.4, 0.98, 0.78)。",
+  "split": "train",
+  "concept": "future_seed",
+  "source_file_id": "commons_Kay_Ka_us_chained_in_a_grotto_by_the_white_demon_FGA_F2006_7",
+  "source_sha256": "31045bff45f4dd84807af1c31ad63236c662433f391a59bab20bc3c042b686dc"
+}

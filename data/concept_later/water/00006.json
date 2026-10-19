@@ -1,0 +1,40 @@
+{
+  "id": "water_00006",
+  "license": "CC0",
+  "family": "rimpa",
+  "style": {
+    "traits": [
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "gold_ground",
+      "closed_outline"
+    ],
+    "palette": [
+      "gold",
+      "malachite",
+      "azurite",
+      "jade_white",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "boat",
+    "figure",
+    "wave",
+    "ridge",
+    "spray",
+    "cloud",
+    "screen",
+    "water"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_water, patterned water, a boat with figures on curling waves drawn as flat overlapping ridges of green and blue, spray repeated as combed ornament, pale cloud bands above, gold, malachite green, azurite blue, jade white, soot",
+  "notes_zh": "复用风格集 00032；caption 已去风格锁词、加概念触发词 deco_water。",
+  "split": "train",
+  "concept": "water",
+  "reused_from": "00032"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "ritual_00003",
+  "license": "CC0",
+  "family": "silkroad_mural",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline",
+      "tapestry_space"
+    ],
+    "palette": [
+      "lapis",
+      "malachite",
+      "cinnabar",
+      "ochre",
+      "jade_white",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "figure",
+    "donor",
+    "scarf",
+    "robe",
+    "cup",
+    "headdress"
+  ],
+  "composition": "central_figure",
+  "caption_en": "deco_ritual, a standing donor figure with a red headdress and long green scarf, holding a small cup, on a deep lapis blue ground, weathered mineral surface, lapis blue, malachite green, cinnabar red, ochre, jade white",
+  "notes_zh": "复用风格集 00009；caption 已去风格锁词、加概念触发词 deco_ritual。",
+  "split": "train",
+  "concept": "ritual",
+  "reused_from": "00009"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "future_seed_00010",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "cinnabar",
+      "azurite",
+      "malachite",
+      "gold",
+      "ochre"
+    ]
+  },
+  "theme": {
+    "primary": "machine_or_sky",
+    "secondary": [
+      "creature"
+    ]
+  },
+  "content": [
+    "div",
+    "demon",
+    "boulder",
+    "cave",
+    "beast",
+    "gold_ground"
+  ],
+  "composition": "central_figure",
+  "caption_en": "deco_future, a ring of coloured divs raising boulders on a golden ground, a combat in a black cave mouth, horned and blue-skinned figures crowding the rocks",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:An_illustrated_leaf_from_a_manuscript_of_Firdausi%E2%80%99s_Shahnameh;_Rustam_killing_the_White_Div,_Persia,_Shiraz,_Safavid,_circa_1560-80.jpg（Wikimedia Commons，circa 1560-1580）。裁切 (0.055, 0.275, 0.945, 0.875)。",
+  "split": "train",
+  "concept": "future_seed",
+  "source_file_id": "commons_An_illustrated_leaf_from_a_manuscript_of_Firdausi_s_Shahname",
+  "source_sha256": "545ca7d9af325d9e2b92c0d54f77dd49fc590a1e5993e43f5b5ad1ed10d51118"
+}

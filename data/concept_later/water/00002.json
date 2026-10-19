@@ -1,0 +1,43 @@
+{
+  "id": "water_00002",
+  "license": "PD",
+  "family": "rimpa",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "gold_ground",
+      "ornamental_border"
+    ],
+    "palette": [
+      "gold",
+      "azurite",
+      "malachite",
+      "jade_white",
+      "soot"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "wave",
+    "crest",
+    "foam",
+    "islet",
+    "pine",
+    "screen",
+    "sea",
+    "ridge",
+    "comb"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_water, patterned water, a folding screen of breaking waves drawn as flat curling ridges of blue and green, pine-clad islets scattered between the crests, foam combs repeated as ornament, gold, azurite blue, malachite green, jade white, soot",
+  "notes_zh": "复用风格集 00028；caption 已去风格锁词、加概念触发词 deco_water。",
+  "split": "train",
+  "concept": "water",
+  "reused_from": "00028"
+}

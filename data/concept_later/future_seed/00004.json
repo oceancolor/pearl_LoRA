@@ -1,0 +1,53 @@
+{
+  "id": "future_seed_00004",
+  "license": "CC0",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "tapestry_space"
+    ],
+    "palette": [
+      "azurite",
+      "malachite",
+      "ochre",
+      "gold"
+    ]
+  },
+  "theme": {
+    "primary": "machine_or_sky",
+    "secondary": [
+      "water"
+    ]
+  },
+  "content": [
+    "bird",
+    "crane",
+    "rooster",
+    "hawk",
+    "swallow",
+    "goose",
+    "phoenix",
+    "parrot",
+    "magpie",
+    "nightingale",
+    "duck",
+    "ram",
+    "hunter",
+    "spear",
+    "mountain",
+    "rock",
+    "pond",
+    "water-lily"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_future, a gathering of twenty-one birds of many kinds, cranes, a phoenix, parrots and ducks, with two horned rams and a hunter bearing a long spear, set among mountains and a pond patterned with water-lilies, peacock blue, malachite green, ochre, gold",
+  "notes_zh": "复用风格集 00001；caption 已去风格锁词、加概念触发词 deco_future。",
+  "split": "train",
+  "concept": "future_seed",
+  "reused_from": "00001"
+}

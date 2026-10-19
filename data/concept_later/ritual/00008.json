@@ -1,0 +1,42 @@
+{
+  "id": "ritual_00008",
+  "license": "PD",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "pattern_equals_form",
+      "no_chiaroscuro",
+      "closed_outline",
+      "tapestry_space"
+    ],
+    "palette": [
+      "cinnabar",
+      "gold",
+      "lapis",
+      "malachite",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "rider",
+    "horse",
+    "flame",
+    "fire",
+    "attendant",
+    "canopy",
+    "tent",
+    "row"
+  ],
+  "composition": "central_figure",
+  "caption_en": "deco_ritual, a rider on a dark horse passing through a field of leaping flames, rows of attendants watching from a striped tent canopy above, gold flames repeated as ornament over a pale ground, cinnabar red, gold, lapis blue, malachite green, jade white",
+  "notes_zh": "复用风格集 00049；caption 已去风格锁词、加概念触发词 deco_ritual。",
+  "split": "train",
+  "concept": "ritual",
+  "reused_from": "00049"
+}
