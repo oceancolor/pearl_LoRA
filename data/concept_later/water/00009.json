@@ -1,0 +1,37 @@
+{
+  "id": "water_00009",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "jade_white",
+      "ochre"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "full_moon",
+    "bay",
+    "island",
+    "pine",
+    "sailboat",
+    "mountain"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_water, a full moon over a wide bay, a dark wooded island and chains of small pine islets reaching across pale blue water, sailboats far out, mountains on the horizon",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/1921.410.b（The Cleveland Museum of Art，1857）。裁切 (0.03, 0.03, 0.97, 0.92)。",
+  "split": "train",
+  "concept": "water",
+  "source_file_id": "cma_103358",
+  "source_sha256": "1168dd8cf94140cb0b32de0e5b911fe39a49f95bc6ab58432712190132139011"
+}

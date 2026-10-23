@@ -1,0 +1,37 @@
+{
+  "id": "water_00011",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "jade_white",
+      "ochre"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "fireworks",
+    "night_sky",
+    "river",
+    "bridge",
+    "boat",
+    "lantern"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_water, fireworks bursting in a dark blue night sky over a broad river, a long wooden bridge crowded with figures, many pleasure boats on the water",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/1940.986（The Cleveland Museum of Art，1858）。裁切 (0.17, 0.26, 0.95, 0.96)。",
+  "split": "train",
+  "concept": "water",
+  "source_file_id": "cma_120225",
+  "source_sha256": "614bee86f3590ddb56ce78b5d4ee11be79202ff6901b9f2166ede862b57220bf"
+}

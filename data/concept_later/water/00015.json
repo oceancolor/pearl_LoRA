@@ -1,0 +1,38 @@
+{
+  "id": "water_00015",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "malachite",
+      "cinnabar",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "willow",
+    "river",
+    "ferry",
+    "figure",
+    "boat",
+    "bank"
+  ],
+  "composition": "crop_detail",
+  "caption_en": "deco_water, a willow branch hanging over a calm evening river, figures in red at a ferry landing, small boats on dark blue water, a wooded far bank",
+  "notes_zh": "新补。来源 https://www.artic.edu/artworks/18366（The Art Institute of Chicago，1857）。裁切 (0.08, 0.2, 0.78, 0.95)。",
+  "split": "train",
+  "concept": "water",
+  "source_file_id": "aic_18366",
+  "source_sha256": "282ccaf7c3e87efe60e0284c5db08c8f68f5771c491a0f7b89e6bcc22b3ffe91"
+}

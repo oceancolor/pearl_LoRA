@@ -1,0 +1,36 @@
+{
+  "id": "water_00012",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "jade_white",
+      "ochre"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "night_rain",
+    "lake",
+    "pine",
+    "jetty",
+    "boat"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_water, night rain falling in long grey lines over a lake, a huge dark pine spreading its branches across a stone jetty, deep blue water and a small boat",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/1985.312（The Cleveland Museum of Art，c. 1835）。裁切 (0.21, 0.3, 0.83, 0.96)。",
+  "split": "train",
+  "concept": "water",
+  "source_file_id": "cma_152490",
+  "source_sha256": "6355d61b1928c8e70e0d7d3e454320eebfb69ce9a9d6242b3f60014df77c7366"
+}

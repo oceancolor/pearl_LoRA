@@ -1,0 +1,41 @@
+{
+  "id": "future_seed_00015",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "cinnabar",
+      "jade_white",
+      "malachite",
+      "ochre",
+      "gold"
+    ]
+  },
+  "theme": {
+    "primary": "machine_or_sky",
+    "secondary": [
+      "creature"
+    ]
+  },
+  "content": [
+    "vishnu",
+    "serpent",
+    "lotus",
+    "deity",
+    "woman",
+    "cosmic_ocean"
+  ],
+  "composition": "pattern_field",
+  "caption_en": "deco_future, Vishnu reclining on a white many-headed serpent floating in a sea of lotuses, a four-headed god on a lotus above, a woman massaging his feet, rows of pink lotus buds and green lotus leaves",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/2018.155（The Cleveland Museum of Art，c. 1700）。裁切 (0.05, 0.05, 0.95, 0.95)。",
+  "split": "train",
+  "concept": "future_seed",
+  "source_file_id": "cma_314460",
+  "source_sha256": "a17137ca8de39b37cbfef85cddbbe794d797a14400f9c5573fba08bc2ca34636"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "water_00013",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "jade_white",
+      "cinnabar",
+      "ochre"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "night",
+    "river_mouth",
+    "ship_mast",
+    "ripple",
+    "bridge_pillar"
+  ],
+  "composition": "crop_detail",
+  "caption_en": "deco_water, a night river mouth under a dusky sky, masts of moored ships, dark rippling water and a great wooden bridge pillar in the foreground",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/1992.73（The Cleveland Museum of Art，1858）。裁切 (0.31, 0.27, 0.92, 0.945)。",
+  "split": "train",
+  "concept": "water",
+  "source_file_id": "cma_156858",
+  "source_sha256": "9899baf05e3e49f7de4dafab5f347ff271451f3386a70a93de3685b9a1e54fa2"
+}

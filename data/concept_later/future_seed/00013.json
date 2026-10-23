@@ -1,0 +1,41 @@
+{
+  "id": "future_seed_00013",
+  "license": "PD",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "ochre",
+      "cinnabar",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "machine_or_sky",
+    "secondary": [
+      "creature"
+    ]
+  },
+  "content": [
+    "full_moon",
+    "night_sky",
+    "lion",
+    "sleeper",
+    "mandolin",
+    "jar",
+    "desert"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_future, a full moon in a deep blue night sky over a desert, a lion sniffing a sleeping wanderer in a striped robe, a mandolin and a water jar beside, distant pale mountains",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:La_Boh%C3%A9mienne_endormie.jpg（Wikimedia Commons，1897date QS:P571,+1897-00-00T00:00:00Z/9）。裁切 (0.0, 0.0, 0.895, 1.0)。",
+  "split": "train",
+  "concept": "future_seed",
+  "source_file_id": "commons_La_Boh_mienne_endormie_jpg",
+  "source_sha256": "5100dbfc17e6cd58cf624165dee27273340a1fdd54a80e017231c9101db46e88"
+}

@@ -135,7 +135,65 @@ CONCEPTS = {
         "trigger": "deco_water",
         "theme": "water",
         "reuse": ["00022", "00028", "00029", "00030", "00031", "00032", "00045", "00050"],
-        "new": [],
+        # 2026-10-23 用户定：「夜林、满月、密叶」审美 -> 夜色水面。广重版画，裁掉标题框/落款/印章。
+        "new": [
+            {
+                "src": "cma_103358", "crop": (0.03, 0.03, 0.97, 0.92),
+                "family": "other_pd", "composition": "full_page",
+                "content": ["full_moon", "bay", "island", "pine", "sailboat", "mountain"],
+                "palette": ["azurite", "jade_white", "ochre"],
+                "caption": 'a full moon over a wide bay, a dark wooded island and chains of small pine islets '
+                           'reaching across pale blue water, sailboats far out, mountains on the horizon',
+            },
+            {
+                "src": "cma_106962", "crop": (0.13, 0.07, 0.885, 0.96),
+                "family": "other_pd", "composition": "horizontal_register",
+                "content": ["full_moon", "bay", "island", "sandbar", "pine", "boat"],
+                "palette": ["azurite", "jade_white", "ochre"],
+                "caption": 'a wide panorama of a moonlit bay, a small full moon in a hazy sky, dark islands and '
+                           'pine-dotted sandbars spread across pale blue water, tiny boats',
+            },
+            {
+                "src": "cma_120225", "crop": (0.17, 0.26, 0.95, 0.96),
+                "family": "other_pd", "composition": "full_page",
+                "content": ["fireworks", "night_sky", "river", "bridge", "boat", "lantern"],
+                "palette": ["azurite", "jade_white", "ochre"],
+                "caption": 'fireworks bursting in a dark blue night sky over a broad river, a long wooden bridge '
+                           'crowded with figures, many pleasure boats on the water',
+            },
+            {
+                "src": "cma_152490", "crop": (0.21, 0.30, 0.83, 0.96),
+                "family": "other_pd", "composition": "full_page",
+                "content": ["night_rain", "lake", "pine", "jetty", "boat"],
+                "palette": ["azurite", "jade_white", "ochre"],
+                "caption": 'night rain falling in long grey lines over a lake, a huge dark pine spreading its '
+                           'branches across a stone jetty, deep blue water and a small boat',
+            },
+            {
+                "src": "cma_156858", "crop": (0.31, 0.27, 0.92, 0.945),
+                "family": "other_pd", "composition": "crop_detail",
+                "content": ["night", "river_mouth", "ship_mast", "ripple", "bridge_pillar"],
+                "palette": ["azurite", "jade_white", "cinnabar", "ochre"],
+                "caption": 'a night river mouth under a dusky sky, masts of moored ships, dark rippling water and '
+                           'a great wooden bridge pillar in the foreground',
+            },
+            {
+                "src": "aic_11054", "crop": (0.035, 0.31, 0.845, 0.945),
+                "family": "other_pd", "composition": "crop_detail",
+                "content": ["full_moon", "willow", "river", "barge", "boatman", "reed"],
+                "palette": ["azurite", "malachite", "jade_white", "ochre"],
+                "caption": 'a full moon behind wind-blown willows on a night river, a boatman poling a loaded '
+                           'barge through reeds, green banks and pale distant roofs',
+            },
+            {
+                "src": "aic_18366", "crop": (0.08, 0.20, 0.78, 0.95),
+                "family": "other_pd", "composition": "crop_detail",
+                "content": ["willow", "river", "ferry", "figure", "boat", "bank"],
+                "palette": ["azurite", "malachite", "cinnabar", "jade_white"],
+                "caption": 'a willow branch hanging over a calm evening river, figures in red at a ferry landing, '
+                           'small boats on dark blue water, a wooded far bank',
+            },
+        ],
     },
     "future_seed": {
         "trigger": "deco_future",
@@ -202,6 +260,48 @@ CONCEPTS = {
                 "palette": ["azurite", "cinnabar", "ochre", "malachite", "gold"],
                 "caption": 'a white demon wrestling a warrior inside a black cave mouth, orange and blue '
                            'mountains of patterned rock, cypress trees and a watching figure above',
+            },
+            # 2026-10-23 用户定：future 也走「夜林、满月、密叶」审美（幻想，非科幻）
+            {
+                "src": "commons_Henri_Rousseau_Le_R_ve_Google_Art_Project_jpg",
+                "crop": (0.44, 0.0, 1.0, 0.89),  # 去左侧裸体人物与右下签名
+                "family": "other_pd",
+                "composition": "crop_detail",
+                "content": ["full_moon", "jungle", "lotus_flower", "flute_player", "lion", "serpent", "bird"],
+                "palette": ["malachite", "azurite", "cinnabar", "ochre", "jade_white"],
+                "caption": 'a full moon over a dreamlike jungle, giant flowers in blue and pink, a dark flute '
+                           'player in a striped skirt, two lions peering through dense leaves, a coiling orange serpent',
+            },
+            {
+                "src": "commons_La_Boh_mienne_endormie_jpg",
+                "crop": (0.0, 0.0, 0.895, 1.0),  # 去右下签名
+                "family": "other_pd",
+                "composition": "full_page",
+                "content": ["full_moon", "night_sky", "lion", "sleeper", "mandolin", "jar", "desert"],
+                "palette": ["azurite", "ochre", "cinnabar", "jade_white"],
+                "caption": 'a full moon in a deep blue night sky over a desert, a lion sniffing a sleeping wanderer '
+                           'in a striped robe, a mandolin and a water jar beside, distant pale mountains',
+            },
+            {
+                "src": "commons_Stories_from_the_Arabian_nights_London_1907_plate_02_jpg",
+                "crop": (0.03, 0.02, 0.97, 0.98),
+                "family": "other_pd",
+                "composition": "central_figure",
+                "content": ["genie", "wing", "smoke", "stream", "rock", "fisherman"],
+                "palette": ["azurite", "ochre", "cinnabar", "jade_white"],
+                "caption": 'a towering winged genie with a jewelled headband rising out of smoke above a rocky '
+                           'stream, a tiny fisherman fallen below',
+            },
+            {
+                "src": "cma_314460",
+                "crop": (0.05, 0.05, 0.95, 0.95),
+                "family": "other_pd",
+                "composition": "pattern_field",
+                "content": ["vishnu", "serpent", "lotus", "deity", "woman", "cosmic_ocean"],
+                "palette": ["cinnabar", "jade_white", "malachite", "ochre", "gold"],
+                "caption": 'Vishnu reclining on a white many-headed serpent floating in a sea of lotuses, a '
+                           'four-headed god on a lotus above, a woman massaging his feet, rows of pink lotus buds '
+                           'and green lotus leaves',
             },
         ],
     },

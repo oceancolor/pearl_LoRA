@@ -1,0 +1,40 @@
+{
+  "id": "future_seed_00014",
+  "license": "PD",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "ochre",
+      "cinnabar",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "machine_or_sky",
+    "secondary": [
+      "creature"
+    ]
+  },
+  "content": [
+    "genie",
+    "wing",
+    "smoke",
+    "stream",
+    "rock",
+    "fisherman"
+  ],
+  "composition": "central_figure",
+  "caption_en": "deco_future, a towering winged genie with a jewelled headband rising out of smoke above a rocky stream, a tiny fisherman fallen below",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:Stories_from_the_Arabian_nights_-_London_1907_-_plate_02.jpg（Wikimedia Commons，1907）。裁切 (0.03, 0.02, 0.97, 0.98)。",
+  "split": "train",
+  "concept": "future_seed",
+  "source_file_id": "commons_Stories_from_the_Arabian_nights_London_1907_plate_02_jpg",
+  "source_sha256": "c8a6fab673b10fa2b057a0c6e4624b2ed9dc3212d778dbb44a23fc6ed3873a4f"
+}

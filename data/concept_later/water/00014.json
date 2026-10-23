@@ -1,0 +1,38 @@
+{
+  "id": "water_00014",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "malachite",
+      "jade_white",
+      "ochre"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "full_moon",
+    "willow",
+    "river",
+    "barge",
+    "boatman",
+    "reed"
+  ],
+  "composition": "crop_detail",
+  "caption_en": "deco_water, a full moon behind wind-blown willows on a night river, a boatman poling a loaded barge through reeds, green banks and pale distant roofs",
+  "notes_zh": "新补。来源 https://www.artic.edu/artworks/11054（The Art Institute of Chicago，c. 1835/38）。裁切 (0.035, 0.31, 0.845, 0.945)。",
+  "split": "train",
+  "concept": "water",
+  "source_file_id": "aic_11054",
+  "source_sha256": "8c3464493b8fa177111bc1da874da5cf34e4c06824ea7d943be2ca29d84ccc4b"
+}

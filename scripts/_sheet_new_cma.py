@@ -25,7 +25,7 @@ SEEN_INIT = {
 
 seen = set(SEEN.read_text(encoding="utf-8").split()) if SEEN.exists() else set(SEEN_INIT)
 new = []
-for d in sorted(RAW.glob("cma_*")):
+for d in sorted(list(RAW.glob("cma_*")) + list(RAW.glob("aic_*"))):
     if d.name in seen:
         continue
     p = d / "image.jpg"

@@ -1,0 +1,37 @@
+{
+  "id": "water_00010",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "jade_white",
+      "ochre"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "full_moon",
+    "bay",
+    "island",
+    "sandbar",
+    "pine",
+    "boat"
+  ],
+  "composition": "horizontal_register",
+  "caption_en": "deco_water, a wide panorama of a moonlit bay, a small full moon in a hazy sky, dark islands and pine-dotted sandbars spread across pale blue water, tiny boats",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/1924.967（The Cleveland Museum of Art，1857）。裁切 (0.13, 0.07, 0.885, 0.96)。",
+  "split": "train",
+  "concept": "water",
+  "source_file_id": "cma_106962",
+  "source_sha256": "6610a5665bbd0d937a27b3c0bf1425293337ae261e40feca921fc0af43a7040b"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "future_seed_00012",
+  "license": "PD",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "malachite",
+      "azurite",
+      "cinnabar",
+      "ochre",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "machine_or_sky",
+    "secondary": [
+      "creature"
+    ]
+  },
+  "content": [
+    "full_moon",
+    "jungle",
+    "lotus_flower",
+    "flute_player",
+    "lion",
+    "serpent",
+    "bird"
+  ],
+  "composition": "crop_detail",
+  "caption_en": "deco_future, a full moon over a dreamlike jungle, giant flowers in blue and pink, a dark flute player in a striped skirt, two lions peering through dense leaves, a coiling orange serpent",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:Henri_Rousseau_-_Le_R%C3%AAve_-_Google_Art_Project.jpg（Wikimedia Commons，1910date QS:P571,+1910-00-00T00:00:00Z/9）。裁切 (0.44, 0.0, 1.0, 0.89)。",
+  "split": "train",
+  "concept": "future_seed",
+  "source_file_id": "commons_Henri_Rousseau_Le_R_ve_Google_Art_Project_jpg",
+  "source_sha256": "05f424be8eb24349f04177c26fe9c91ca20434bc448f78346caf85d953e5adcc"
+}
