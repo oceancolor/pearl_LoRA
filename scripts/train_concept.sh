@@ -64,6 +64,23 @@ echo "-- 渲染完成 --"
 grep -E "image_dir|num_repeats" "$DS"
 grep -E "pretrained_model|output_name|network_dim|max_train_steps" "$CFG"
 
+# 抽检提示词：每 250 步 2 张，只带概念触发词（不叠风格 LoRA），用来看触发词是否绑定
+case "$SLUG" in
+  ritual)      S1="a seated deity among attendants in a dense night grove under a full moon"
+               S2="a procession of worshippers beneath a canopy of dark leaves" ;;
+  water)       S1="a full moon over a wide bay with small pine islands and boats"
+               S2="a night river with willows and a lone boatman" ;;
+  future_seed) S1="a winged spirit rising above a moonlit jungle of giant flowers"
+               S2="a floating palace among clouds and stars over a dark forest" ;;
+esac
+NEG="photograph, 3d render, text, watermark, signature"
+SAMPLE="$GEN/sample_$SLUG.txt"
+{
+  echo "$TRIGGER, $S1 --n $NEG --w 1024 --h 1024 --d 20260915 --s 28 --l 7"
+  echo "$TRIGGER, $S2 --n $NEG --w 1024 --h 1024 --d 20261023 --s 28 --l 7"
+} > "$SAMPLE"
+SAMPLE_ARGS="--sample_prompts $SAMPLE --sample_every_n_steps 250 --sample_sampler euler_a --sample_at_first"
+
 # 3) 启动（kohya 需在其目录内运行；config 用绝对路径）
 SD_SCRIPTS="${SD_SCRIPTS:-$HOME/sd-scripts}"
 [[ -f "$SD_SCRIPTS/sdxl_train_network.py" ]] || { echo "找不到 $SD_SCRIPTS/sdxl_train_network.py"; exit 5; }
@@ -73,4 +90,5 @@ cd "$SD_SCRIPTS"
 python sdxl_train_network.py \
   --config_file "$CFG" \
   --dataset_config "$DS" \
+  $SAMPLE_ARGS \
   ${EXTRA_ARGS:-} 2>&1 | tee "$LOGDIR/train_${SLUG}.log"
