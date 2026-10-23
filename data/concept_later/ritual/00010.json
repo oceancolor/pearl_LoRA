@@ -1,0 +1,40 @@
+{
+  "id": "ritual_00010",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "malachite",
+      "azurite",
+      "cinnabar",
+      "ochre",
+      "gold"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "grove",
+    "tree",
+    "krishna",
+    "flute",
+    "woman",
+    "lotus",
+    "pond"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_ritual, a grove of dense dark trees under a sky streaked with red cloud bands, a crowned blue-skinned Krishna kneeling with a flute, two women seated beneath a leaning tree hung with blossom chains, a lotus pond in the foreground",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/1989.334（The Cleveland Museum of Art，c. 1820–25）。裁切 (0.035, 0.06, 0.96, 0.95)。",
+  "split": "train",
+  "concept": "ritual",
+  "source_file_id": "cma_154754",
+  "source_sha256": "a548285e1418b0681d9f8b75493fd9da1a981cd808cd640f7b2ccc5bb072ec34"
+}

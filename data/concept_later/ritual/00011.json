@@ -1,0 +1,41 @@
+{
+  "id": "ritual_00011",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "malachite",
+      "azurite",
+      "cinnabar",
+      "ochre",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "krishna",
+    "halo",
+    "gopi",
+    "storm_cloud",
+    "tree",
+    "cow",
+    "peacock",
+    "palace"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_ritual, Krishna with a halo standing among women carrying pots under a black sky of rolling storm clouds, a dense wall of round green trees, white and brown cows and peacocks on a green hill, white palace domes at the left",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/2013.352（The Cleveland Museum of Art，c. 1770）。裁切 (0.07, 0.07, 0.935, 0.915)。",
+  "split": "train",
+  "concept": "ritual",
+  "source_file_id": "cma_170893",
+  "source_sha256": "a218537b2de4884405bc3a0fab4c29c1f3ebda93480461ac407349a0ba831702"
+}

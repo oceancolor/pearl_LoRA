@@ -1,0 +1,40 @@
+{
+  "id": "ritual_00009",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "malachite",
+      "azurite",
+      "cinnabar",
+      "gold",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "grove",
+    "tree",
+    "krishna",
+    "crown",
+    "woman",
+    "blossom",
+    "stream"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_ritual, a dense grove of dark rounded trees and broad leaves, crowned blue-skinned Krishna figures hiding among the branches, two women seated on a lawn, sprays of white and red blossoms, a grey stream along the bottom",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/1989.333（The Cleveland Museum of Art，c. 1820–25）。裁切 (0.045, 0.07, 0.955, 0.93)。",
+  "split": "train",
+  "concept": "ritual",
+  "source_file_id": "cma_154753",
+  "source_sha256": "45653e8065af24665ef8cb3a38c89cfc07ab96ca8bc0265a4620e6d9b04f312f"
+}

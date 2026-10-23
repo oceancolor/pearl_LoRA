@@ -1,0 +1,39 @@
+{
+  "id": "ritual_00013",
+  "license": "CC0",
+  "family": "persian_miniature",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "malachite",
+      "cinnabar",
+      "ochre"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "forest",
+    "night",
+    "tree",
+    "parrot",
+    "bird",
+    "fox",
+    "nest"
+  ],
+  "composition": "crop_detail",
+  "caption_en": "deco_ritual, a dense forest under a deep blue night sky, a tall tree with pink-tipped leaves full of parrots and small birds, a pack of foxes leaping on dark ground",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/1962.279.32.a（The Cleveland Museum of Art，c. 1560）。裁切 (0.05, 0.03, 0.955, 0.585)。",
+  "split": "train",
+  "concept": "ritual",
+  "source_file_id": "cma_137824",
+  "source_sha256": "52fb5acb933b035f6b446dc94344dff322d101f26df8fb039549df55238d0b98"
+}

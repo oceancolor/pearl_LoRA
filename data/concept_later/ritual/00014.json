@@ -1,0 +1,39 @@
+{
+  "id": "ritual_00014",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "malachite",
+      "ochre",
+      "cinnabar",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "jungle",
+    "tiger",
+    "buffalo",
+    "banana_leaf",
+    "fruit",
+    "flower",
+    "fern"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_ritual, a tiger fighting a buffalo deep inside a dense jungle, giant banana leaves and hanging pale banana bunches, orange fruits and red flowers, layered fern and grass blades filling the whole picture",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/1949.186（The Cleveland Museum of Art，1908）。裁切 (0.0, 0.0, 1.0, 0.92)。",
+  "split": "train",
+  "concept": "ritual",
+  "source_file_id": "cma_126769",
+  "source_sha256": "5b0b0c1bc1f09e53683b0f625fe859902156f159ab3d93bcfa28ea2b1ae3eb35"
+}

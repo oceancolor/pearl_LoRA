@@ -1,0 +1,39 @@
+{
+  "id": "ritual_00012",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "malachite",
+      "cinnabar",
+      "ochre",
+      "gold"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "woman",
+    "tree",
+    "night",
+    "hill",
+    "cloud",
+    "bush",
+    "flowering_shrub"
+  ],
+  "composition": "central_figure",
+  "caption_en": "deco_ritual, a lone woman in an orange and gold skirt waiting beneath a tree at night, a dark brown hill and a black sky with grey clouds, round green bushes and a flowering pink shrub",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/2018.103（The Cleveland Museum of Art，c. 1734–50）。裁切 (0.105, 0.08, 0.895, 0.915)。",
+  "split": "train",
+  "concept": "ritual",
+  "source_file_id": "cma_314235",
+  "source_sha256": "718274c4baf6a871e3ce983821e164be3b25560a594f574dfbbebc35768e463a"
+}

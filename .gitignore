@@ -46,3 +46,6 @@ smoke_pack.tar.gz
 # 操作系统缓存
 .DS_Store
 Thumbs.db
+
+# 用户审美参照图（来源/许可未核，绝不进训练、不入库）
+data/style_ref/

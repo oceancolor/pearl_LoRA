@@ -1,0 +1,39 @@
+{
+  "id": "ritual_00015",
+  "license": "PD",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "malachite",
+      "ochre",
+      "cinnabar",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "full_moon",
+    "jungle",
+    "figure",
+    "flute",
+    "serpent",
+    "wading_bird",
+    "lake"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_ritual, a dark silhouetted figure playing a flute under a full moon, a black serpent and a pink wading bird, dense jungle foliage, tall pale grass and a still lake behind",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:Henri_Rousseau,_known_as_le_Douanier_-_The_Snake_Charmer_-_Google_Art_Project.jpg（Wikimedia Commons，1907date QS:P571,+1907-00-00T00:00:00Z/9）。裁切 (0.0, 0.0, 1.0, 0.9)。",
+  "split": "train",
+  "concept": "ritual",
+  "source_file_id": "commons_Henri_Rousseau_known_as_le_Douanier_The_Snake_Charmer_Google",
+  "source_sha256": "a5a056134b4f2cdb585f36daa8f9e4c99aa7715b720f26953af7e5fe1e9b4852"
+}

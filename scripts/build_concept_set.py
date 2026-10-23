@@ -19,6 +19,9 @@ import shutil
 
 from PIL import Image
 
+Image.MAX_IMAGE_PIXELS = None  # CMA 原图可超 1 亿像素，属可信来源
+MAX_LONG = 1600
+
 TRAIN = pathlib.Path("data/train/images")
 RAW = pathlib.Path("data/inbox/raw")
 OUT = pathlib.Path("data/concept_later")
@@ -38,7 +41,95 @@ CONCEPTS = {
         "trigger": "deco_ritual",
         "theme": "ritual",
         "reuse": ["00007", "00008", "00009", "00033", "00034", "00035", "00042", "00049"],
-        "new": [],
+        # 2026-10-23 用户定的方向：夜林、满月、密叶（参照 data/style_ref/00010、00012）。
+        # 用户确认：Gita Govinda 夜林算 ritual；卢梭要。
+        "new": [
+            {
+                "src": "cma_154753",
+                "crop": (0.045, 0.07, 0.955, 0.93),  # 去外框花边
+                "family": "other_pd",
+                "composition": "full_page",
+                "content": ["grove", "tree", "krishna", "crown", "woman", "blossom", "stream"],
+                "palette": ["malachite", "azurite", "cinnabar", "gold", "jade_white"],
+                "caption": 'a dense grove of dark rounded trees and broad leaves, crowned blue-skinned Krishna '
+                           'figures hiding among the branches, two women seated on a lawn, sprays of white and '
+                           'red blossoms, a grey stream along the bottom',
+            },
+            {
+                "src": "cma_154754",
+                "crop": (0.035, 0.06, 0.96, 0.95),
+                "family": "other_pd",
+                "composition": "full_page",
+                "content": ["grove", "tree", "krishna", "flute", "woman", "lotus", "pond"],
+                "palette": ["malachite", "azurite", "cinnabar", "ochre", "gold"],
+                "caption": 'a grove of dense dark trees under a sky streaked with red cloud bands, a crowned '
+                           'blue-skinned Krishna kneeling with a flute, two women seated beneath a leaning tree '
+                           'hung with blossom chains, a lotus pond in the foreground',
+            },
+            {
+                "src": "cma_170893",
+                "crop": (0.07, 0.07, 0.935, 0.915),
+                "family": "other_pd",
+                "composition": "full_page",
+                "content": ["krishna", "halo", "gopi", "storm_cloud", "tree", "cow", "peacock", "palace"],
+                "palette": ["malachite", "azurite", "cinnabar", "ochre", "jade_white"],
+                "caption": 'Krishna with a halo standing among women carrying pots under a black sky of rolling '
+                           'storm clouds, a dense wall of round green trees, white and brown cows and peacocks '
+                           'on a green hill, white palace domes at the left',
+            },
+            {
+                "src": "cma_314235",
+                "crop": (0.105, 0.08, 0.895, 0.915),
+                "family": "other_pd",
+                "composition": "central_figure",
+                "content": ["woman", "tree", "night", "hill", "cloud", "bush", "flowering_shrub"],
+                "palette": ["malachite", "cinnabar", "ochre", "gold"],
+                "caption": 'a lone woman in an orange and gold skirt waiting beneath a tree at night, a dark '
+                           'brown hill and a black sky with grey clouds, round green bushes and a flowering '
+                           'pink shrub',
+            },
+            {
+                "src": "cma_137824",
+                "crop": (0.05, 0.03, 0.955, 0.585),  # 只取上半画面，下方是文字栏
+                "family": "persian_miniature",
+                "composition": "crop_detail",
+                "content": ["forest", "night", "tree", "parrot", "bird", "fox", "nest"],
+                "palette": ["azurite", "malachite", "cinnabar", "ochre"],
+                "caption": 'a dense forest under a deep blue night sky, a tall tree with pink-tipped leaves full '
+                           'of parrots and small birds, a pack of foxes leaping on dark ground',
+            },
+            {
+                "src": "cma_126769",
+                "crop": (0.0, 0.0, 1.0, 0.92),  # 去右下角签名
+                "family": "other_pd",
+                "composition": "full_page",
+                "content": ["jungle", "tiger", "buffalo", "banana_leaf", "fruit", "flower", "fern"],
+                "palette": ["malachite", "ochre", "cinnabar", "jade_white"],
+                "caption": 'a tiger fighting a buffalo deep inside a dense jungle, giant banana leaves and '
+                           'hanging pale banana bunches, orange fruits and red flowers, layered fern and grass '
+                           'blades filling the whole picture',
+            },
+            {
+                "src": "commons_Henri_Rousseau_known_as_le_Douanier_The_Snake_Charmer_Google",
+                "crop": (0.0, 0.0, 1.0, 0.90),  # 去右下角签名「Henri Julien Rousseau 1907」
+                "family": "other_pd",
+                "composition": "full_page",
+                "content": ["full_moon", "jungle", "figure", "flute", "serpent", "wading_bird", "lake"],
+                "palette": ["malachite", "ochre", "cinnabar", "jade_white"],
+                "caption": 'a dark silhouetted figure playing a flute under a full moon, a black serpent and a '
+                           'pink wading bird, dense jungle foliage, tall pale grass and a still lake behind',
+            },
+            {
+                "src": "commons_Henri_Rousseau_The_Equatorial_Jungle_1909_NGA_46688_jpg",
+                "crop": (0.0, 0.0, 1.0, 0.89),  # 去右下角签名「Henri Julien Rousseau 1909」
+                "family": "other_pd",
+                "composition": "full_page",
+                "content": ["jungle", "leaf", "lily", "flower", "animal", "grass"],
+                "palette": ["malachite", "ochre", "cinnabar", "jade_white"],
+                "caption": 'an impenetrable wall of jungle leaves in many greens, pink lilies and a white flower '
+                           'spike, a small animal half hidden in the undergrowth, tall pale grass',
+            },
+        ],
     },
     "water": {
         "trigger": "deco_water",
@@ -189,6 +280,9 @@ def main():
                 l, t, r, b = crop
                 box = (int(l * w), int(t * h), int(r * w), int(b * h))
                 im = im.crop(box)
+            # 博物馆原图可达 7000–13000px；训练 bucket 上限 1024，存长边 1600 足够且省空间
+            if max(im.size) > MAX_LONG:
+                im.thumbnail((MAX_LONG, MAX_LONG), Image.LANCZOS)
             cw, ch = im.size
             short = min(cw, ch)
             flag = "OK" if short >= 768 else "SMALL(<768) 不可用"

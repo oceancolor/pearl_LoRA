@@ -1,0 +1,38 @@
+{
+  "id": "ritual_00016",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "malachite",
+      "ochre",
+      "cinnabar",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "jungle",
+    "leaf",
+    "lily",
+    "flower",
+    "animal",
+    "grass"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_ritual, an impenetrable wall of jungle leaves in many greens, pink lilies and a white flower spike, a small animal half hidden in the undergrowth, tall pale grass",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:Henri_Rousseau,_The_Equatorial_Jungle,_1909,_NGA_46688.jpg（Wikimedia Commons，1909date QS:P571,+1909-00-00T00:00:00Z/9）。裁切 (0.0, 0.0, 1.0, 0.89)。",
+  "split": "train",
+  "concept": "ritual",
+  "source_file_id": "commons_Henri_Rousseau_The_Equatorial_Jungle_1909_NGA_46688_jpg",
+  "source_sha256": "970b1cc88cc5c346b92a23ab87be0cb2e0617ec45e5d3f7ab3800aa24b93065d"
+}
