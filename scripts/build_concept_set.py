@@ -193,6 +193,33 @@ CONCEPTS = {
                 "caption": 'a willow branch hanging over a calm evening river, figures in red at a ferry landing, '
                            'small boats on dark blue water, a wooded far bank',
             },
+            # 2026-10-28 机时复盘：water 前 15 张里 7 张是广重同一系列月夜水，8 张复用是琳派浪屏，
+            # 出图母题雷同（湖+舟+松+月反复）。补 3 张**不同母题**：骤雨、瀑布、大浪。
+            {
+                "src": "aic_26545", "crop": (0.018, 0.012, 0.575, 0.545),
+                "family": "other_pd", "composition": "full_page",
+                "content": ["rain", "river", "raft", "boatman", "far_bank", "tree", "storm_cloud"],
+                "palette": ["azurite", "jade_white", "ochre"],
+                "caption": 'torrential rain falling in long thin diagonal lines across the whole picture, a low '
+                           'raft with a single boatman on a wide grey river, a dark band of trees on the far bank '
+                           'under a black storm cloud',
+            },
+            {
+                "src": "cma_95381", "crop": (0.055, 0.175, 0.687, 0.945),
+                "family": "other_pd", "composition": "full_page",
+                "content": ["waterfall", "cliff", "house", "pine", "figure", "pool", "rock"],
+                "palette": ["azurite", "malachite", "cinnabar", "ochre"],
+                "caption": 'a tall waterfall dropping in pale blue ribbons down a dark rock face, small houses with '
+                           'red roofs and pines below, tiny figures at the pool, orange and blue patterned rock',
+            },
+            {
+                "src": "aic_24645", "crop": (0.155, 0.012, 0.947, 0.962),
+                "family": "other_pd", "composition": "full_page",
+                "content": ["wave", "foam", "boat", "sea", "mountain", "spray", "claw_foam"],
+                "palette": ["azurite", "jade_white", "ochre"],
+                "caption": 'a towering wave curling over with claw-like white foam, a deep blue trough below, '
+                           'three slender boats riding the swells, a small snow-capped mountain far off',
+            },
         ],
     },
     "future_seed": {

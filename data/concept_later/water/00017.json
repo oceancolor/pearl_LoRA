@@ -1,0 +1,39 @@
+{
+  "id": "water_00017",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "malachite",
+      "cinnabar",
+      "ochre"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "waterfall",
+    "cliff",
+    "house",
+    "pine",
+    "figure",
+    "pool",
+    "rock"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_water, a tall waterfall dropping in pale blue ribbons down a dark rock face, small houses with red roofs and pines below, tiny figures at the pool, orange and blue patterned rock",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/1916.1137（The Cleveland Museum of Art，early 1830s）。裁切 (0.055, 0.175, 0.687, 0.945)。",
+  "split": "train",
+  "concept": "water",
+  "source_file_id": "cma_95381",
+  "source_sha256": "546060440a4d9eb9ee20314942cf1e5a3b4e7a1da57f2248b6f38331b948e5cc"
+}

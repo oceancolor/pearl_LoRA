@@ -1,0 +1,38 @@
+{
+  "id": "water_00018",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "jade_white",
+      "ochre"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "wave",
+    "foam",
+    "boat",
+    "sea",
+    "mountain",
+    "spray",
+    "claw_foam"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_water, a towering wave curling over with claw-like white foam, a deep blue trough below, three slender boats riding the swells, a small snow-capped mountain far off",
+  "notes_zh": "新补。来源 https://www.artic.edu/artworks/24645（The Art Institute of Chicago，1830/33）。裁切 (0.155, 0.012, 0.947, 0.962)。",
+  "split": "train",
+  "concept": "water",
+  "source_file_id": "aic_24645",
+  "source_sha256": "99cfc00fddb45e5b54e7843c451370a1f604b1d68ea660177ea34788181765ac"
+}

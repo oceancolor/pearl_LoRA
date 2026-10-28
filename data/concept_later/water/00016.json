@@ -1,0 +1,38 @@
+{
+  "id": "water_00016",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "jade_white",
+      "ochre"
+    ]
+  },
+  "theme": {
+    "primary": "water",
+    "secondary": []
+  },
+  "content": [
+    "rain",
+    "river",
+    "raft",
+    "boatman",
+    "far_bank",
+    "tree",
+    "storm_cloud"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_water, torrential rain falling in long thin diagonal lines across the whole picture, a low raft with a single boatman on a wide grey river, a dark band of trees on the far bank under a black storm cloud",
+  "notes_zh": "新补。来源 https://www.artic.edu/artworks/26545（The Art Institute of Chicago，1857）。裁切 (0.018, 0.012, 0.575, 0.545)。",
+  "split": "train",
+  "concept": "water",
+  "source_file_id": "aic_26545",
+  "source_sha256": "75dabcfe3db566ee0c8f4c9ca66877a393d1e8924a24670e9ab6171589fb848f"
+}
