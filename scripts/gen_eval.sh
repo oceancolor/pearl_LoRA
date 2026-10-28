@@ -16,6 +16,13 @@
 #   N=2 bash scripts/gen_eval.sh        # 先看个大概
 set -euo pipefail
 
+if ! command -v python >/dev/null 2>&1 && [[ -f "$HOME/venv/bin/activate" ]]; then
+  # shellcheck disable=SC1091
+  source "$HOME/venv/bin/activate"
+  echo "已激活 venv: $(command -v python)"
+fi
+command -v python >/dev/null 2>&1 || { echo "找不到 python，先 source ~/venv/bin/activate"; exit 1; }
+
 PRJ="${PROJECT_DIR:-$HOME/pearl_LoRA}"
 SD="${SD_SCRIPTS:-$HOME/sd-scripts}"
 CKPT="${CKPT:-$PRJ/models/sd_xl_base_1.0.safetensors}"
