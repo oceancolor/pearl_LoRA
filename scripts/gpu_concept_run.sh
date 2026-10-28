@@ -152,9 +152,15 @@ for slug in "${SLUGS[@]}"; do
   # 每训完一支立刻归档，机器随时释放也不丢
   mkdir -p "$DEST/lora" "$DEST/logs"
   cp -u "$PRJ"/output/lora/"$trig"*.safetensors "$DEST/lora/" 2>/dev/null || true
-  [[ -d "$PRJ/output/lora/sample" ]] && cp -ru "$PRJ/output/lora/sample" "$DEST/lora/"
+  # ★抽检图必须按 slug 分目录存：kohya 的 sample/ 文件名只含步数，
+  # 三支跑下来会互相覆盖（2026-10-28 实测：只剩最后一支 future 的）。
+  if [[ -d "$PRJ/output/lora/sample" ]]; then
+    mkdir -p "$DEST/lora/sample_$slug"
+    cp -u "$PRJ"/output/lora/sample/* "$DEST/lora/sample_$slug/" 2>/dev/null || true
+    rm -rf "$PRJ/output/lora/sample"   # 清空，避免下一支覆盖本支
+  fi
   cp -u "$PRJ/logs/train_$slug.log" "$DEST/logs/" 2>/dev/null || true
-  echo "-- $slug 完成，已归档到 $DEST"
+  echo "-- $slug 完成，已归档到 $DEST/lora/sample_$slug"
 done
 
 # ---------------------------------------------------------------- 7. 汇总
