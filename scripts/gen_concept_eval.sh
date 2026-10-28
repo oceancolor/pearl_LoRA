@@ -44,18 +44,21 @@ OUT="${OUT:-$PRJ/eval_concept/$SLUG}"
 
 case "$SLUG" in
   ritual)      TRIG=deco_ritual
-               SUBJ="a ceremonial hall in a dense night grove under a full moon, a deity on a lotus throne beneath a canopy of dark leaves, rows of attendants with banners, a lotus pond, patterned ground" ;;
+               SUBJ="a ceremonial hall in a dense night grove beneath a single full moon high in the sky, a deity on a lotus throne beneath a canopy of dark leaves, rows of attendants with banners, a lotus pond, patterned ground" ;;
   water)       TRIG=deco_water
-               SUBJ="a full moon over a wide bay, pine-covered islets and small boats on patterned water, a night river with willows and a jetty" ;;
+               SUBJ="a single full moon high in a dark sky over a wide bay, pine-covered islets and small boats on patterned water, a night river with willows and a jetty" ;;
   future_seed) TRIG=deco_future
-               SUBJ="a floating palace among clouds and stars above a dark forest, a winged spirit rising over a moonlit jungle, towers like sutra pillars treated as ornament" ;;
+               SUBJ="a floating palace among clouds and stars above a dark forest, a winged spirit rising over a moonlit jungle, one moon only, towers like sutra pillars treated as ornament" ;;
   *) echo "未知概念: $SLUG"; exit 2 ;;
 esac
 
 CONCEPT_LORA="$PRJ/output/lora/$TRIG.safetensors"
 
 STYLE="decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, tapestry space, jewel-like palette, closed color shapes, ornamental border"
-NEG="photograph, realistic lighting, chiaroscuro, 3d render, anime, oil painting, western perspective, watermark, text, artist name, signature"
+# 负面词可用环境变量覆盖。★默认已加「两个月亮」相关词：
+# 2026-10-28 实测 concept_only 组 8/8 都出现「小月 + 大圆月」，是过拟合的高频伪影，
+# 提示词层面先压，不必为此重训。
+NEG="${NEG:-photograph, realistic lighting, chiaroscuro, 3d render, anime, oil painting, western perspective, watermark, text, artist name, signature, two moons, double moon, repeated moons, multiple suns}"
 PAL="malachite, azurite, cinnabar, gold"
 
 [ -f "$CKPT" ] || { echo "未找到 SDXL base: $CKPT"; exit 1; }
