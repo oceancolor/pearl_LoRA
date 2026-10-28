@@ -68,8 +68,14 @@ echo "== 风格 LoRA 校验（10-10 好版应为 6d4af5c7；9edebbfc 是 10-09 �
 if [ -f "$STYLE_LORA" ]; then
   H=$(sha256sum "$STYLE_LORA" | cut -c1-8)
   echo "  $H  $STYLE_LORA"
-  [ "$H" = "9edebbfc" ] && { echo "  !! 这是 10-09 坏版（出黑图），别用"; exit 1; }
-  [ "$H" = "6d4af5c7" ] || echo "  !! 哈希不在已知基准内，请确认来源"
+  # ★必须用 if 而不是 `[ ... ] && {...}`：条件为假时整个 && 列表返回 1，
+  # 在 set -e 下会让脚本静默退出（2026-10-28 就是这么卡住的，日志停在哈希那一行）
+  if [ "$H" = "9edebbfc" ]; then
+    die "这是 10-09 坏版（出黑图），别用"
+  fi
+  if [ "$H" != "6d4af5c7" ]; then
+    echo "  !! 哈希不在已知基准内，请确认来源"
+  fi
 else
   echo "  !! 缺风格 LoRA: $STYLE_LORA"
   [ "$MODE" = "concept_only" ] || exit 1

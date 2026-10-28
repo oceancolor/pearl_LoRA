@@ -34,7 +34,7 @@ cat > "$S/env.sh" <<EOF
 export S=$S
 export PIP_CACHE_DIR=$S/cache/pip
 export HF_HOME=$S/cache/hf
-[ -f $VENV/bin/activate ] && source $VENV/bin/activate
+[ -f $VENV/bin/activate ] && source $VENV/bin/activate || true
 EOF
 export PIP_CACHE_DIR="$S/cache/pip" HF_HOME="$S/cache/hf"
 echo "以后登录先：source $S/env.sh"
@@ -104,8 +104,9 @@ for f in $(find "$S" -maxdepth 6 -name "decomineral_v1_16gb.safetensors" 2>/dev/
     echo "  -> 跳过（9edebbfc 是 10-09 坏版）"
   fi
 done
-[[ -f "$PRJ/output/lora/decomineral_v1_16gb.safetensors" ]] && \
+if [[ -f "$PRJ/output/lora/decomineral_v1_16gb.safetensors" ]]; then
   sha256sum "$PRJ/output/lora/decomineral_v1_16gb.safetensors" | cut -c1-8
+fi
 
 # ---------------------------------------------------------------- 5. tokenizer（HF 被封时的退路）
 step "[5/7] CLIP tokenizer"
