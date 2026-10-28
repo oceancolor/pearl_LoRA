@@ -87,7 +87,12 @@ case "$MODE" in
     # ★这版 kohya 的 sdxl_minimal_inference.py 不支持逗号传多个 LoRA
     # （实测 ValueError: too many values to unpack，2026-10-28）。
     # 故先用 kohya 自带的 merge_lora.py 按权重比合成一个文件，再以 1.0 挂上。
-    MERGE=$(ls "$SD/networks/merge_lora.py" "$SD/scripts/networks/merge_lora.py" 2>/dev/null | head -1)
+    # ★不能写成 `MERGE=$(ls A B 2>/dev/null | head -1)`：B 不存在时 ls 返回 2，
+    # 而 set -o pipefail 会让整条管道判失败、脚本静默退出（2026-10-28 卡在这，EXIT=2 无输出）
+    MERGE=""
+    for c in "$SD/networks/merge_lora.py" "$SD/scripts/networks/merge_lora.py"; do
+      if [[ -f "$c" ]]; then MERGE="$c"; break; fi
+    done
     [[ -n "$MERGE" ]] || die "找不到 kohya 的 merge_lora.py，无法叠加两个 LoRA（可先用 MODE=concept_only）"
     MERGED="$PRJ/output/lora/_merged_${SLUG}_s${MUL_STYLE}_c${MUL_CONCEPT}.safetensors"
     echo "== 合并 LoRA（风格 $MUL_STYLE + 概念 $MUL_CONCEPT）=="
