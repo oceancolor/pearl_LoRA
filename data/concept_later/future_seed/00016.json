@@ -10,8 +10,8 @@
       "closed_outline"
     ],
     "palette": [
-      "azurite",
       "cinnabar",
+      "malachite",
       "jade_white",
       "ochre"
     ]
@@ -23,19 +23,19 @@
     ]
   },
   "content": [
-    "deity",
-    "bull",
-    "cloud",
-    "trident",
-    "woman",
-    "flower",
-    "procession"
+    "archer",
+    "demon",
+    "shield",
+    "sword",
+    "night",
+    "flower_tree",
+    "crown"
   ],
-  "composition": "central_figure",
-  "caption_en": "deco_future, a family of pale gods riding a great black bull through a swirl of grey clouds, the white-haired god raising a trident, a woman in red beside him, a band of round red and yellow flowers below",
-  "notes_zh": "新补。来源 https://clevelandart.org/art/1952.587（The Cleveland Museum of Art，c. 1675–80）。裁切 (0.08, 0.045, 0.925, 0.875)。",
+  "composition": "full_page",
+  "caption_en": "deco_future, a pair of archers with bows drawn against a tall many-headed demon holding a round shield and a sword, a red flowering branch at the left, a dark green night field with a pale band of clouds along the top",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/1953.357（The Cleveland Museum of Art，c. 1765）。裁切 (0.115, 0.16, 0.815, 0.895)。",
   "split": "train",
   "concept": "future_seed",
-  "source_file_id": "cma_130218",
-  "source_sha256": "6e36bc249503910583b21be13f60d88d42eacccceb0c80e48489ebed57145755"
+  "source_file_id": "cma_130637",
+  "source_sha256": "02e23d78f8105a535ada2e274ab32406ed4d82370170b811c61923112896be74"
 }

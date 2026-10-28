@@ -1,7 +1,7 @@
 {
   "id": "future_seed_00009",
   "license": "PD",
-  "family": "persian_miniature",
+  "family": "other_pd",
   "style": {
     "traits": [
       "flat_fill",
@@ -10,6 +10,7 @@
       "closed_outline"
     ],
     "palette": [
+      "malachite",
       "azurite",
       "cinnabar",
       "ochre",
@@ -23,18 +24,19 @@
     ]
   },
   "content": [
-    "demon",
-    "grotto",
-    "rock",
-    "king",
-    "attendant",
-    "banner"
+    "full_moon",
+    "jungle",
+    "lotus_flower",
+    "flute_player",
+    "lion",
+    "serpent",
+    "bird"
   ],
   "composition": "crop_detail",
-  "caption_en": "deco_future, a white demon seated in a dark grotto of violet rocks, a bound king and attendants among jutting stone shelves, small trees along the ledges",
-  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:Kay-Ka%27us_chained_in_a_grotto_by_the_white_demon_(FGA_F2006.7).jpg（Wikimedia Commons，1576）。裁切 (0.02, 0.4, 0.98, 0.78)。",
+  "caption_en": "deco_future, a full moon over a dreamlike jungle, giant flowers in blue and pink, a dark flute player in a striped skirt, two lions peering through dense leaves, a coiling orange serpent",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:Henri_Rousseau_-_Le_R%C3%AAve_-_Google_Art_Project.jpg（Wikimedia Commons，1910date QS:P571,+1910-00-00T00:00:00Z/9）。裁切 (0.44, 0.0, 1.0, 0.89)。",
   "split": "train",
   "concept": "future_seed",
-  "source_file_id": "commons_Kay_Ka_us_chained_in_a_grotto_by_the_white_demon_FGA_F2006_7",
-  "source_sha256": "31045bff45f4dd84807af1c31ad63236c662433f391a59bab20bc3c042b686dc"
+  "source_file_id": "commons_Henri_Rousseau_Le_R_ve_Google_Art_Project_jpg",
+  "source_sha256": "05f424be8eb24349f04177c26fe9c91ca20434bc448f78346caf85d953e5adcc"
 }

@@ -1,0 +1,37 @@
+{
+  "id": "ritual_00018",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "cinnabar",
+      "ochre",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "monkey_god",
+    "club",
+    "figure",
+    "dhoti",
+    "necklace",
+    "tail"
+  ],
+  "composition": "central_figure",
+  "caption_en": "deco_ritual, a red-bodied monkey god standing with a pale club, tiny figures held in his hand and on his shoulder, a yellow cloth at the waist, strings of white beads, a pale plain ground",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/2003.120（The Cleveland Museum of Art，c. 1890）。裁切 (0.02, 0.02, 0.98, 0.943)。",
+  "split": "train",
+  "concept": "ritual",
+  "source_file_id": "cma_162460",
+  "source_sha256": "e835f079c0697bd2192a6a36877db0ab9b8da572deea022735103e826153ab99"
+}

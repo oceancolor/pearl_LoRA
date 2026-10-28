@@ -1,7 +1,7 @@
 {
   "id": "future_seed_00011",
   "license": "PD",
-  "family": "persian_miniature",
+  "family": "other_pd",
   "style": {
     "traits": [
       "flat_fill",
@@ -11,10 +11,9 @@
     ],
     "palette": [
       "azurite",
-      "cinnabar",
       "ochre",
-      "malachite",
-      "gold"
+      "cinnabar",
+      "jade_white"
     ]
   },
   "theme": {
@@ -24,18 +23,18 @@
     ]
   },
   "content": [
-    "white_demon",
-    "cave",
-    "mountain",
-    "tree",
-    "warrior",
-    "flame"
+    "genie",
+    "wing",
+    "smoke",
+    "stream",
+    "rock",
+    "fisherman"
   ],
-  "composition": "crop_detail",
-  "caption_en": "deco_future, a white demon wrestling a warrior inside a black cave mouth, orange and blue mountains of patterned rock, cypress trees and a watching figure above",
-  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:Seventh_Labour_of_Rostam_%E2%80%93_Killing_the_White_Demon.jpg（Wikimedia Commons，1430）。裁切 (0.08, 0.38, 0.92, 0.85)。",
+  "composition": "central_figure",
+  "caption_en": "deco_future, a towering winged genie with a jewelled headband rising out of smoke above a rocky stream, a tiny fisherman fallen below",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:Stories_from_the_Arabian_nights_-_London_1907_-_plate_02.jpg（Wikimedia Commons，1907）。裁切 (0.03, 0.02, 0.97, 0.98)。",
   "split": "train",
   "concept": "future_seed",
-  "source_file_id": "commons_Seventh_Labour_of_Rostam_Killing_the_White_Demon_jpg",
-  "source_sha256": "12d005600c299226f4f72c5b8684a67b4fecbcb807f3032f5f18ea6ffad02857"
+  "source_file_id": "commons_Stories_from_the_Arabian_nights_London_1907_plate_02_jpg",
+  "source_sha256": "c8a6fab673b10fa2b057a0c6e4624b2ed9dc3212d778dbb44a23fc6ed3873a4f"
 }

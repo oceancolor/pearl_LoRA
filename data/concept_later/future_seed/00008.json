@@ -11,10 +11,10 @@
     ],
     "palette": [
       "azurite",
-      "jade_white",
       "cinnabar",
       "ochre",
-      "malachite"
+      "malachite",
+      "gold"
     ]
   },
   "theme": {
@@ -24,18 +24,18 @@
     ]
   },
   "content": [
-    "div",
-    "horned_figure",
-    "boulder",
-    "cloud",
+    "white_demon",
+    "cave",
     "mountain",
-    "tree"
+    "tree",
+    "warrior",
+    "flame"
   ],
-  "composition": "central_figure",
-  "caption_en": "deco_future, a horned div lifting a slab of rock overhead, islands of cloud ringing the sky, jagged mountains and flowering trees below",
-  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:Shahnameh_-_The_Div_Akvan_throws_Rustam_into_the_sea.jpg（Wikimedia Commons，16th-17th centuries）。裁切 (0.12, 0.4, 0.945, 0.8)。",
+  "composition": "crop_detail",
+  "caption_en": "deco_future, a white demon wrestling a warrior inside a black cave mouth, orange and blue mountains of patterned rock, cypress trees and a watching figure above",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:Seventh_Labour_of_Rostam_%E2%80%93_Killing_the_White_Demon.jpg（Wikimedia Commons，1430）。裁切 (0.08, 0.38, 0.92, 0.85)。",
   "split": "train",
   "concept": "future_seed",
-  "source_file_id": "commons_Shahnameh_The_Div_Akvan_throws_Rustam_into_the_sea_jpg",
-  "source_sha256": "f2773b72a4ae1b4bd012d8aa0a75e8462103655b6f16e253edaf52cb5ec9ef3d"
+  "source_file_id": "commons_Seventh_Labour_of_Rostam_Killing_the_White_Demon_jpg",
+  "source_sha256": "12d005600c299226f4f72c5b8684a67b4fecbcb807f3032f5f18ea6ffad02857"
 }

@@ -1,6 +1,6 @@
 {
   "id": "future_seed_00013",
-  "license": "PD",
+  "license": "CC0",
   "family": "other_pd",
   "style": {
     "traits": [
@@ -11,9 +11,9 @@
     ],
     "palette": [
       "azurite",
-      "ochre",
       "cinnabar",
-      "jade_white"
+      "jade_white",
+      "ochre"
     ]
   },
   "theme": {
@@ -23,19 +23,19 @@
     ]
   },
   "content": [
-    "full_moon",
-    "night_sky",
-    "lion",
-    "sleeper",
-    "mandolin",
-    "jar",
-    "desert"
+    "deity",
+    "bull",
+    "cloud",
+    "trident",
+    "woman",
+    "flower",
+    "procession"
   ],
-  "composition": "full_page",
-  "caption_en": "deco_future, a full moon in a deep blue night sky over a desert, a lion sniffing a sleeping wanderer in a striped robe, a mandolin and a water jar beside, distant pale mountains",
-  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:La_Boh%C3%A9mienne_endormie.jpg（Wikimedia Commons，1897date QS:P571,+1897-00-00T00:00:00Z/9）。裁切 (0.0, 0.0, 0.895, 1.0)。",
+  "composition": "central_figure",
+  "caption_en": "deco_future, a family of pale gods riding a great black bull through a swirl of grey clouds, the white-haired god raising a trident, a woman in red beside him, a band of round red and yellow flowers below",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/1952.587（The Cleveland Museum of Art，c. 1675–80）。裁切 (0.08, 0.045, 0.925, 0.875)。",
   "split": "train",
   "concept": "future_seed",
-  "source_file_id": "commons_La_Boh_mienne_endormie_jpg",
-  "source_sha256": "5100dbfc17e6cd58cf624165dee27273340a1fdd54a80e017231c9101db46e88"
+  "source_file_id": "cma_130218",
+  "source_sha256": "6e36bc249503910583b21be13f60d88d42eacccceb0c80e48489ebed57145755"
 }

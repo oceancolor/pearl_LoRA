@@ -1,53 +1,40 @@
 {
   "id": "future_seed_00004",
-  "license": "CC0",
+  "license": "PD",
   "family": "persian_miniature",
   "style": {
     "traits": [
       "flat_fill",
       "mineral_pigment",
-      "pattern_equals_form",
       "no_chiaroscuro",
-      "closed_outline",
-      "tapestry_space"
+      "closed_outline"
     ],
     "palette": [
       "azurite",
+      "cinnabar",
       "malachite",
-      "ochre",
       "gold"
     ]
   },
   "theme": {
     "primary": "machine_or_sky",
     "secondary": [
-      "water"
+      "creature"
     ]
   },
   "content": [
-    "bird",
-    "crane",
-    "rooster",
-    "hawk",
-    "swallow",
-    "goose",
-    "phoenix",
-    "parrot",
-    "magpie",
-    "nightingale",
-    "duck",
-    "ram",
-    "hunter",
-    "spear",
-    "mountain",
-    "rock",
-    "pond",
-    "water-lily"
+    "cloud",
+    "rider",
+    "horse",
+    "tower",
+    "roof",
+    "garden"
   ],
-  "composition": "full_page",
-  "caption_en": "deco_future, a gathering of twenty-one birds of many kinds, cranes, a phoenix, parrots and ducks, with two horned rams and a hunter bearing a long spear, set among mountains and a pond patterned with water-lilies, peacock blue, malachite green, ochre, gold",
-  "notes_zh": "复用风格集 00001；caption 已去风格锁词、加概念触发词 deco_future。",
+  "composition": "crop_detail",
+  "caption_en": "deco_future, a rider on a horse before a walled pavilion, heavy blue clouds filling the sky, red roofs and a garden terrace above",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:An_Illustrated_Leaf_from_the_Shah_Isma%27il_II_Manuscript_of_Firdausi%27s_Shahnama,_The_Fire_Ordeal_of_Siyavush,_Ascribed_to_the_artist_Siyavush,_Qazvin,_Persia,_circa_1577.jpg（Wikimedia Commons，circa 1577date QS:P571,+1577-00-00T00:00:00Z/9,P1480,Q5727902）。裁切 (0.205, 0.16, 0.785, 0.555)。",
   "split": "train",
   "concept": "future_seed",
-  "reused_from": "00001"
+  "source_file_id": "commons_An_Illustrated_Leaf_from_the_Shah_Isma_il_II_Manuscript_of_F",
+  "source_sha256": "bd2ab1b44304287eab24149bdccc8db66b09a324cc9f93da38d6920b833a5aa1"
 }

@@ -1,6 +1,6 @@
 {
   "id": "future_seed_00014",
-  "license": "PD",
+  "license": "CC0",
   "family": "other_pd",
   "style": {
     "traits": [
@@ -10,10 +10,10 @@
       "closed_outline"
     ],
     "palette": [
-      "azurite",
-      "ochre",
       "cinnabar",
-      "jade_white"
+      "ochre",
+      "jade_white",
+      "malachite"
     ]
   },
   "theme": {
@@ -23,18 +23,19 @@
     ]
   },
   "content": [
-    "genie",
-    "wing",
-    "smoke",
-    "stream",
-    "rock",
-    "fisherman"
+    "goddess",
+    "tiger",
+    "demon",
+    "buffalo",
+    "spear",
+    "club",
+    "scroll"
   ],
-  "composition": "central_figure",
-  "caption_en": "deco_future, a towering winged genie with a jewelled headband rising out of smoke above a rocky stream, a tiny fisherman fallen below",
-  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:Stories_from_the_Arabian_nights_-_London_1907_-_plate_02.jpg（Wikimedia Commons，1907）。裁切 (0.03, 0.02, 0.97, 0.98)。",
+  "composition": "horizontal_register",
+  "caption_en": "deco_future, a many-armed goddess riding a white tiger and thrusting a spear at a buffalo demon swinging a club, both floating in a flat orange field, red curling scrolls and a green ground below",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/1960.51（The Cleveland Museum of Art，c. 1700–1710）。裁切 (0.03, 0.045, 0.965, 0.915)。",
   "split": "train",
   "concept": "future_seed",
-  "source_file_id": "commons_Stories_from_the_Arabian_nights_London_1907_plate_02_jpg",
-  "source_sha256": "c8a6fab673b10fa2b057a0c6e4624b2ed9dc3212d778dbb44a23fc6ed3873a4f"
+  "source_file_id": "cma_136475",
+  "source_sha256": "08a9a23f96b229f665688d2441181d6f10367853703a0f82d4da0234c45a3271"
 }

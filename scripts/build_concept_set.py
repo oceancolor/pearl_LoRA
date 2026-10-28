@@ -41,6 +41,8 @@ CONCEPTS = {
         "trigger": "deco_ritual",
         "theme": "ritual",
         "reuse": ["00007", "00008", "00009", "00033", "00034", "00035", "00042", "00049"],
+        # 00033 是双语经折装书页：左右各有一栏文字，只留中间画心（裁后 1900x2131）
+        "reuse_crop": {"00033": (0.26, 0.02, 0.755, 0.98)},
         # 2026-10-23 用户定的方向：夜林、满月、密叶（参照 data/style_ref/00010、00012）。
         # 用户确认：Gita Govinda 夜林算 ritual；卢梭要。
         "new": [
@@ -128,6 +130,33 @@ CONCEPTS = {
                 "palette": ["malachite", "ochre", "cinnabar", "jade_white"],
                 "caption": 'an impenetrable wall of jungle leaves in many greens, pink lilies and a white flower '
                            'spike, a small animal half hidden in the undergrowth, tall pale grass',
+            },
+            # 2026-10-28 复盘：ritual 前 16 张是「神像+华盖」8 张、夜林 5 张、丛林 3 张三种构图。
+            # 补三张不同母题：宫廷集会/行列、单体神猴全身像、夜间园林叙事。
+            {
+                "src": "cma_162515", "crop": (0.01, 0.02, 0.99, 0.97),
+                "family": "other_pd", "composition": "horizontal_register",
+                "content": ["assembly", "ruler", "attendant", "elephant", "parasol", "terrace", "carpet", "facade"],
+                "palette": ["malachite", "cinnabar", "ochre", "jade_white"],
+                "caption": 'a court assembly seen through a two-storey facade, a ruler beneath a parasol on a raised '
+                           'terrace, rows of attendants carrying fly-whisks and gifts, an elephant and horses in '
+                           'the doorway, a long red carpet on the floor',
+            },
+            {
+                "src": "cma_162460", "crop": (0.02, 0.02, 0.98, 0.943),
+                "family": "other_pd", "composition": "central_figure",
+                "content": ["monkey_god", "club", "figure", "dhoti", "necklace", "tail"],
+                "palette": ["cinnabar", "ochre", "jade_white"],
+                "caption": 'a red-bodied monkey god standing with a pale club, tiny figures held in his hand and on '
+                           'his shoulder, a yellow cloth at the waist, strings of white beads, a pale plain ground',
+            },
+            {
+                "src": "cma_314412", "crop": (0.05, 0.075, 0.912, 0.902),
+                "family": "other_pd", "composition": "full_page",
+                "content": ["night", "river", "lying_figure", "woman", "archer", "cart", "tree", "grass"],
+                "palette": ["azurite", "malachite", "jade_white", "cinnabar"],
+                "caption": 'a pale figure lying on dark ground beside a pale river, three women and a green archer '
+                           'standing by, a small red cart and round trees, a black night sky above',
             },
         ],
     },
@@ -225,8 +254,13 @@ CONCEPTS = {
     "future_seed": {
         "trigger": "deco_future",
         "theme": "machine_or_sky",
-        # 复用：塔楼云 / 屠龙 / 神鸟 / 群鸟 / 宫台 —— 幻想向，非科幻
-        "reuse": ["00016", "00020", "00021", "00001", "00043"],
+        # 复用：塔楼云 / 神鸟 —— 幻想向，非科幻
+        # 00020（屠龙）剔除：波斯书页，画心仅占高度 43%，裁掉上下文字带后短边只剩 555，不达标。
+        # 00001（百鸟图）剔除：画内自带两处波斯文小框，裁掉就伤主体；留着会让概念 LoRA 学到文字。
+        # 00043（宫台）剔除：实际是带画框翻拍的绿野牧牛图，与 caption 不符，且属翻拍件。
+        # 00021（神鸟+骑者）上下各一条文字带，裁画心后约 1170x809。
+        "reuse": ["00016", "00021"],
+        "reuse_crop": {"00021": (0.065, 0.148, 0.902, 0.632)},
         "new": [
             {
                 "src": "commons_The_Tortoise_Folio_from_an_Aja_ib_al_Makhluqat_Wonders_of_C",
@@ -359,6 +393,16 @@ CONCEPTS = {
                            'white-robed attendants and horses below, a dark blue sky filled with small pale dots '
                            'and one big round disc',
             },
+            {
+                # 替换被剔除的 00020（屠龙页）：同样是「神话搏斗」，但无文字栏、尺寸达标
+                "src": "cma_130637", "crop": (0.115, 0.16, 0.815, 0.895),
+                "family": "other_pd", "composition": "full_page",
+                "content": ["archer", "demon", "shield", "sword", "night", "flower_tree", "crown"],
+                "palette": ["cinnabar", "malachite", "jade_white", "ochre"],
+                "caption": 'a pair of archers with bows drawn against a tall many-headed demon holding a round '
+                           'shield and a sword, a red flowering branch at the left, a dark green night field with a '
+                           'pale band of clouds along the top',
+            },
         ],
     },
 }
@@ -377,7 +421,16 @@ def write_entry(concept, slug, trigger, theme, jpeg_or_png, caption, meta, dry):
     dst_txt = dst_png.with_suffix(".txt")
     dst_json = dst_png.with_suffix(".json")
     if not dry:
-        shutil.copyfile(jpeg_or_png, dst_png)
+        crop = meta.get("crop")
+        if crop:
+            # 复用图有时带文字栏（波斯书页、双语经折装），必须裁掉——
+            # 风格集就是因为留着文字栏才学出了伪阿拉伯书法（见 CODEBUDDY 2026-10-10 记录）
+            im = Image.open(jpeg_or_png).convert("RGB")
+            w, h = im.size
+            im = im.crop((int(crop[0] * w), int(crop[1] * h), int(crop[2] * w), int(crop[3] * h)))
+            im.save(dst_png)
+        else:
+            shutil.copyfile(jpeg_or_png, dst_png)
         dst_txt.write_text(caption, encoding="utf-8")
         dst_json.write_text(json.dumps(meta["json"], ensure_ascii=False, indent=2), encoding="utf-8")
     return dst_png
@@ -391,6 +444,11 @@ def main():
     for slug, spec in CONCEPTS.items():
         trigger, theme = spec["trigger"], spec["theme"]
         (OUT / slug).mkdir(parents=True, exist_ok=True)
+        # ★重建前先清掉旧的编号文件：条目数减少时（例如剔除带文字栏的图），
+        # 不清理会留下上一轮的 000xx.png，导致张数虚高、编号错位（2026-10-28 踩过）
+        if not args.dry_run:
+            for old in (OUT / slug).glob("0[0-9][0-9][0-9][0-9].*"):
+                old.unlink()
         idx = 0
         print("\n== %s (%s) ==" % (slug, trigger))
 
@@ -418,8 +476,10 @@ def main():
                 "concept": slug,
                 "reused_from": src_id,
             }
-            write_entry(slug, slug, trigger, theme, png, caption, {"idx": idx, "json": meta_json}, args.dry_run)
-            print("  [reuse] %s -> %05d.png  %s" % (src_id, idx, caption[:88]))
+            rc = (spec.get("reuse_crop") or {}).get(src_id)
+            write_entry(slug, slug, trigger, theme, png, caption,
+                        {"idx": idx, "json": meta_json, "crop": rc}, args.dry_run)
+            print("  [reuse] %s -> %05d.png %s %s" % (src_id, idx, "[裁切]" if rc else "", caption[:80]))
 
         for item in spec["new"]:
             d = RAW / item["src"]

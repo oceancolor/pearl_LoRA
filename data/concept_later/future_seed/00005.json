@@ -6,38 +6,36 @@
     "traits": [
       "flat_fill",
       "mineral_pigment",
-      "pattern_equals_form",
       "no_chiaroscuro",
-      "closed_outline",
-      "gold_ground"
+      "closed_outline"
     ],
     "palette": [
-      "gold",
-      "malachite",
-      "cinnabar",
       "azurite",
-      "jade_white"
+      "jade_white",
+      "cinnabar",
+      "ochre",
+      "malachite"
     ]
   },
   "theme": {
     "primary": "machine_or_sky",
-    "secondary": []
+    "secondary": [
+      "creature"
+    ]
   },
   "content": [
-    "courtier",
-    "attendant",
-    "palace",
-    "terrace",
-    "carpet",
-    "vessel",
-    "tree",
-    "cypress",
-    "wall"
+    "div",
+    "horned_figure",
+    "boulder",
+    "cloud",
+    "mountain",
+    "tree"
   ],
-  "composition": "horizontal_register",
-  "caption_en": "deco_future, robed courtiers and attendants gathered before a palace terrace under a gold sky, a carpet and gold vessels set out, flowering trees and a dark cypress behind the wall, gold, malachite green, cinnabar red, azurite blue, jade white",
-  "notes_zh": "复用风格集 00043；caption 已去风格锁词、加概念触发词 deco_future。",
+  "composition": "central_figure",
+  "caption_en": "deco_future, a horned div lifting a slab of rock overhead, islands of cloud ringing the sky, jagged mountains and flowering trees below",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:Shahnameh_-_The_Div_Akvan_throws_Rustam_into_the_sea.jpg（Wikimedia Commons，16th-17th centuries）。裁切 (0.12, 0.4, 0.945, 0.8)。",
   "split": "train",
   "concept": "future_seed",
-  "reused_from": "00043"
+  "source_file_id": "commons_Shahnameh_The_Div_Akvan_throws_Rustam_into_the_sea_jpg",
+  "source_sha256": "f2773b72a4ae1b4bd012d8aa0a75e8462103655b6f16e253edaf52cb5ec9ef3d"
 }

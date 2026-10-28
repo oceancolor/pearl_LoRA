@@ -10,10 +10,11 @@
       "closed_outline"
     ],
     "palette": [
-      "azurite",
       "cinnabar",
+      "azurite",
       "malachite",
-      "gold"
+      "gold",
+      "ochre"
     ]
   },
   "theme": {
@@ -23,18 +24,18 @@
     ]
   },
   "content": [
-    "cloud",
-    "rider",
-    "horse",
-    "tower",
-    "roof",
-    "garden"
+    "div",
+    "demon",
+    "boulder",
+    "cave",
+    "beast",
+    "gold_ground"
   ],
-  "composition": "crop_detail",
-  "caption_en": "deco_future, a rider on a horse before a walled pavilion, heavy blue clouds filling the sky, red roofs and a garden terrace above",
-  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:An_Illustrated_Leaf_from_the_Shah_Isma%27il_II_Manuscript_of_Firdausi%27s_Shahnama,_The_Fire_Ordeal_of_Siyavush,_Ascribed_to_the_artist_Siyavush,_Qazvin,_Persia,_circa_1577.jpg（Wikimedia Commons，circa 1577date QS:P571,+1577-00-00T00:00:00Z/9,P1480,Q5727902）。裁切 (0.205, 0.16, 0.785, 0.555)。",
+  "composition": "central_figure",
+  "caption_en": "deco_future, a ring of coloured divs raising boulders on a golden ground, a combat in a black cave mouth, horned and blue-skinned figures crowding the rocks",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:An_illustrated_leaf_from_a_manuscript_of_Firdausi%E2%80%99s_Shahnameh;_Rustam_killing_the_White_Div,_Persia,_Shiraz,_Safavid,_circa_1560-80.jpg（Wikimedia Commons，circa 1560-1580）。裁切 (0.055, 0.275, 0.945, 0.875)。",
   "split": "train",
   "concept": "future_seed",
-  "source_file_id": "commons_An_Illustrated_Leaf_from_the_Shah_Isma_il_II_Manuscript_of_F",
-  "source_sha256": "bd2ab1b44304287eab24149bdccc8db66b09a324cc9f93da38d6920b833a5aa1"
+  "source_file_id": "commons_An_illustrated_leaf_from_a_manuscript_of_Firdausi_s_Shahname",
+  "source_sha256": "545ca7d9af325d9e2b92c0d54f77dd49fc590a1e5993e43f5b5ad1ed10d51118"
 }

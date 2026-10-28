@@ -1,0 +1,40 @@
+{
+  "id": "ritual_00017",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "malachite",
+      "cinnabar",
+      "ochre",
+      "jade_white"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "assembly",
+    "ruler",
+    "attendant",
+    "elephant",
+    "parasol",
+    "terrace",
+    "carpet",
+    "facade"
+  ],
+  "composition": "horizontal_register",
+  "caption_en": "deco_ritual, a court assembly seen through a two-storey facade, a ruler beneath a parasol on a raised terrace, rows of attendants carrying fly-whisks and gifts, an elephant and horses in the doorway, a long red carpet on the floor",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/2003.156.a（The Cleveland Museum of Art，c. 1890）。裁切 (0.01, 0.02, 0.99, 0.97)。",
+  "split": "train",
+  "concept": "ritual",
+  "source_file_id": "cma_162515",
+  "source_sha256": "23903465b154df717bb755c045e8088055bf3da792f97fa2ce4f95afa6f3d084"
+}

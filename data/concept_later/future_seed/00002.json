@@ -1,6 +1,6 @@
 {
   "id": "future_seed_00002",
-  "license": "CC0",
+  "license": "PD",
   "family": "persian_miniature",
   "style": {
     "traits": [
@@ -12,11 +12,11 @@
       "patterned_terrain"
     ],
     "palette": [
-      "cinnabar",
       "malachite",
+      "cinnabar",
       "azurite",
-      "gold",
-      "ochre"
+      "ochre",
+      "jade_white"
     ]
   },
   "theme": {
@@ -24,20 +24,20 @@
     "secondary": []
   },
   "content": [
-    "hero",
-    "horse",
-    "spear",
-    "dragon",
-    "scale",
-    "rock",
-    "mountain",
+    "bird",
+    "tail",
     "tree",
-    "hill"
+    "blossom",
+    "youth",
+    "horse",
+    "rock",
+    "hill",
+    "foliage"
   ],
-  "composition": "horizontal_register",
-  "caption_en": "deco_future, mountains patterned as dense forest, a hero on horseback thrusting a spear into a coiling dragon whose scaly body loops across a cinnabar red ground, jagged rocks and stylized trees around them, cinnabar red, malachite green, azurite blue, gold, ochre",
-  "notes_zh": "复用风格集 00020；caption 已去风格锁词、加概念触发词 deco_future。",
+  "composition": "central_figure",
+  "caption_en": "deco_future, mountains patterned as dense forest, a great long-tailed bird perched in a stylized blossoming tree above a youth on horseback who reaches toward it, pink and grey rocky hills and patterned foliage filling the field, malachite green, cinnabar red, azurite blue, ochre, jade white",
+  "notes_zh": "复用风格集 00021；caption 已去风格锁词、加概念触发词 deco_future。",
   "split": "train",
   "concept": "future_seed",
-  "reused_from": "00020"
+  "reused_from": "00021"
 }

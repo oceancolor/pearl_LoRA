@@ -1,43 +1,40 @@
 {
   "id": "future_seed_00003",
-  "license": "PD",
-  "family": "persian_miniature",
+  "license": "CC0",
+  "family": "other_pd",
   "style": {
     "traits": [
       "flat_fill",
       "mineral_pigment",
-      "pattern_equals_form",
       "no_chiaroscuro",
-      "closed_outline",
-      "patterned_terrain"
+      "closed_outline"
     ],
     "palette": [
-      "malachite",
       "cinnabar",
-      "azurite",
       "ochre",
+      "azurite",
       "jade_white"
     ]
   },
   "theme": {
     "primary": "machine_or_sky",
-    "secondary": []
+    "secondary": [
+      "creature"
+    ]
   },
   "content": [
-    "bird",
-    "tail",
-    "tree",
-    "blossom",
-    "youth",
-    "horse",
-    "rock",
-    "hill",
-    "foliage"
+    "tortoise",
+    "creature",
+    "cloud",
+    "serpent",
+    "fish",
+    "scaled_ground"
   ],
-  "composition": "central_figure",
-  "caption_en": "deco_future, mountains patterned as dense forest, a great long-tailed bird perched in a stylized blossoming tree above a youth on horseback who reaches toward it, pink and grey rocky hills and patterned foliage filling the field, malachite green, cinnabar red, azurite blue, ochre, jade white",
-  "notes_zh": "复用风格集 00021；caption 已去风格锁词、加概念触发词 deco_future。",
+  "composition": "full_page",
+  "caption_en": "deco_future, a giant tortoise with a patterned shell among red swirling clouds, a reclining figure and a serpent beside it, fish and scaled ground below",
+  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:%22The_Tortoise%22,_Folio_from_an_%60Aja%27ib_al-Makhluqat_(Wonders_of_Creation)_of_Qazwini_MET_136888.jpg（Wikimedia Commons，second half 16th century）。裁切 (0.04, 0.03, 0.96, 0.925)。",
   "split": "train",
   "concept": "future_seed",
-  "reused_from": "00021"
+  "source_file_id": "commons_The_Tortoise_Folio_from_an_Aja_ib_al_Makhluqat_Wonders_of_C",
+  "source_sha256": "386fb61b9a5ea7588012ad8a76cb52c219291803a54eb88a4815b90461206579"
 }

@@ -1,0 +1,40 @@
+{
+  "id": "ritual_00019",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "malachite",
+      "jade_white",
+      "cinnabar"
+    ]
+  },
+  "theme": {
+    "primary": "ritual",
+    "secondary": []
+  },
+  "content": [
+    "night",
+    "river",
+    "lying_figure",
+    "woman",
+    "archer",
+    "cart",
+    "tree",
+    "grass"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_ritual, a pale figure lying on dark ground beside a pale river, three women and a green archer standing by, a small red cart and round trees, a black night sky above",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/2018.122（The Cleveland Museum of Art，c. 1770）。裁切 (0.05, 0.075, 0.912, 0.902)。",
+  "split": "train",
+  "concept": "ritual",
+  "source_file_id": "cma_314412",
+  "source_sha256": "28e66a1d6baf977f6bec865e8dfad36d7ca1785fc00a2e1d5abe9f35492a7b4a"
+}

@@ -1,6 +1,6 @@
 {
   "id": "future_seed_00012",
-  "license": "PD",
+  "license": "CC0",
   "family": "other_pd",
   "style": {
     "traits": [
@@ -10,11 +10,11 @@
       "closed_outline"
     ],
     "palette": [
-      "malachite",
-      "azurite",
       "cinnabar",
+      "jade_white",
+      "malachite",
       "ochre",
-      "jade_white"
+      "gold"
     ]
   },
   "theme": {
@@ -24,19 +24,18 @@
     ]
   },
   "content": [
-    "full_moon",
-    "jungle",
-    "lotus_flower",
-    "flute_player",
-    "lion",
+    "vishnu",
     "serpent",
-    "bird"
+    "lotus",
+    "deity",
+    "woman",
+    "cosmic_ocean"
   ],
-  "composition": "crop_detail",
-  "caption_en": "deco_future, a full moon over a dreamlike jungle, giant flowers in blue and pink, a dark flute player in a striped skirt, two lions peering through dense leaves, a coiling orange serpent",
-  "notes_zh": "新补。来源 https://commons.wikimedia.org/wiki/File:Henri_Rousseau_-_Le_R%C3%AAve_-_Google_Art_Project.jpg（Wikimedia Commons，1910date QS:P571,+1910-00-00T00:00:00Z/9）。裁切 (0.44, 0.0, 1.0, 0.89)。",
+  "composition": "pattern_field",
+  "caption_en": "deco_future, Vishnu reclining on a white many-headed serpent floating in a sea of lotuses, a four-headed god on a lotus above, a woman massaging his feet, rows of pink lotus buds and green lotus leaves",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/2018.155（The Cleveland Museum of Art，c. 1700）。裁切 (0.05, 0.05, 0.95, 0.95)。",
   "split": "train",
   "concept": "future_seed",
-  "source_file_id": "commons_Henri_Rousseau_Le_R_ve_Google_Art_Project_jpg",
-  "source_sha256": "05f424be8eb24349f04177c26fe9c91ca20434bc448f78346caf85d953e5adcc"
+  "source_file_id": "cma_314460",
+  "source_sha256": "a17137ca8de39b37cbfef85cddbbe794d797a14400f9c5573fba08bc2ca34636"
 }
