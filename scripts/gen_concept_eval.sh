@@ -49,9 +49,12 @@ PAL="malachite, azurite, cinnabar, gold"
 [ -f "$CKPT" ] || { echo "未找到 SDXL base: $CKPT"; exit 1; }
 [ -f "$CONCEPT_LORA" ] || { echo "未找到概念 LoRA: $CONCEPT_LORA"; exit 1; }
 
-echo "== 风格 LoRA 校验（10-10 好版应为 f62a 前缀；b038 是坏版）=="
+echo "== 风格 LoRA 校验（10-10 好版应为 6d4af5c7；9edebbfc 是 10-09 坏版）=="
 if [ -f "$STYLE_LORA" ]; then
-  echo "  $(sha256sum "$STYLE_LORA" | cut -c1-8)  $STYLE_LORA"
+  H=$(sha256sum "$STYLE_LORA" | cut -c1-8)
+  echo "  $H  $STYLE_LORA"
+  [ "$H" = "9edebbfc" ] && { echo "  !! 这是 10-09 坏版（出黑图），别用"; exit 1; }
+  [ "$H" = "6d4af5c7" ] || echo "  !! 哈希不在已知基准内，请确认来源"
 else
   echo "  !! 缺风格 LoRA: $STYLE_LORA"
   [ "$MODE" = "concept_only" ] || exit 1

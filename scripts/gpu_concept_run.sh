@@ -91,12 +91,21 @@ if [[ ! -s "$M" ]]; then
 fi
 ls -lhL "$M"
 
-# 风格 LoRA 认准 f62a（10-10 版）；同名的 b038 是坏版（fp16 VAE 溢出），别拷
-for f in $(find "$S" -maxdepth 6 -name "decomineral_v1_16gb*.safetensors" 2>/dev/null); do
+# 风格 LoRA 认准 6d4af5c7（10-10 版，§9 通过的就是它）。
+# 同名的 9edebbfc 是 10-09 坏版（fp16 VAE 溢出，出黑图），别拷。
+# 基准为 2026-10-28 全库 sha256 实测，覆盖 5 个归档目录，一致。
+mkdir -p "$PRJ/output/lora"
+for f in $(find "$S" -maxdepth 6 -name "decomineral_v1_16gb.safetensors" 2>/dev/null | sort); do
   h=$(sha256sum "$f" | cut -c1-8)
-  echo "  发现风格 LoRA: $f  哈希前缀 $h"
-  [[ "$h" == f62a* ]] && cp -u "$f" "$PRJ/output/lora/" && echo "  -> 已采用 f62a 版"
+  echo "  候选: $h  $f"
+  if [[ "$h" == 6d4af5c7* ]]; then
+    cp -u "$f" "$PRJ/output/lora/" && echo "  -> 已采用 6d4af5c7（10-10 好版）"
+  elif [[ "$h" == 9edebbfc* ]]; then
+    echo "  -> 跳过（9edebbfc 是 10-09 坏版）"
+  fi
 done
+[[ -f "$PRJ/output/lora/decomineral_v1_16gb.safetensors" ]] && \
+  sha256sum "$PRJ/output/lora/decomineral_v1_16gb.safetensors" | cut -c1-8
 
 # ---------------------------------------------------------------- 5. tokenizer（HF 被封时的退路）
 step "[5/7] CLIP tokenizer"
