@@ -2,15 +2,19 @@
 # gen_concept_eval.sh — 概念 LoRA 出图：风格 LoRA + 概念 LoRA 叠加（按 SPEC §7 生成期拼法）。
 #
 # 与 gen_eval.sh 的区别：
-#   - 叠两个 LoRA（kohya 的 --lora_weights 支持逗号分隔多个 "路径;权重"）
+#   - 叠两个 LoRA：★这版 kohya 不支持逗号传多个，故先用 networks/merge_lora.py
+#     按权重比合成一个文件再挂（2026-10-28 实测 ValueError: too many values to unpack）
 #   - 每支概念用各自的 subject
 #   - 可选 MODE=concept_only 只挂概念 LoRA，用来看触发词本身绑定了什么（不掺风格干扰）
 #
 # 用法：
 #   bash scripts/gen_concept_eval.sh ritual            # 风格0.6 + 概念0.7，4 张
 #   N=8 bash scripts/gen_concept_eval.sh water         # 8 张
+#   MUL_STYLE=0.75 MUL_CONCEPT=0.5 OUT=~/w1 bash scripts/gen_concept_eval.sh water
 #   MODE=concept_only bash scripts/gen_concept_eval.sh future_seed
 set -euo pipefail
+
+die() { echo "!! $*"; exit 1; }
 
 SLUG="${1:-}"
 if [[ -z "$SLUG" ]]; then
@@ -69,8 +73,21 @@ else
 fi
 
 case "$MODE" in
-  both)         LORAS="$STYLE_LORA;$MUL_STYLE,$CONCEPT_LORA;$MUL_CONCEPT" ;;
   concept_only) LORAS="$CONCEPT_LORA;$MUL_CONCEPT" ;;
+  both)
+    # ★这版 kohya 的 sdxl_minimal_inference.py 不支持逗号传多个 LoRA
+    # （实测 ValueError: too many values to unpack，2026-10-28）。
+    # 故先用 kohya 自带的 merge_lora.py 按权重比合成一个文件，再以 1.0 挂上。
+    MERGE=$(ls "$SD/networks/merge_lora.py" "$SD/scripts/networks/merge_lora.py" 2>/dev/null | head -1)
+    [[ -n "$MERGE" ]] || die "找不到 kohya 的 merge_lora.py，无法叠加两个 LoRA（可先用 MODE=concept_only）"
+    MERGED="$PRJ/output/lora/_merged_${SLUG}_s${MUL_STYLE}_c${MUL_CONCEPT}.safetensors"
+    echo "== 合并 LoRA（风格 $MUL_STYLE + 概念 $MUL_CONCEPT）=="
+    ( cd "$SD" && PYTHONPATH="$SD" python "$MERGE" \
+        --save_precision fp16 --save_to "$MERGED" \
+        --models "$STYLE_LORA" "$CONCEPT_LORA" \
+        --ratios "$MUL_STYLE" "$MUL_CONCEPT" --concat )
+    [[ -s "$MERGED" ]] || die "合并失败：$MERGED"
+    LORAS="$MERGED;1.0" ;;
   *) echo "MODE 只支持 both / concept_only"; exit 2 ;;
 esac
 
