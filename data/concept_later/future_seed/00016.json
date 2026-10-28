@@ -1,0 +1,41 @@
+{
+  "id": "future_seed_00016",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "cinnabar",
+      "jade_white",
+      "ochre"
+    ]
+  },
+  "theme": {
+    "primary": "machine_or_sky",
+    "secondary": [
+      "creature"
+    ]
+  },
+  "content": [
+    "deity",
+    "bull",
+    "cloud",
+    "trident",
+    "woman",
+    "flower",
+    "procession"
+  ],
+  "composition": "central_figure",
+  "caption_en": "deco_future, a family of pale gods riding a great black bull through a swirl of grey clouds, the white-haired god raising a trident, a woman in red beside him, a band of round red and yellow flowers below",
+  "notes_zh": "新补。来源 https://clevelandart.org/art/1952.587（The Cleveland Museum of Art，c. 1675–80）。裁切 (0.08, 0.045, 0.925, 0.875)。",
+  "split": "train",
+  "concept": "future_seed",
+  "source_file_id": "cma_130218",
+  "source_sha256": "6e36bc249503910583b21be13f60d88d42eacccceb0c80e48489ebed57145755"
+}

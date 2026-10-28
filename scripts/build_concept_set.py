@@ -330,6 +330,35 @@ CONCEPTS = {
                            'four-headed god on a lotus above, a woman massaging his feet, rows of pink lotus buds '
                            'and green lotus leaves',
             },
+            # 2026-10-28 复盘：future 前 15 张出图母题集中在「寺观正立面 / 单塔」，只两种构图。
+            # 补三张**不同母题**：云中坐骑、神兽搏斗、星夜骑队（仍是幻想，非科幻）。
+            {
+                "src": "cma_130218", "crop": (0.08, 0.045, 0.925, 0.875),
+                "family": "other_pd", "composition": "central_figure",
+                "content": ["deity", "bull", "cloud", "trident", "woman", "flower", "procession"],
+                "palette": ["azurite", "cinnabar", "jade_white", "ochre"],
+                "caption": 'a family of pale gods riding a great black bull through a swirl of grey clouds, the '
+                           'white-haired god raising a trident, a woman in red beside him, a band of round red and '
+                           'yellow flowers below',
+            },
+            {
+                "src": "cma_136475", "crop": (0.03, 0.045, 0.965, 0.915),
+                "family": "other_pd", "composition": "horizontal_register",
+                "content": ["goddess", "tiger", "demon", "buffalo", "spear", "club", "scroll"],
+                "palette": ["cinnabar", "ochre", "jade_white", "malachite"],
+                "caption": 'a many-armed goddess riding a white tiger and thrusting a spear at a buffalo demon '
+                           'swinging a club, both floating in a flat orange field, red curling scrolls and a green '
+                           'ground below',
+            },
+            {
+                "src": "aic_49195", "crop": (0.045, 0.03, 0.955, 0.95),
+                "family": "other_pd", "composition": "full_page",
+                "content": ["rider", "horse", "parasol", "crowd", "starry_sky", "moon_disc", "horseman"],
+                "palette": ["azurite", "cinnabar", "jade_white", "malachite"],
+                "caption": 'a rider in yellow on a white horse with an orange parasol overhead, a dense crowd of '
+                           'white-robed attendants and horses below, a dark blue sky filled with small pale dots '
+                           'and one big round disc',
+            },
         ],
     },
 }

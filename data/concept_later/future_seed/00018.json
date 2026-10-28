@@ -1,0 +1,41 @@
+{
+  "id": "future_seed_00018",
+  "license": "CC0",
+  "family": "other_pd",
+  "style": {
+    "traits": [
+      "flat_fill",
+      "mineral_pigment",
+      "no_chiaroscuro",
+      "closed_outline"
+    ],
+    "palette": [
+      "azurite",
+      "cinnabar",
+      "jade_white",
+      "malachite"
+    ]
+  },
+  "theme": {
+    "primary": "machine_or_sky",
+    "secondary": [
+      "creature"
+    ]
+  },
+  "content": [
+    "rider",
+    "horse",
+    "parasol",
+    "crowd",
+    "starry_sky",
+    "moon_disc",
+    "horseman"
+  ],
+  "composition": "full_page",
+  "caption_en": "deco_future, a rider in yellow on a white horse with an orange parasol overhead, a dense crowd of white-robed attendants and horses below, a dark blue sky filled with small pale dots and one big round disc",
+  "notes_zh": "新补。来源 https://www.artic.edu/artworks/49195（The Art Institute of Chicago，c. 1820）。裁切 (0.045, 0.03, 0.955, 0.95)。",
+  "split": "train",
+  "concept": "future_seed",
+  "source_file_id": "aic_49195",
+  "source_sha256": "c466e633ab2ff4e4ae8dea4c3f4c5799fe5ee4c9f04c86bab3d744fdc4a74f93"
+}
