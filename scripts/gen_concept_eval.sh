@@ -34,8 +34,11 @@ PRJ="${PROJECT_DIR:-$HOME/pearl_LoRA}"
 SD="${SD_SCRIPTS:-$HOME/sd-scripts}"
 CKPT="${CKPT:-$PRJ/models/sd_xl_base_1.0.safetensors}"
 STYLE_LORA="${STYLE_LORA:-$PRJ/output/lora/decomineral_v1_16gb.safetensors}"
-MUL_STYLE="${MUL_STYLE:-0.6}"     # 与 gen_eval.sh 一致（0.8 会出伪书法）
-MUL_CONCEPT="${MUL_CONCEPT:-0.7}"
+# 2026-10-28 实测权重扫描结论：0.75 + 0.50 优于 0.60 + 0.70
+#   - 0.75/0.50：装饰边框齐整、金地干净、单月、平涂稳定
+#   - 0.60/0.70：概念侧过强，出现「圈月」（同心圆替代月亮）与边框不齐
+MUL_STYLE="${MUL_STYLE:-0.75}"
+MUL_CONCEPT="${MUL_CONCEPT:-0.50}"
 N="${N:-4}"
 BASE_SEED="${BASE_SEED:-20261028}"
 STEPS="${STEPS:-28}"
@@ -58,8 +61,9 @@ STYLE="decomineral style, flat mineral pigments, no chiaroscuro, pattern equal t
 # 负面词可用环境变量覆盖。★默认已加「两个月亮」相关词：
 # 2026-10-28 实测 concept_only 组 8/8 都出现「小月 + 大圆月」，是过拟合的高频伪影，
 # 提示词层面先压，不必为此重训。
-NEG="${NEG:-photograph, realistic lighting, chiaroscuro, 3d render, anime, oil painting, western perspective, watermark, text, artist name, signature, two moons, double moon, repeated moons, multiple suns}"
-PAL="malachite, azurite, cinnabar, gold"
+NEG="${NEG:-photograph, realistic lighting, chiaroscuro, 3d render, anime, oil painting, western perspective, watermark, text, artist name, signature, two moons, double moon, repeated moons, multiple suns, ring moon, concentric circles in the sky, donut shape moon}"
+# 输出偏青绿+金、缺朱砂，故把颜色写成带色相的短语并前置朱砂（2026-10-28 观察）
+PAL="${PAL:-cinnabar red accents, azurite blue, malachite green, gold}"
 
 [ -f "$CKPT" ] || { echo "未找到 SDXL base: $CKPT"; exit 1; }
 [ -f "$CONCEPT_LORA" ] || { echo "未找到概念 LoRA: $CONCEPT_LORA"; exit 1; }
