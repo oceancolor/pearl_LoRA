@@ -54,6 +54,10 @@ sed -i 's/^\([[:space:]]*\).*set_use_memory_efficient_attention_xformers.*/\1pas
 sed -i 's/set_use_memory_efficient_attention(True/set_use_memory_efficient_attention(False/g' "$INFER"
 grep -n "^    steps\|^    seed\|xformers\|pass" "$INFER" | head
 
+# sdxl_minimal_inference.py import 了 kohya 的 networks.lora，脚本被拷到项目目录后
+# 必须把 sd-scripts 加进 PYTHONPATH，否则 ModuleNotFoundError: No module named 'networks'
+export PYTHONPATH="$SD${PYTHONPATH:+:$PYTHONPATH}"
+
 gen() {  # gen <branch> <subject>
   local branch="$1" subject="$2"
   mkdir -p "$OUT/$branch"

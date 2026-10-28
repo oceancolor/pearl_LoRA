@@ -87,6 +87,10 @@ if [ "$MODE" = "concept_only" ]; then PROMPT="$TRIG, $SUBJ"; else PROMPT="$STYLE
 mkdir -p "$OUT"
 echo "== 生成（mode=$MODE, steps=$STEPS, style=$MUL_STYLE, concept=$MUL_CONCEPT, n=$N）=="
 echo "   prompt: ${PROMPT:0:110}..."
+# ★推理脚本 import 了 kohya 的 networks.lora，必须把 sd-scripts 加进 PYTHONPATH
+# （脚本被拷到项目目录运行，否则报 ModuleNotFoundError: No module named 'networks'）
+export PYTHONPATH="$SD${PYTHONPATH:+:$PYTHONPATH}"
+
 for ((i=0; i<N; i++)); do
   GEN_SEED=$((BASE_SEED + i)) python "$INFER" \
     --ckpt_path "$CKPT" \
