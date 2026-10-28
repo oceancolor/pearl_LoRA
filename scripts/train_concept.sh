@@ -85,6 +85,11 @@ SAMPLE_ARGS="--sample_prompts $SAMPLE --sample_every_n_steps 250 --sample_sample
 SD_SCRIPTS="${SD_SCRIPTS:-$HOME/sd-scripts}"
 [[ -f "$SD_SCRIPTS/sdxl_train_network.py" ]] || { echo "找不到 $SD_SCRIPTS/sdxl_train_network.py"; exit 5; }
 
+# ★必须先删旧的 latents 缓存：cache_latents=true 会复用同目录残留的 .npz。
+# 若上一轮是 fp16 且没开 no_half_vae，缓存本身就是坏的，直接导致 LoRA 报废
+# （2026-10-09 首次训练就踩过，loss 看着正常、产物全废）。
+find "$DIR" -name "*.npz" -delete 2>/dev/null && echo "已清理 $DIR 下的旧 latents 缓存"
+
 echo "-- 开始训练（预计 $(python -c "print(round(1000*2.1/60))") 分钟量级）--"
 cd "$SD_SCRIPTS"
 python sdxl_train_network.py \

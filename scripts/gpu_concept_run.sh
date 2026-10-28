@@ -52,10 +52,14 @@ python -m pip install -q --upgrade pip
 
 # ---------------------------------------------------------------- 2. kohya + 依赖 + cu121 torch
 step "[2/7] kohya sd-scripts + 依赖"
-[[ -d "$SD/.git" ]] || git clone https://github.com/kohya-ss/sd-scripts.git "$SD"
-if [[ ! -f "$SD/.deps_ok" ]]; then
-  ( cd "$SD" && pip install -r requirements.txt && pip install bitsandbytes )
-  touch "$SD/.deps_ok"
+if [[ "${SKIP_INIT:-0}" == "1" ]]; then
+  echo "SKIP_INIT=1：跳过克隆与依赖安装（环境已就绪时用）"
+else
+  [[ -d "$SD/.git" ]] || git clone https://github.com/kohya-ss/sd-scripts.git "$SD"
+  if [[ ! -f "$SD/.deps_ok" ]]; then
+    ( cd "$SD" && pip install -r requirements.txt && pip install bitsandbytes )
+    touch "$SD/.deps_ok"
+  fi
 fi
 if ! python -c "import torch,sys; sys.exit(0 if torch.version.cuda=='12.1' and torch.cuda.is_available() else 1)" 2>/dev/null; then
   echo "torch 不是 cu121 或 CUDA 不可用 -> 重装 cu121"
@@ -78,12 +82,21 @@ step "[4/7] SDXL 底模"
 mkdir -p "$PRJ/models"
 M="$PRJ/models/sd_xl_base_1.0.safetensors"
 if [[ ! -s "$M" ]]; then
-  SRC=$(find "$S" -maxdepth 5 -name sd_xl_base_1.0.safetensors -size +6G 2>/dev/null | sort | tail -1)
+  # 归档目录优先：workspace/*/models/ 下是上次备份的完整底模
+  SRC=$(find "$S" -maxdepth 6 -path "*workspace*" -name sd_xl_base_1.0.safetensors -size +6G 2>/dev/null | sort | tail -1)
+  [[ -n "$SRC" ]] || SRC=$(find "$S" -maxdepth 6 -name sd_xl_base_1.0.safetensors -size +6G 2>/dev/null | sort | tail -1)
   [[ -n "$SRC" ]] || die "共享存储里找不到 sd_xl_base_1.0.safetensors"
   echo "链接 $SRC"
   ln -sf "$SRC" "$M"
 fi
 ls -lhL "$M"
+
+# 风格 LoRA 认准 f62a（10-10 版）；同名的 b038 是坏版（fp16 VAE 溢出），别拷
+for f in $(find "$S" -maxdepth 6 -name "decomineral_v1_16gb*.safetensors" 2>/dev/null); do
+  h=$(sha256sum "$f" | cut -c1-8)
+  echo "  发现风格 LoRA: $f  哈希前缀 $h"
+  [[ "$h" == f62a* ]] && cp -u "$f" "$PRJ/output/lora/" && echo "  -> 已采用 f62a 版"
+done
 
 # ---------------------------------------------------------------- 5. tokenizer（HF 被封时的退路）
 step "[5/7] CLIP tokenizer"
