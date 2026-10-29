@@ -52,3 +52,6 @@ data/style_ref/
 
 # GPU 机经共享存储带回、由用户手动拷入的文件（补丁/评估图/日志），合并后再按需入库
 _incoming/
+
+# LoRA 产物（发布用，已走 LFS）
+!dist/lora/**/*.safetensors
