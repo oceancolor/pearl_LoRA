@@ -55,7 +55,8 @@ case "$SLUG" in
   *) echo "未知概念: $SLUG"; exit 2 ;;
 esac
 
-CONCEPT_LORA="$PRJ/output/lora/$TRIG.safetensors"
+# 可用环境变量指定别处权重（例如先用共享存储里上一版 deco_ritual 出图做冒烟）
+CONCEPT_LORA="${CONCEPT_LORA:-$PRJ/output/lora/$TRIG.safetensors}"
 
 STYLE="decomineral style, flat mineral pigments, no chiaroscuro, pattern equal to form, tapestry space, jewel-like palette, closed color shapes, ornamental border"
 # 负面词可用环境变量覆盖。★默认已加「两个月亮」相关词：
