@@ -55,6 +55,14 @@ case "$SLUG" in
   *) echo "未知概念: $SLUG"; exit 2 ;;
 esac
 
+# 用 SUBJ_OVERRIDE 换 subject，用来测「这套数据能不能出别的母题」。
+# 2026-10-29 教训：g6 六张全是「月+湾+舟」，不是数据缺雨/瀑布/浪，
+# 而是 default subject 自己把构图写死了。测多样性必须先换 subject。
+if [ -n "${SUBJ_OVERRIDE:-}" ]; then
+  SUBJ="$SUBJ_OVERRIDE"
+  echo "== subject 已覆盖 =="
+fi
+
 # 可用环境变量指定别处权重（例如先用共享存储里上一版 deco_ritual 出图做冒烟）
 CONCEPT_LORA="${CONCEPT_LORA:-$PRJ/output/lora/$TRIG.safetensors}"
 
