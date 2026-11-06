@@ -1,0 +1,48 @@
+# dataset_v2 — 针对"几何装饰画泄漏"的数据配置修正（相对 v1 逐条说明）
+#
+# v1 的问题（来自 10-09/10-28 配置与训练日志）：
+#   1. shuffle_caption=false + 38/38 张前 5 个 token 完全相同 → 模型靠位置记忆，
+#      触发词吸收了全部视觉属性（含"图案化"），无法区分"风格"与"内容"。
+#   2. color/flip 全关 + 无 caption dropout → 每张图被原样重复 200 次（19张×53repeats×1000步），
+#      单张构图/几何纹样被记死（配置注释自己也写了"提示词稍变就退化到某张训练图"）。
+#   3. 100% 训练图同风格，0 张先验保留（prior preservation）负例 →
+#      LoRA 无条件改变 UNet 输出分布，"任何提示词都出装饰画"。
+#
+# __XXX__ 为渲染占位符，与 scripts 渲染方式一致。
+
+[general]
+enable_bucket = true
+bucket_no_upscale = true
+min_bucket_reso = 768
+max_bucket_reso = 1024
+bucket_reso_steps = 64
+caption_extension = ".txt"
+shuffle_caption = true            # 改：打乱风格词/内容词，破除位置记忆
+keep_tokens = 1                   # 触发词固定在首位，其余全 shuffle
+color_aug = false                 # 保留：矿物色是风格核心
+flip_aug = true                   # 改：默认镜像增广（有方向性题字的图单独放入 no_flip 子集）
+caption_dropout_rate = 0.08       # 新增：8% 样本整个 caption 置空 → 学"无触发词=不应用风格"
+caption_tag_dropout_rate = 0.15   # 新增：随机丢风格/内容词，减少触发词与属性的绑定
+
+[[datasets]]
+resolution = 896
+batch_size = 1
+
+  # 主集：风格图（触发词 + 风格 caption）
+  [[datasets.subsets]]
+  image_dir = "__TRAIN_DIR__"
+  num_repeats = __REPEATS__        # 目标：每张图整个训练只见 ~20-40 次（v1 是 ~200 次）
+  flip_aug = true
+
+  # 先验保留负例：base SDXL 生成的通用图，caption 为普通描述（无触发词、无风格词）
+  # 生成方式见 make_reg_set.py；规模 ≈ 主集张数
+  [[datasets.subsets]]
+  image_dir = "__REG_DIR__"
+  num_repeats = __REG_REPEATS__    # ≈ 主集 repeats，保持风格:负例 ≈ 1:1
+  flip_aug = true
+
+  # 可选：方向性/题字图单独放这里，禁镜像
+  # [[datasets.subsets]]
+  # image_dir = "__NOFLIP_DIR__"
+  # num_repeats = __REPEATS__
+  # flip_aug = false

@@ -1,0 +1,13 @@
+# OOD 泛化评估集 — 固定 seed，用于量化"提示词 → 几何装饰画"泄漏
+# 分三组；每轮训练前后都跑同一份，横向对比。
+# A. 泄漏检测：无触发词的普通提示词（理想：与 base SDXL 无明显风格差）
+a photorealistic portrait of an elderly fisherman, natural light, 50mm photo
+a bowl of ramen on a wooden table, food photography
+a modern city street at dusk, cars and neon signs, cinematic
+a golden retriever puppy playing on grass, photo
+# B. token 污染检测：含 deco/pattern 语义但无触发词（理想：正常 deco/极简输出，不被 LoRA 纹样吞掉）
+an art deco travel poster of a cruise ship
+a simple minimalist logo of a bird, clean lines, white background
+# C. 触发词绑定 + 域外主体（理想：出风格但主体仍可辨识）
+deco_ritual, a steam locomotive crossing a stone bridge
+deco_water, a football player kicking a ball

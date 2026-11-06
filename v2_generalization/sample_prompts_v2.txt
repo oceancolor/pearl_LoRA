@@ -1,0 +1,3 @@
+mirlak style, a steam locomotive crossing a stone bridge --w 896 --h 896 --s 28 --d 20261106 --l 6
+mirlak style, an elderly fisherman portrait, natural light --w 896 --h 896 --s 28 --d 20261107 --l 6
+mirlak style, a bowl of ramen on a wooden table --w 896 --h 896 --s 28 --d 20261108 --l 6

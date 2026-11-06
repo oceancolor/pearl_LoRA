@@ -1,0 +1,61 @@
+# sdxl_lora_v2 — 针对"几何装饰画泄漏"的训练配置修正（16gb 剖面）
+#
+# 与 v1（configs_generated/sdxl_lora_concept_*.toml）的差异：
+#   ★1 触发词必须换：v1 的 deco_ritual/deco_water/deco_future 在 CLIP 中切为
+#      ['deco</w>','_','ritual</w>'] —— "deco" 本身就是装饰/几何图案的强语义 token，
+#      且 network_train_unet_only=true 不训 TE，无法重绑定 →
+#      任何含 deco/pattern/ornament 语义的提示词都会触发装饰画（实测现象吻合）。
+#      候选（已用项目 tokenizer 验证，切词均为无语义碎片）：
+#        ritual   -> shimur   (shi + mur)
+#        water    -> naxumi   (nax + umi)
+#        future   -> korval   (kor + val)
+#      风格触发词 decomineral 切为 de/com/in/eral，其中 in/com 为高频英文碎片，
+#      中风险；如重训风格 LoRA 建议一并更换（如 mirlak）。
+#   ★2 训练量：v1 概念集 19 张×53 repeats×4 epoch=1000 步，loss 0.164→0.122 几乎不降，
+#      纯记忆化。v2 降步数并依赖 OOD 评估选 checkpoint，而不是取最后一步。
+#   ★3 noise_offset：改善平涂色块的对比度分布，减少大面积装饰底纹。
+
+pretrained_model_name_or_path = "__BASE_MODEL__"
+
+network_module = "networks.lora"
+network_dim = 12                 # 风格 v2：v1 是 16 -> 12（降容量减过拟合）；概念 v2 重训时改回 8
+network_alpha = 6                # alpha=dim/2，有效缩放更柔
+network_train_unet_only = true   # 前提：触发词已换成语义中性词；若换回自然语言触发词须设 false
+
+learning_rate = 8.0e-5           # v1 1.0e-4 -> 下调
+unet_lr = 8.0e-5
+optimizer_type = "AdamW8bit"
+lr_scheduler = "cosine"
+lr_warmup_steps = 40
+max_train_steps = __STEPS__      # 概念集 ~500-600；风格集 ~1000
+gradient_accumulation_steps = 4
+max_grad_norm = 1.0
+seed = 20261106
+
+mixed_precision = "fp16"
+save_precision = "fp16"
+no_half_vae = true
+gradient_checkpointing = true
+cache_latents = true
+cache_latents_to_disk = true
+vae_batch_size = 1
+sdpa = true
+lowram = false
+
+min_snr_gamma = 5
+noise_offset = 0.035             # 新增
+
+dataset_config = "__DATASET_TOML__"
+
+output_dir = "__OUTPUT_DIR__"
+output_name = "__OUTPUT_NAME__"
+save_model_as = "safetensors"
+save_every_n_steps = 100         # 改：按步保存，配合 OOD 评估挑最优 checkpoint
+save_last_n_steps = 400
+logging_dir = "__LOG_DIR__"
+log_with = "tensorboard"
+
+# 训练期间自采样（v1 只有 2 条域内 prompt，测不出泛化；v2 直接用 OOD 集）
+sample_prompts = "__SAMPLE_PROMPTS__"
+sample_every_n_steps = 100
+sample_sampler = "euler_a"

@@ -1,0 +1,10 @@
+# v2 专用 OOD 评估集：A/B 组与 ood_prompts.txt 完全一致（可直接横向比泄漏），
+# C 组换成 v2 的触发词 mirlak（v1 用 deco_ritual / deco_water）。
+a photorealistic portrait of an elderly fisherman, natural light, 50mm photo
+a bowl of ramen on a wooden table, food photography
+a modern city street at dusk, cars and neon signs, cinematic
+a golden retriever puppy playing on grass, photo
+an art deco travel poster of a cruise ship
+a simple minimalist logo of a bird, clean lines, white background
+mirlak style, a steam locomotive crossing a stone bridge
+mirlak style, a football player kicking a ball
